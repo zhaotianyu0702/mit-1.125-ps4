@@ -2,7 +2,7 @@
 
 **Student:** Tianyu Zhao  
 **Repository:** https://github.com/zhaotianyu0702/mit-1.125-ps4  
-**Current status:** The public code and evidence repository is uploaded, and its URL was registered in the course roster's PS4 Repo field on October 15 UTC. The overall assignment remains incomplete because article/video publication and the final published-claim trace are still pending; publication links below are intentionally pending.
+**Current status:** The public code and evidence repository is uploaded, and its URL was registered in the course roster's PS4 Repo field on October 15 UTC. All three companion videos are now Unlisted and their watch pages have been verified. The overall assignment remains incomplete: the three Substack articles, article/video crosslinks, and final technical demonstration with a published-claim trace are still pending.
 
 ## Topic, audience and purpose
 
@@ -12,11 +12,13 @@
 
 | Piece | Article | Substack URL | YouTube URL |
 | --- | --- | --- | --- |
-| 1 | Coding agents move into the delivery system | Pending | Pending |
-| 2 | What Coding-Agent Results Actually Measure | Pending | Pending |
-| 3 | Run a Small, Reversible Trial Before Expanding Agent Access | Pending | Pending |
+| 1 | Coding agents move into the delivery system | Pending | [Watch video 1](https://youtu.be/pmSUPnpCyag) |
+| 2 | What Coding-Agent Results Actually Measure | Pending | [Watch video 2](https://youtu.be/h0z538an6hE) |
+| 3 | Run a Small, Reversible Trial Before Expanding Agent Access | Pending | [Watch video 3](https://youtu.be/7dnm8xoI_yA) |
 
 The approved article/script pairs and source notes are in [the production package](revisions/20261012T225329Z-student-feedback/package/). The three completed companion videos run 3:33.72, 3:51.83 and 3:48.95. Google Vids generated their narration; local finishing added evidence graphics and corrected subtitles. Research, drafting and substantive assistant review were AI-assisted. The student approved the deliverables on October 13 at 19:43 UTC. No personal source-listening claim is made.
+
+The three videos use the approved titles, evidence-as-of date, source references, written AI disclosure and YouTube AI-generated-content label. They are set as not made for children, with subscriber notifications disabled. [Published video metadata and full source URLs](publishing/video-publication.json) preserve the exact descriptions and verification record. The companion-article fields explicitly remain pending. YouTube currently requires one-time channel verification before external description links become clickable; some are truncated in its watch interface. The complete URLs are retained in the linked metadata.
 
 **Separate technical demonstration:** shareable URL pending. The approved Elio review copy is 5:28.07. It covers architecture, the entrypoint, retained source/decision/claim evidence, both actual run dates, recovery, editorial revisions and an architectural tradeoff. The final published-claim screen and the statements about pending publication must be updated after publication. Written AI-narration disclosure will remain.
 

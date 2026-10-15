@@ -6,13 +6,13 @@
     "20261013T000115Z-e07304"
   ],
   "student_feedback_revision": "revisions/20261012T225329Z-student-feedback (selected articles/scripts, six sample and policy feedback record)",
-  "contents_file_count": 325,
-  "contents_bytes": 4082039,
+  "contents_file_count": 326,
+  "contents_bytes": 4089219,
   "sha256": {
     ".gitignore": "932179c8ef5f0c66508ff1146079bafda8781b2bf5d6a880bd020c25b0c8268a",
     "ARCHITECTURE.md": "9b0bc4cd7800053b552f30b2398d75fde22749bada3614520ec7f87c9c850bd9",
     "README.md": "4bdeabd9444351b2d0970e7b48d1698d89162dbc3a2a1abc3eb31d396b5328e7",
-    "SUBMISSION.md": "89a80fb088a67849dabf8e3c2ddebad726c1ec5d0e87b48c74793dbbd42f2a0c",
+    "SUBMISSION.md": "da4031eaa0198fa5b8471ad901a255285a19924604689e4e7544df71cb33e4ca",
     "adapters/codex.py": "edd60116477f6c17ef4b2b66305c55a5c358d2c0e4e9e75577120038af541ea1",
     "adapters/codex.sh": "323648411a3903c8430a9f7449776d78b58e1c8041d78bc4a27822f92ed9bcc2",
     "collectors/collect.py": "c958e1642ff6c722cfbd27b2a2c342a4969748a92a27c6217cd713eb792b19d9",
@@ -145,6 +145,7 @@
     "prompts/write_video_scripts.md": "fde05a904704f020c0762161c28002e1d7aae2a5e9e4151a0567715e0628dc18",
     "publishing/prepare_package.py": "6cb501cee457d03e5c8c6fdfe97e78c6d58ce8734790a48902a56668ece13ef0",
     "publishing/prepare_package.sh": "29cb5f5ebb261bc6b1b24d81de327c603afa8286cae038568e3de5529b0726a8",
+    "publishing/video-publication.json": "cba39776dee82a9a51361de66efdf3895b11a9e9e89bb754286aa3d2eaa673f6",
     "reporting/summarize_run.py": "265265dd0c806922354cd28b9873687d736ea6b8a175f01014d17d077dbd8cac",
     "reporting/summarize_run.sh": "1492d8e02f6a750eaa1cd2598e6294c20646f20eac972c9428e50141e8d69ddc",
     "requirements-lock.txt": "be04eadfc65895cbe3154b4c5aa03b4c0dadcf65d4c450cd8992c7e1db66307f",
@@ -347,7 +348,7 @@
   "asset_preservation": "Copied exact data/assets text and timestamp-segment files referenced by both selected live runs; run records retain the same repository-relative paths.",
   "derivative_label": "Run summaries, stage receipts, student feedback records, and review samples are sanitized derivatives; original local records remain unchanged.",
   "parent_sync_pending": [
-    "verified publication links and final technical-demo published-claim trace"
+    "verified Substack links, article/video crosslinks and final technical-demo published-claim trace"
   ],
   "privacy_derivatives": [
     "non-portable local CLI path removed from staged adapter; use codex on PATH or PS4_CODEX_BIN",
