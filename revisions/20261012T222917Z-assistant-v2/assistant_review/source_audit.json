@@ -1,0 +1,597 @@
+{
+  "run_id": "20261012T214349Z-992554",
+  "revision_dir": "revisions/20261012T222917Z-assistant-v2",
+  "reviewer_type": "user_authorized_ai_assistant",
+  "reviewed_at": "2026-10-12T22:30:40Z",
+  "eligible_records_reviewed": 36,
+  "decisions_changed": 0,
+  "scope_note": "A semantic review of the six assignment sample items used relevant source passages and, for timed media, corresponding segments. For the other records, the audit records the actual scoped excerpt considered; it does not claim semantic reading of full source files merely because a script loaded them. All assessments are limited to retained text/segments.",
+  "records": [
+    {
+      "item_id": "feed:897ed0a11c3fdbaa832840c6",
+      "version_id": "e8f12f87b7dcd87172d5684b4ef3473189e4fa3a71eee3cbd32a10618983c625",
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "specific_relevant_excerpt",
+        "path": "data/assets/7afc49efd18d023256813dd2f3b1778ce4aa3351552997210361de58557c3158.txt",
+        "quote_or_passage": "“Agent skills package repeatable procedures. - Custom agents bring specialized guidance to larger tasks.”",
+        "scope": "Read the cited relevant passage in the retained text; for transcript sources also checked the corresponding timed segment record."
+      },
+      "assistant_assessment": "The article enumerates four repo-level controls—custom instructions, reusable skills, specialized agents, and MCP connections—and explains them with examples. That is directly relevant implementation guidance for a small team; it supplies no comparative outcome evidence. Retain acceptance for piece 01/03 as a bounded practice example."
+    },
+    {
+      "item_id": "feed:36fbabdb1a9e5152a5f3bd37",
+      "version_id": "95eca7a4c8cd8b6ae280d3109b38a1319eaca238a6c29e2de25884c5f699885e",
+      "title": "Hack the World: Why hackathons are still the best place to learn to build",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "specific_relevant_excerpt",
+        "path": "data/assets/db8eec0ef8ce8f35aedbbab814f14d609747857841e164ac85ffcace8ca49cbb.txt",
+        "quote_or_passage": "“Two days of intense focus on one small experimental project”",
+        "scope": "Read the cited relevant passage in the retained text; for transcript sources also checked the corresponding timed segment record."
+      },
+      "assistant_assessment": "The feature is primarily a GitHub event/community story. Its Copilot anecdote is a participant’s quick prototype claim, without task specifics, review details, or verification; reject for this publication’s delivery-evidence question."
+    },
+    {
+      "item_id": "feed:12c3cf490bfbd515689d018b",
+      "version_id": "bc2169458edc05c554bffe977ae456fdc7aa8fb4f13bfac65cdb3d530a9a1368",
+      "title": "How one bug bounty researcher chooses the features they investigate",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "specific_relevant_excerpt",
+        "path": "data/assets/7602c9ce92c9f1b7dd7d0f091d8efe7993aa5f5ed546cc82fda97bdb4eb8a32e.txt",
+        "quote_or_passage": "“you don’t earn more by submitting more—you earn more by submitting better.”",
+        "scope": "Read the cited relevant passage in the retained text; for transcript sources also checked the corresponding timed segment record."
+      },
+      "assistant_assessment": "This profile is about the bug-bounty program and one researcher’s investigation choices. The AI remarks are contextual and do not document a coding-agent delivery task or measured result; reject on scope and evidentiary fit."
+    },
+    {
+      "item_id": "feed:24d39f28f1664a92f8c76c40",
+      "version_id": "d73316204e22397669adacefd05804c362deb0d58863380cda97e3eebdefeb70",
+      "title": "Building Git infrastructure for agent-scale development",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/8d034dff7409dddbe899df60ab428d52d217b4c3d9a1ab20f55497c70fb4fd8c.txt",
+        "quote_or_passage": "Brian Celenza Brian is a Principal Software Engineer working on the storage and core services that power all repository interactions on GitHub. We’re rebuilding GitHub’s Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. Every day on GitHub, millions of developers build the products their customers rely on, contribute to open source, and pursue personal projects. GitHub’s architecture has changed steadily over the years to support that work and the growing dem",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes building git infrastructure for agent-scale development, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:570fe3204556675e8dd927e7",
+      "version_id": "24c729df4334721faaf5f95e88be8a2f61bdd9d50cbe2ed6c334469e527b7497",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/719f4a16ff3917db4a83c87ec2a4b3993cf467c7143ea0f83ac8bbacf5ab05b0.txt",
+        "quote_or_passage": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak With OpenAI Daybreak, Sophos combines frontier intelligence with cybersecurity expertise to investigate threats faster and protect customers at scale. 89 seconds average response time for cases using AI agents 96% reduction in investigation time using OpenAI models 52% of MDR cases resolved end-to-end by AI Frontier AI is changing cybersecurity on both sides(opens in a new window). Advanced models can help defenders find and investigate threats faste",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for sophos cuts threat investigation time by 96% with openai daybreak is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:9bf93d58cc35db9987f8bca4",
+      "version_id": "9884448e05c11b91a13b7ce1c6d163cc3f2ae0b7cb4a1aafc189e1f696ee16ba",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/0b5804dea7dc8dff8bcb364a0d109edff8ce9c50bbacb52df5b0672afb9a49cc.txt",
+        "quote_or_passage": "Asana cuts model costs 76x in browser tests with GPT‑6.1 Sol Using GPT‑6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models. 76x Lower estimated model costs with the optimized GPT-6.1 Sol workflow 5x Faster browser runs with the optimized GPT-6.1 Sol workflow $0.47 Average estimated model cost with the optimized GPT-6.1 Sol workflow With GPT‑6 Astra in Codex running experiments, Asana optimized its browser agent’s workflow on GPT‑6.1 Sol to run 76x",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes asana cuts model costs 76x in browser tests with gpt-6.1 sol, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:db7b9e6fe248e3146f87743a",
+      "version_id": "d65ef1ac8e0b3e5d6779721bbf19ae5beec46212bf78d75e0dd6af556594effd",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "original_decision": "defer",
+      "assistant_decision": "defer",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "specific_relevant_excerpt",
+        "path": "data/assets/f88e4a5de96531cb0adfe0c3fe361bff9dbe2cdda530b58dd327afd86fcd099c.txt",
+        "quote_or_passage": "“for simple events that don’t require a lot of context, they can resolve in minutes instead of an hour”",
+        "scope": "Read the cited relevant passage in the retained text; for transcript sources also checked the corresponding timed segment record."
+      },
+      "assistant_assessment": "The customer story mixes recruiting and engineering use, with only a brief engineering incident example and broad time-saving assertions. Its retained material provides no task denominator, before/after method, failure account, or small-team transfer basis. Keep deferred because the supplied excerpt does not support a fair final judgment of the complete engineering case; do not use it as evidence meanwhile."
+    },
+    {
+      "item_id": "feed:855092fba1df7e8a668bec1b",
+      "version_id": "19a516307d4debe086c6b9ef5c2e81cbb72e38264ee938cb99ed05475feb1d9d",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/b9aba925b0656739ddc2b231c7d68f49ec46463b950149052eece52524da086b.txt",
+        "quote_or_passage": "Pollo AI turns creative ideas into campaigns with OpenAI With GPT‑5.6, GPT‑6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads. Pollo AI(opens in a new window) was founded on the premise that people should be able to turn their creative ideas into finished images and videos without needing production expertise. Even with generative AI, creators and marketers can struggle to navigate different tools and choose between models to get the result they want. So",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for pollo ai turns creative ideas into campaigns with openai is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:45d6a2b79938283a07ca47b3",
+      "version_id": "f4d84cff1f61e754f1fcfcd5bc3eb799d02428811e491e5e9dfc333c61faa710",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/71a15abccac7d5fd039e083944262125746c53b2e779842bbac19b49df37419d.txt",
+        "quote_or_passage": "LegalOn halves Codex costs while maintaining development speed LegalOn cut costs by 65% while maintaining development speed by matching Astra, Sol, and Luna to tasks and managing budgets strategically. Results -20% Cost reduction in mature business areas Results -65% Reduction in estimated daily costs LegalOn Technologies offers Professional AI globally, using AI to support legal work and other key business functions. By combining domain expertise with AI, it enables people to focus on complex judgments and decisio",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes legalon halves codex costs while maintaining development speed, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:d9e485b409fe8517ac6e3a5b",
+      "version_id": "b6c67632b562fc5d16247437f9d17a2f422c10988f9e73a9205587a8b1ab3af7",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/17e4b17a1a7988142b720a81b4f33b24d7e9de5e6c83fb48209af498f4f87289.txt",
+        "quote_or_passage": "Disrupting AI-enabled “false front” operations Over the past two and a half years, we’ve reported on many of the ways in which threat actors tried to use our models to conduct cyber attacks, covert influence operations (IO), scams, and other violations of our Usage Policies. We publish these reports to inform regulators, our industry peers, and wider society of how we see threat actors trying to leverage AI, and to shine a light on the vulnerabilities they try to exploit. We recently banned two IO—one from Russia a",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for disrupting ai-enabled “false front” operations is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:0f50c3868b84705241c980de",
+      "version_id": "99919e97481c4475bdb7232dd4a4f97f5594a2ee8b8464e4a09aaad95bd59374",
+      "title": "Beyond the AI noise: How Stack Overflow is rethinking tech hiring",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/62b94fb54a1ade61ad2fdfa1ba37da43bc1c20dc6cff460eb4a5e3c98dc14527.txt",
+        "quote_or_passage": "I’ve been recruiting into Stack Overflow's product and engineering teams on and off since 2015, having originally joined the team when we were focused on our Careers product, and returning in 2021 to help build the teams that have built products like Overflow AI, Stack Internal, and more. Therefore, I feel quite uniquely placed to offer some perspective on just how much hiring has changed in the last 11 years, both as a talent professional and someone who’s spent most of their career doing that here at Stack Overfl",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for beyond the ai noise: how stack overflow is rethinking tech hiring is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:0de794a916f2d962b8cb205f",
+      "version_id": "7559ca09d7f78f40819b0b522e197302e8bd963ed8a01a61c575b0666c4c1a24",
+      "title": "A Treatise on Model Oriented Programming Languages",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/ecbcc0795dd4061d862d0d1119f190407a3381cca9fd5a12e43c34347380c74d.txt",
+        "quote_or_passage": "Thirteen years ago I developed to my knowledge the first and currently the only fully featured model oriented programming language and IDE. I utilized this technology (Mo+) to great effect on my own and workplace enterprise projects, but failed to sell the ideas to a wider audience. Six years ago I left my software engineering career in favor of wielding an ax and building Viking and Anglo Saxon ships in Norway, UK and other future places in Scandinavia. Even so, I still think about model oriented programming from ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for a treatise on model oriented programming languages is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:425cbd44d7ef5cc67868c4f7",
+      "version_id": "cb415aeeefa780558b617e087ae511af0554af2f20c43774b506cf292ac2d89c",
+      "title": "Taking a look under your agent’s hood",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/ef722d99181d7da916c7331c8aea4cd99874468b1e46052ee2252258f97201c1.txt",
+        "quote_or_passage": "Datadog is an observability and security platform for cloud applications, providing real-time monitoring for infrastructure, distributed systems, and AI agent behavior. Connect with Yanbing on LinkedIn and learn more on the Datadog website. Congrats to Great Answer badge winner insertusernamehere for winning the badge on their answer to How can I get a character array from a string?.",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for taking a look under your agent’s hood is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:56dba7d9cf962ed143721fa8",
+      "version_id": "ff7dc33bb7da5db3b005a7252d1bc01a2d091bccd884c8d40efdef735ccf0c93",
+      "title": "Production-grade LLMs and agents: a field guide",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/1707fe0b2066443f6d2791e0059e7f98d8c3a940dabe3fcbce23720575f6b5b7.txt",
+        "quote_or_passage": "There’s a canyon between an agent that demos well and an agent you’d put in front of customers or money. Crossing it isn’t about a bigger model — it’s the boring machinery around the model: determinism, evaluation, calibrated confidence, layered guardrails, an audit trail, and observability. This post is the map and the maturity model. Each layer links to a focused deep-dive. The one-paragraph thesis LLMs are probabilistic; production demands guarantees. You get guarantees not by making the model deterministic (you",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for production-grade llms and agents: a field guide is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:4fbb53826a04fcf1cd8fd5e7",
+      "version_id": "2c42a376f4a21197ada2cd7dd8d8b7a5eaac5757b9c559ebfb30a7ed3d72f3c2",
+      "title": "Part 5: Operating an LLM system: observability, cost, routing, and the platform underneath",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/fa913ea2ada27f3c5e0214034efdbb16e58117770279aa76f25d3e9a86cc003d.txt",
+        "quote_or_passage": "This is Level 5 of a six-level maturity model for running LLM systems in production. The earlier levels got the system working and correct. Level 5 is about operability: can you actually run this thing day to day, see what it’s deciding, control what it costs, survive a provider outage, stop it in seconds when it misbehaves — and is the platform underneath shaped to support all of that? A traditional service that goes wrong returns a 500. An LLM system that goes wrong can take wrong actions at scale, fast. That asy",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes part 5: operating an llm system: observability, cost, routing, and the platform underneath, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:bcd34ceb205e64cdf75eeddb",
+      "version_id": "0074c063187895e2dc2740a9292e6251515f0bad548519311ca1c7816e2f8b01",
+      "title": "A green exit code is not evidence that the work happened",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/1cb56a649a0f2b7bab8b11af511ca3b243a9596420e704844b25f9f8af0e0499.txt",
+        "quote_or_passage": "[Ed. note: If you listened to a podcast or read an article of ours and want to publish a response, let us know. We’re open to highlighting community views that respond to our work in ways that don’t fit in a comment section, whether you agree or disagree. Reach out at pitches@stackoverflow.com.] In March 2025, a team at OpenAI published something you don't often get to see: the private reasoning of one of their own frontier models as it worked through a coding task during training. The model looked at the problem, ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes a green exit code is not evidence that the work happened, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:9cb55fd77f332b5cd7a07191",
+      "version_id": "8b426e73adb1c39384c5f327dcfd4a04779780edf2f686c66c28c86d209b7398",
+      "title": "Filter, reshape, and redact logs before export with Transformers",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/256359666623fc99085c8cb106f9558f699fe15c47a26a8312bb8dded035e49f.txt",
+        "quote_or_passage": "Filter, reshape, and redact logs before export with Transformers Logpush delivers logs in batches as quickly as possible, enabling Cloudflare to provide information almost in real time. During our recent Birthday Week, we made Logpush available on all self-serve plans and Transformers generally available. Those changes were among eight major updates to Cloudflare Observability and reflect our commitment to make every Cloudflare feature available to everyone. This post takes a deeper look at how Transformers work in",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for filter, reshape, and redact logs before export with transformers is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:a43e1f96d044430d977bf234",
+      "version_id": "fe0eeaa57632c5d04bb6b3389834b8f612e54c8e3228c35ef5de6ea6a578e28f",
+      "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/3e28383be824e233d17aabcaa87d0c9d0c41eed93dda2f7b2601b3c7b1142d2b.txt",
+        "quote_or_passage": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash Following last week’s release of Clef and Clef-flash, Cloudflare’s open-weight decision models, we decided to bring forth more gifts. Today, we’re releasing Clef-omni, which takes in audio and video input alongside text and image. We also cut the price of Clef-flash so it is now cheaper than Jev, and we made Clef faster. Although the model game is still early for Cloudflare, innovation and iteration is in our DNA, and we appl",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for introducing clef-omni with full multimodality, plus a faster clef and a cheaper clef-flash is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:8417bba844174a46ac26bf17",
+      "version_id": "33fcc4b05dfa0b5b72e29e33c97d06f8bd084019cf52241899e6a13b2570de4d",
+      "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/5a1fb85601e637ddc584a4808eee7b8403dd644146676a2b5e7577fcc6179257.txt",
+        "quote_or_passage": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects Understanding why an application is using more resources than expected, whether that is CPU or memory, can be challenging. Logs and aggregate metrics can only get you so far. Thankfully there is a better way: CPU or memory profiling can show you the exact function where your application is using CPU or allocating memory. Today we are happy to announce support for CPU and memory profiling of Workers and Durable Objects. F",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for introducing on-demand cpu and memory profiling with flamegraphs for workers and durable objects is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:a289db51a1e2a244d95269bd",
+      "version_id": "276d0fae2e86de12a70026c916d2287ce220e550510013f22b7ea259724ae9c4",
+      "title": "Deno is joining Cloudflare",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/766d8e1f5d9d35e008e3043c64557455e9e555b23d395e51126dbf567ab33ed0.txt",
+        "quote_or_passage": "This may come as a surprise to some, but when the Deno team released celld in August, we were delighted. Why a surprise? Well, as it happens, there is a popular theory that suggests we shouldn't be happy. You see, it is commonly claimed around the Internet that we made Cloudflare Workers work differently from other cloud platforms in order to create \"lock-in.\" The claim goes, software built on Workers is hard to move to other hosting platforms, therefore if you write your app on Workers you are \"trapped\" on Cloudfl",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for deno is joining cloudflare is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:7003ef6c4acd73c62fce3a69",
+      "version_id": "1cc9bedcf59b8b211d297836991bd12d3b47184ef31e183f30b3c8c964cad3e6",
+      "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/50d0c916bd23055d2a6ccbf8eedaf9aedbc169c64a9e3f0a63a3b3ddf7b84dcb.txt",
+        "quote_or_passage": "Bridging technical depth and usability: The story behind Radar’s redesign Radar provides a real-time view into global Internet trends, powered by Cloudflare’s global network. We support Cloudflare’s mission to help build a better Internet by making web data visible, clear, and actionable for everyone. Since launching in 2020, Radar has found a natural audience amongst expert users with technical backgrounds, such as network operators and academic researchers who rely on Radar data to observe industry trends and glo",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for bridging technical depth and usability: the story behind radar’s redesign is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:23e8d56010663b8be21c5cd8",
+      "version_id": "ef886643ff9e858e70039d02006b4cbf18d71d96851b0b32d19b197bcdaaa8c9",
+      "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/f20bda1bd5953fd16abaf66a9062bfb2870f7860cd772541a5e6c42611f6ab0f.txt",
+        "quote_or_passage": "Building an evidence-grounded agentic security operations harness on Cloudflare Security alerts rarely arrive one at a time. A single alert can cause a spike across the environment, requiring a human analyst to decide which alerts are related and what they mean. When multiple arrive at the same time, it can quickly overwhelm even a seasoned security analyst. Enter the alert paradox. Now, our built-in, multi-AI-agent security operations harness can handle more of this work at Cloudflare scale. Our Cloudflare Managed",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes building an evidence-grounded agentic security operations harness on cloudflare, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "youtube:rAUyRDOFyHU",
+      "version_id": "ca1da54d964f56f643c9a4cca6e50469a2a430bf5b1b32a1a8a6ab541700738a",
+      "title": "Agents in Orbit: Workflows, Not Autopilot — Eduardo Simon & Javier Casal, Flywire",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "02"
+      ],
+      "evidence_checked": {
+        "kind": "specific_relevant_excerpt",
+        "path": "data/assets/231750ef22f75f86fd5a8f79f196bd9399a111c6540e6f58e9f00dd2b0b871bb.txt",
+        "quote_or_passage": "“A code review step ... can ... search the code but cannot edit files or push changes.” (11:46–11:52; s-0237–s-0238). “We do not have online evaluations yet” (15:07–15:10; s-0303).",
+        "scope": "Read the cited relevant passage in the retained text; for transcript sources also checked the corresponding timed segment record."
+      },
+      "assistant_assessment": "The retained transcript describes deterministic steps, restricted read-only review permissions, merge-request handoff, a reported 9,700 runs, and explicitly says online evaluation is not yet available. Accept as an attributed enterprise workflow example, not a measured quality/productivity finding. Correct the source decision’s online-evaluation pointer to 15:07 (907.4–909.96s), not 18:35; these are unverified machine transcript segments, not a claim of viewing/listening."
+    },
+    {
+      "item_id": "feed:901eddfa61b84a5e35f1f60f",
+      "version_id": "9794a9d0282aeae92ca7879cab5da857ced56810402acf8cde9f5a6ab7cc968f",
+      "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/421ea49c8d09c7c21a900686277210fe6c11ba2841091a94ee2eddbdc87a9461.txt",
+        "quote_or_passage": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11 12th October 2026 Python 3.15 is here! Here’s the essential What’s new in Python 3.15 guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported Python version, I get to say goodbye to Python 3.10 and start embracing features from Python 3.11. First, some highlights from Python 3.15. Explicit lazy imports I’m most excited about Explicit lazy imports from PEP 810. These l",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for hello python 3.15, goodbye 3.10, and now i can use 3.11 is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:305ba874f36ffe291e11411a",
+      "version_id": "8a4533513315275fb756abef1eff5d247df8b62438b9724ad1fa29250f3b2e61",
+      "title": "A new feature for my blog, built using my voice",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/bbd87200f946b4fbedc3be21c3611cdccdbb996d32ccbc59ba404dc73d8e7da7.txt",
+        "quote_or_passage": "A new feature for my blog, built using my voice 9th October 2026 I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I’ve sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner. Codex voice mode I used the ChatGPT desktop app for this, in the Codex tab, using the voice conversation mode, running against a local development environment",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes a new feature for my blog, built using my voice, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:231befe88d753d0247c6f00f",
+      "version_id": "48570dd9e6adcd9e3646d4ef676bb41330d7be0f0e622f9132876025cacc78cf",
+      "title": "Claude Haiku 5.5",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/f72d5980cbca3fc028aae858beb689b8ec8c94b532547f155a0e88c8021cbd9a.txt",
+        "quote_or_passage": "Claude Haiku 5.5 7th October 2026 As previously promised, here’s Anthropic’s new fast, low cost model: Introducing Claude Haiku 5.5. The previous Haiku, 4.5, was very much showing its age. It came out almost a year ago, and was priced at $1/million input and $5/million output—relatively expensive even back then, and a full 10x the price of OpenAI’s GPT-6 Luna, released last month. The new Haiku exactly matches the price of GPT-6 Luna—$0.10/$0.50—up to 100,000 tokens. Beyond 100,000 tokens the price increases 5x to ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes claude haiku 5.5, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:345f1755705d282a19e9b6b2",
+      "version_id": "595f8e9aaf690246b01839471e6465a36b907e098fc65b940a90905e37936ed7",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/67601a59b231ef1ffdca36616ea1472b433f28ab948c2a254be3e1ec56534175.txt",
+        "quote_or_passage": "We’re going to need default hard budget caps on pretty much everything 3rd October 2026 Here’s a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps. I’m talking about the feature of pay-by-usage services and APIs that lets you say “after $X/month, cut this thing off and return errors”. These need to be hard limits. Soft caps, “after $X/month, send me a warning email”, will not cut it. Coding agents, and personal agents (coding agents wrapp",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes we're going to need default hard budget caps on pretty much everything, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:d3b185d971abc0ead80775d6",
+      "version_id": "19872b58feed7c6d04e6531e21f833057c684f02bf254adca62544c21529fe20",
+      "title": "OpenAI DevDay 2026 live blog",
+      "original_decision": "defer",
+      "assistant_decision": "defer",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/b4017f173593efef943304b37d3dad7974fd2970e665e35adcaaae8cc71d1d13.txt",
+        "quote_or_passage": "OpenAI DevDay 2026 live blog 29th September 2026 I’m at OpenAI DevDay today, in Fort Mason, San Francisco. Same as last year I’ll be live blogging the keynote and some other notes during the day. OpenAI gave me a free ticket and a seat in the “creator” area for the keynote. 09:27 I'm in the room for the keynote, which starts in half an hour. This year I vibe-coded a system for more easily adding photos to my live blog. I intended to do that using Codex Cloud (I built it on my phone on the way to the venue) but ran ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage for openai devday 2026 live blog is relevant enough to merit follow-up but leaves a material scope or evidence question unresolved. Defer and do not use it to support a brief claim until that uncertainty is resolved."
+    },
+    {
+      "item_id": "feed:7db4974c11ebd58e1ae24279",
+      "version_id": "fdae2465784f477e02dbc60ee58c7972ce71e9c8a01a902be145e626aec69b7b",
+      "title": "2026 in LLMs (so far)",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/bbfe34e942245658a1a3f44ad04cfb5509d1941fcf1af7af118b68f200757334.txt",
+        "quote_or_passage": "2026 in LLMs (so far) 27th September 2026 On Friday I gave the closing keynote at the WeAreDevelopers World Congress North America in San Jose. I tied together the key trends from the past year into a chronological exploration of everything that happened in 2026. The video is on YouTube; here are my annotated slides and notes to accompany the talk. And as an annotated presentation: I’m going to give a lightning tour of everything that has happened so far in 2026. The year isn’t over yet! For me, 2026 started a coup",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for 2026 in llms (so far) is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "feed:62a0756114b37316a42ffd12",
+      "version_id": "d12a7e53fe512fef59f5e17bb29eb4e7cbcd6c86ca9696d1a2ad6993860ea335",
+      "title": "Secret protection must scale with software",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/57094f8d4e80873a34d55df359bc3354e4803731e2c68af7213b9385750e1776.txt",
+        "quote_or_passage": "Erin Havens Erin Havens is a Product Manager at GitHub, focused on security products. 100+ ships across products like Secret Protection and Dependabot (and counting). Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it. Today, one in three pull requests on GitHub involves an AI agent. A year ago, that number was fewer than one in 10. If that pace holds, within the next two years, most of the code p",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes secret protection must scale with software, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "feed:56071c061dcaa98af1dc613f",
+      "version_id": "8d0614125a0680c9049d2fc4efe3c89459503b2640289a3594184303e627ec47",
+      "title": "ReviewBench: An open benchmark for AI code review",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/6236d12a477c5553b4b58217beda136c091c2b6769c5e6860d50fe6994d8c48e.txt",
+        "quote_or_passage": "Michelle Zhou Michelle develops and evaluates agentic AI systems for code review, focusing on repository-level context retrieval, review and fix quality, and rigorous benchmarking of AI code reviewers. We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. Agentic code review is becoming an essential piece of how development happens. It helps you inspect pull requests, catch issue",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes reviewbench: an open benchmark for ai code review, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "youtube:ql_-cPc_ZYQ",
+      "version_id": "33fbbe5e548299aef1b389b2d4053289a5931769626699bf143006777770e869",
+      "title": "Live Coding with Wes Bos, Burke Holland, Pierce Boggan & Friends | GitHub Copilot Day",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "02",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/bf7cb624d527d7d2413905c92921f132031d5cbc2156f60dcd6f79594aa71d12.txt",
+        "quote_or_passage": "Welcome back, folks. Thank you, Patrick. Welcome back, folks. Thank you, Patrick. Uh, so y'all, we're gonna spend the next Uh, so y'all, we're gonna spend the next Uh, so y'all, we're gonna spend the next uh what do we have like two hours here uh what do we have like two hours here uh what do we have like two hours here and we're gonna we're going to build and we're gonna we're going to build and we're gonna we're going to build something. But the trouble with this is something. But the trouble with this is somethi",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected retained passage describes live coding with wes bos, burke holland, pierce boggan & friends | github copilot day, which bears on the publication’s coding-agent delivery question through a concrete operational, evaluation, cost, security, or workflow detail. I retain it only for the assigned piece(s) as a source-attributed example; the passage does not establish a general or independent outcome."
+    },
+    {
+      "item_id": "podcast:1ea9bc08cf81ce2790ce5ae4",
+      "version_id": "e651d71a4999b8e5ecd9ceac2317009b8f029003e41a83e39a956ea0de40bf30",
+      "title": "Narrative intelligence and the human advantage",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/49c3a2f2af46b8271febf1fb3598a4a1c9bf275dc3af0c74a71f61f35d75fe80.txt",
+        "quote_or_passage": "Welcome to the Practical AI Podcast, where we break down the real world applications of artificial intelligence and how it's shaping the way we live, work, and create. Our goal is to help make AI technology practical, productive, and accessible to everyone. Whether you're a developer, business leader, or just curious about the tech behind the buzz, you're in the right place. Be sure to connect with us on LinkedIn, X, or Blue Sky to stay up to date with episode drops, behind the scenes content, and AI insights. You ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for narrative intelligence and the human advantage is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "podcast:5f03b41a33ed1edf183c9afe",
+      "version_id": "1790c590d151e210a585c8fa5d6faed4ba4f9e06f0480f1df557c29bcfcd57fb",
+      "title": "Open models and the future of Physical AI with NVIDIA",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/2f4277794d27852d1bd2af6f0c6d6ff80e599c441b2748864bdeee77598fdb93.txt",
+        "quote_or_passage": "Welcome to the Practical AI Podcast, where we break down the real world applications of artificial intelligence and how it's shaping the way we live, work, and create. Our goal is to help make AI technology practical, productive, and accessible to everyone. Whether you're a developer, business leader, or just curious about the tech behind the buzz, you're in the right place. Be sure to connect with us on LinkedIn, X, or Blue Sky to stay up to date with episode drops, behind the scenes content, and AI insights. You ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for open models and the future of physical ai with nvidia is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    },
+    {
+      "item_id": "podcast:fad37397a128b591f52589ad",
+      "version_id": "0fde931f3c8f1b8eae9d7924edde054b69f424b570502eea91b0822d8a3c9780",
+      "title": "From AGENTS.md to Enterprise Deployment",
+      "original_decision": "accept",
+      "assistant_decision": "accept",
+      "piece_ids": [
+        "01",
+        "03"
+      ],
+      "evidence_checked": {
+        "kind": "specific_relevant_excerpt",
+        "path": "data/assets/57c6a40e103ef22ecfa29ed7666f3e10c788a548924b00ca8d7ab04f60bcb253.txt",
+        "quote_or_passage": "“you start to get into a cloud world that things spin up and down and are ephemeral” (11:00–11:37; s-0031); gateway access control (24:21–24:55; s-0062).",
+        "scope": "Read the cited relevant passage in the retained text; for transcript sources also checked the corresponding timed segment record."
+      },
+      "assistant_assessment": "The supplied publisher transcript describes temporary environments losing local agent memory, container isolation and tool access, and an MCP gateway that limits available servers/tools. Those concrete implementation details suit a bounded deployment discussion; they are interviewee claims, not independent validation, and the transcript is not verified by listening."
+    },
+    {
+      "item_id": "podcast:f77cc2ea82a77c9ee59f5ff9",
+      "version_id": "1e589d78acd464891af9778e4c12b54b29e1a1eef9feb4d8502daa6491a60c49",
+      "title": "How to get discovered in AI search",
+      "original_decision": "reject",
+      "assistant_decision": "reject",
+      "piece_ids": [],
+      "evidence_checked": {
+        "kind": "scoped_excerpt",
+        "path": "data/assets/449a21a4f85f91cfd5dad639b7fc50f6d47d48b58077d48df99023a4a86f0265.txt",
+        "quote_or_passage": "Welcome to the Practical AI Podcast, where we break down the real world applications of artificial intelligence and how it's shaping the way we live, work, and create. Our goal is to help make AI technology practical, productive, and accessible to everyone. Whether you're a developer, business leader, or just curious about the tech behind the buzz, you're in the right place. Be sure to connect with us on LinkedIn, X, or Blue Sky to stay up to date with episode drops, behind the scenes content, and AI insights. You ",
+        "scope": "Semantically reviewed this excerpt plus title and item metadata only; not a full-source audit. For media sources, no listening is represented."
+      },
+      "assistant_assessment": "The inspected passage for how to get discovered in ai search is principally about a neighboring topic or lacks a concrete coding-agent delivery result. The topical connection in the supplied excerpt is too incidental to support the series’ claims, so rejection is appropriate on this record."
+    }
+  ]
+}

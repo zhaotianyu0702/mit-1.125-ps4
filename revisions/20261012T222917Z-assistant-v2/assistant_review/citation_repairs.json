@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-10-12T22:34:14.027627+00:00",
+  "actor": "user_authorized_ai_assistant",
+  "changes": [
+    {
+      "claim_id": "01-c1",
+      "action": "Add exact retained passages for every stated feature/numerical qualifier",
+      "item_id": "feed:897ed0a11c3fdbaa832840c6",
+      "quotes_added": [
+        "Agent skills package repeatable procedures.",
+        "Custom agents bring specialized guidance to larger tasks."
+      ]
+    },
+    {
+      "claim_id": "01-c4",
+      "action": "Add exact retained passages for every stated feature/numerical qualifier",
+      "item_id": "feed:9bf93d58cc35db9987f8bca4",
+      "quotes_added": [
+        "Asana’s 144-run study(opens in a new window) tested GPT‑6.1 Sol and three other frontier models, called here Models A, B and C.",
+        "The optimized workflow that emerged on GPT‑6.1 Sol averaged $0.47 in estimated model costs and about four minutes per run",
+        "from three of 18 with the smaller history budget to all 18 with the larger budget, each with the correct answer."
+      ]
+    },
+    {
+      "claim_id": "02-c1",
+      "action": "Add exact retained passages for every stated feature/numerical qualifier",
+      "item_id": "feed:9bf93d58cc35db9987f8bca4",
+      "quotes_added": [
+        "Asana’s 144-run study(opens in a new window) tested GPT‑6.1 Sol and three other frontier models, called here Models A, B and C.",
+        "The optimized workflow that emerged on GPT‑6.1 Sol averaged $0.47 in estimated model costs and about four minutes per run",
+        "from three of 18 with the smaller history budget to all 18 with the larger budget, each with the correct answer."
+      ]
+    },
+    {
+      "claim_id": "03-c1",
+      "action": "Add exact retained passages for every stated feature/numerical qualifier",
+      "item_id": "feed:9bf93d58cc35db9987f8bca4",
+      "quotes_added": [
+        "Asana’s 144-run study(opens in a new window) tested GPT‑6.1 Sol and three other frontier models, called here Models A, B and C.",
+        "The optimized workflow that emerged on GPT‑6.1 Sol averaged $0.47 in estimated model costs and about four minutes per run",
+        "from three of 18 with the smaller history budget to all 18 with the larger budget, each with the correct answer."
+      ]
+    },
+    {
+      "claim_id": "02-c1",
+      "action": "Add exact retained passages for every stated feature/numerical qualifier",
+      "item_id": "feed:9bf93d58cc35db9987f8bca4",
+      "quotes_added": [
+        "history budgets of 120,000 and 480,000 characters and six caching and screenshot policies, each tested three times on each of the four models"
+      ]
+    }
+  ],
+  "source_assets_changed": false,
+  "student_approval": false
+}

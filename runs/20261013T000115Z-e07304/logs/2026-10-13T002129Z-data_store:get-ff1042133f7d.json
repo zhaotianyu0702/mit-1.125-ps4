@@ -1,0 +1,17 @@
+{
+  "stage": "data/store:get",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 0,
+  "output_count": 1,
+  "started_at": "2026-10-13T00:21:29Z",
+  "finished_at": "2026-10-13T00:21:29Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T002129Z-data_store:get-ff1042133f7d.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

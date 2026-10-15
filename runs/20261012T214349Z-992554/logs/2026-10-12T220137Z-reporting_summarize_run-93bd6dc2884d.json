@@ -1,0 +1,17 @@
+{
+  "stage": "reporting/summarize_run",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 9,
+  "output_count": 1,
+  "started_at": "2026-10-12T22:01:37Z",
+  "finished_at": "2026-10-12T22:01:37Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-12T220137Z-reporting_summarize_run-93bd6dc2884d.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

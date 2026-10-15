@@ -1,0 +1,26 @@
+{
+  "record_type": "sanitized_public_copy_of_authentic_student_feedback",
+  "reviewed_at_utc": "2026-10-12T22:49:53.451321Z",
+  "reviewer": "student user (name not supplied)",
+  "scope": {
+    "six_sample_decisions_confirmed": true,
+    "policy_v2_accepted": true,
+    "conclusion_revision_requested": true,
+    "full_drafts_approved": false,
+    "source_audio_verified_by_student": false,
+    "student_personal_source_inspection_claimed": false,
+    "publication_authorized": false,
+    "coursework_submission_authorized": false
+  },
+  "interpretation": {
+    "six_sample_decisions_confirmed": true,
+    "policy_v2_accepted": true,
+    "conclusion_revision_requested": true,
+    "full_drafts_approved_at_this_feedback_step": false,
+    "personal_source_inspection_claimed": false,
+    "source_audio_verified_by_student": false,
+    "publication_authorized_at_this_feedback_step": false
+  },
+  "privacy_note": "Public derivative. Private message/thread identifiers and verbatim message text are omitted; see local authenticated source record for the original.",
+  "source_message_id": "[redacted source-message identifier]"
+}

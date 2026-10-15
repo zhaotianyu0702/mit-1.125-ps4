@@ -1,0 +1,42 @@
+{
+  "stage": "editorial/create_briefs",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 36,
+  "output_count": 3,
+  "started_at": "2026-10-12T22:00:17Z",
+  "finished_at": "2026-10-12T22:01:00Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-12T220017Z-editorial_create_briefs-8a732c369dec.json",
+  "tools": [
+    "python3",
+    "OpenAI Codex CLI (existing ChatGPT login)"
+  ],
+  "error_count": 0,
+  "model_calls": [
+    {
+      "usage": {
+        "input_tokens": 41171,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2445,
+        "reasoning_output_tokens": 0
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 41218,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2375,
+        "reasoning_output_tokens": 147
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    }
+  ],
+  "public_derivative": true
+}

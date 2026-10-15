@@ -1,0 +1,56 @@
+GitHub Copilot app for Beginners: How to teach Copilot about your codebase
+Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.
+Context matters when you’re working with AI. Every codebase has its own house rules: how components are structured, which scripts to run, and which conventions apply to different frameworks and file types.
+Copilot can help you make changes across a project, but it works best when it knows those rules, too. Much of that knowledge can live inside the repository, so Copilot can pick it up automatically instead of requiring you to explain the same standards, scripts, and workflows every time you start a new task.
+In this installment of our GitHub Copilot app for Beginners series, we’ll look at four ways to tailor how Copilot works with your project:
+- Custom instructions communicate the conventions Copilot should follow.
+- Agent skills package repeatable procedures.
+- Custom agents bring specialized guidance to larger tasks.
+- Model Context Protocol (MCP) servers connect Copilot to external tools and data sources, expanding what it can do.
+Let’s look at how each one works and how they can work together.
+Start with custom instructions
+Suppose you ask Copilot to add a custom page size to an application. Making the change is only part of the job. The new code should also follow the patterns your team already uses.
+Repository custom instructions give Copilot that baseline context. Add a .github/copilot-instructions.md file to define guidance that applies across the repository, such as your preferred architecture, naming conventions, or expectations for testing and validation.
+You can also create path-specific instruction files inside .github/instructions. These files use an applyTo field to tell Copilot when the guidance is relevant.
+When Copilot works on a matching file, it can use both the repository-wide instructions and the more specific guidance. That lets you keep the broad rules in one place without forcing every file type into the same mold.
+Package repeatable procedures as agent skills
+Custom instructions are useful for standards that should shape many tasks. But some guidance only matters when Copilot is performing a particular procedure, such as running quality checks, preparing a release, or debugging a failed workflow.
+That’s where agent skills come in. A skill is a folder containing instructions and, optionally, scripts and other resources that Copilot can load when they’re relevant. Project-level skills can live in .github/skills, with each skill in its own subfolder.
+For example, a .github/skills/quality-checks folder could contain a SKILL.md file that explains:
+- When Copilot should use the skill.
+- Which scripts run the project’s tests and linting.
+- What each script checks.
+- How to troubleshoot common failures.
+The description in SKILL.md helps Copilot determine when the skill applies. After updating the interface, Copilot can load the quality-checks skill and follow the project’s established process for testing and linting instead of guessing which commands to run.
+Use a custom agent for broader, specialized work
+Some tasks are larger than a single procedure. An accessibility review, for example, may require Copilot to inspect components, templates, styles, and interactions across multiple files.
+Custom agents let you create specialized versions of Copilot for work like this. A repository-level agent profile lives in .github/agents and can define the agent’s purpose, instructions, tools, and relevant project context.
+Use a custom agent when a recurring type of work benefits from a dedicated role or perspective, especially when the task may span multiple files and draw on several tools or sources of context.
+Connect Copilot to external tools with MCP servers
+Instructions, skills, and agents help Copilot understand how to work within your project. MCP servers expand what it can access and do beyond the repository.
+MCP servers connect Copilot to external tools, data sources, and services. A documentation server can give it access to framework guidance, while a server such as Playwright can let it open and interact with your application in a browser.
+You can browse available MCP servers in the Copilot app or add a custom one. Once Playwright is configured, you can ask: Use the Playwright MCP server to test the functionality manually.
+Copilot can then use Playwright to open the application in a browser and interact with it much as you would. That gives it a way to verify not only that the code passes automated checks, but also that the updated interface behaves as expected.
+Choose the right type of customizations
+These customizations solve different problems, but they become more useful when you combine them:
+- Custom instructions define the conventions Copilot should follow across the repository or for particular files.
+- Agent skills package repeatable procedures that Copilot can load when they’re relevant.
+- Custom agents provide focused expertise and guidance for broader tasks.
+- MCP servers connect Copilot to external tools, services, and data sources, expanding what Copilot can do.
+Take this with you
+Giving Copilot useful project context starts with four questions:
+- What project convention do I keep explaining?
+- What multi-step procedure do I repeat?
+- What complex task could benefit from a dedicated custom agent?
+- What outside tool or source does Copilot need?
+Not sure where to begin? The community has shared ready-made instructions, skills, agents, and more through Awesome Copilot. Find one that addresses a workflow you already repeat, review what it contains, and adapt it to your repository’s tools and standards.
+Start small: choose one convention you keep explaining, add it to .github/copilot-instructions.md, and see how Copilot applies it to your next task.
+Tags:
+Written by
+Related posts
+Secret protection must scale with software
+Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.
+ReviewBench: An open benchmark for AI code review
+We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics.
+AI is changing developer work. Here are three skills to strengthen.
+Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow.

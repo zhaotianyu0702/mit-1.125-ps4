@@ -1,0 +1,17 @@
+{
+  "stage": "publishing/prepare_package",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 3,
+  "output_count": 11,
+  "started_at": "2026-10-13T19:51:31Z",
+  "finished_at": "2026-10-13T19:51:34Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T195131Z-publishing_prepare_package-8e06c8407c43.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "run:resume_snapshot",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 15,
+  "output_count": 16,
+  "started_at": "2026-10-13T00:18:34Z",
+  "finished_at": "2026-10-13T00:18:34Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T001834Z-run:resume_snapshot-8d6c39b2472a.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

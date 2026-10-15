@@ -1,0 +1,202 @@
+This is Level 5 of a six-level maturity model for running LLM systems in production. The earlier levels got the system working and correct. Level 5 is about operability: can you actually run this thing day to day, see what it’s deciding, control what it costs, survive a provider outage, stop it in seconds when it misbehaves — and is the platform underneath shaped to support all of that?
+A traditional service that goes wrong returns a 500. An LLM system that goes wrong can take wrong actions at scale, fast. That asymmetry is why operability isn’t a nice-to-have here — it’s the difference between a system you can run and one you have to hope about. This post is the concrete spec for the operability layer: the observability signals, the cost controls, the routing and failover, the kill switch, the identity model, and the infrastructure spine that holds it together. It’s the longest post in the series, because it’s the layer with the most moving parts. The unifying idea, though, is small: one chokepoint your model traffic flows through, one decision_id that threads everything, and a domain that never knows which vendor answered.
+Observe the decision, not just the service
+Standard observability — request rate, latency, error rate, CPU — tells you the service is up. It tells you nothing about whether the agent is doing its job well. You need a second layer of signals specific to AI, plus the schemas and thresholds to make them actionable.
+The model: RED + a decision layer
+Keep your usual RED metrics (Rate, Errors, Duration) for the service. Add a decision layer that treats every agent decision as a first-class, measurable event. Names below follow Prometheus conventions (`_total` counters, _bucket histograms), and every series carries tenant_id and capability` as labels (omitted in the table for brevity — assume them everywhere). One caveat: a per-`tenant_id` label on histograms is a cardinality bomb past a few hundred tenants — keep tenant counts bounded, or move per-tenant rollups to recording rules / exemplars beyond that.
+metric                             type       key labels                                                              what it answers
+---------------------------------  ---------  ----------------------------------------------------------------------  -------------------------------------------------
+`agent_decisions_total`            counter    `outcome` (auto / hitl_recommended / hitl_required / reject / abstain)  volume + the auto/human split
+`agent_auto_execution_ratio`       gauge      —                                                                       % handled without a human
+`agent_decision_confidence`        histogram  —                                                                       distribution of composed confidence
+`agent_decision_duration_seconds`  histogram  `node`                                                                  latency per graph node
+`guardrail_blocks_total`           counter    `layer` (input / output / pii), `rule`                                  what's being blocked, where
+`judge_invocations_total`          counter    —                                                                       how often the judge ran (the ratio's denominator)
+`judge_disagreements_total`        counter    —                                                                       judge overruled the primary
+`llm_tokens_total`                 counter    `direction` (in / out), `model`                                         token consumption
+`llm_cost_usd_total`               counter    `model`                                                                 spend, rolled up by tenant/capability
+`llm_call_duration_seconds`        histogram  `model`, `outcome`                                                      model latency, separate from service
+`shadow_eval_pass_ratio`           gauge      `slice`                                                                 live quality on sampled prod traffic
+`human_override_rate`              gauge      —                                Four families fall out of that: decision (volume, split, confidence, latency), safety (guardrail blocks, judge disagreement), cost/perf (tokens, USD, model latency), quality (shadow eval, overrides). If you only instrument four things, make them auto_execution_ratio, guardrail_blocks_total`, llm_cost_usd_total, and human_override_rate` — they cover behavior, safety, money, and quality.
+Structured logging: three tiers
+Don’t dump everything into one log stream — tier by sensitivity, because some of this is regulated data and most alerts only need tier 1.
+- Tier 1 — operational (safe anywhere, high volume): timestamp, level, decision_id, tenant_id`, capability, node`, duration_ms, outcome. This is what your alerts query.
+- Tier 2 — decision metadata (inside your trust boundary; the audit-adjacent record): model, prompt_version`, composed_confidence, routing decision, judge result, guardrail actions, an inputs_hash`, and a redacted PII-free summary.
+- Tier 3 — regulated/raw (encrypted, access-controlled, never in your general log store): the sensitive payload, if you retain it at all — usually you store a hash + redacted summary in tier 2 and skip tier 3 entirely.
+The rule: tier 1 and 2 are queryable by engineers; tier 3 is a vault. A decision_id threads all three — and the trace below — so you can reconstruct any single decision end-to-end.
+Trace the decision graph
+A normal trace shows the HTTP request across services. An agent trace should also span the internal graph so you can see which step failed and how long each took:
+span: agent.decision            attrs: decision_id, tenant_id, capability, outcome, confidence
+ ├─ span: entry                 attrs: identity, auth_type
+ ├─ span: context_load          attrs: slices_loaded, cache_hit
+ ├─ span: llm_decision          attrs: model, prompt_version, tokens_in, tokens_out, cost_usd
+ ├─ span: output_guardrail      attrs: blocks[], pii_actions[]
+ ├─ span: judge                 attrs: ran, model, agreed     (only when sampled in)
+ ├─ span: routing               attrs: decision=auto|hitl|reject, threshold
+ └─ span: exit                  attrs: ledger_entry_id
+Now “why did decision X take 4 seconds / get rejected?” is a single trace lookup.
+Alert on symptoms, with real thresholds
+Alert on what hurts the user or business, not on causes. A starter set:
+alert                  condition (example)                                                             severity
+---------------------  ------------------------------------------------------------------------------  ------------
+AutoExecutionSwing     `auto_execution_ratio` moves >15% vs 7-day baseline                             warning
+GuardrailBlockSpike    `rate(guardrail_blocks_total[5m])` > 3× trailing hr                             critical
+JudgeDisagreementHigh  rate(judge_disagreements_total[1h]) / rate(judge_invocations_total[1h]) > 0.15  critical
+CostCeiling            `increase(llm_cost_usd_total[1h])` > budget/24                                  warning→page
+ShadowEvalDrop         `shadow_eval_pass_ratio` < 0.95                                                 critical
+ModelLatencyP99        `llm_call_duration_seconds` p99 > 8s for 10m         Page on the safety and quality ones; the rest open a ticket. And set SLOs that mean something for a decision system: decision availability (≥ 99.9% of decisions return a proposal — failing to decide is the real outage, not a 5xx), quality (shadow-eval ≥ baseline − 2%, rolling 7d), latency (p95 excluding human time under your interaction budget), and cost (USD per 1k decisions within ±20% of plan).
+Three observability anti-patterns worth naming: one log stream for everything (tier-3 leaks into searchable logs — a compliance problem), self-reported model confidence as a metric (it’s miscalibrated; track composed confidence and validate against outcomes), and no decision_id (every investigation becomes archaeology).
+Control the cost at the chokepoint
+LLM cost has a nasty property: it’s invisible until the invoice, and it scales with things you’re not watching — tokens per call, calls per request, retries, a chatty prompt someone added. Teams discover their unit economics are upside down only after they’ve shipped. The fix isn’t a cheaper model; it’s a handful of structural controls that make cost observable and bounded — and they all hang off the same chokepoint.
+Measure where you enforce
+You can’t control what you can’t see, and you can’t see spend when model calls happen all over the codebase. Route every call through one gateway. That component is where you measure and enforce:
+def complete(self, req: ChatRequest) -> ChatResponse:
+    rate_limiter.check(req.tenant_id, est_tokens(req))     # enforce (estimate now; settle actuals below)
+    resp = self._adapter.complete(req)
+    metrics.incr("llm_tokens_total", resp.tokens_in,  direction="in",  model=req.model, tenant_id=req.tenant_id)
+    metrics.incr("llm_tokens_total", resp.tokens_out, direction="out", model=req.model, tenant_id=req.tenant_id)
+    metrics.incr("llm_cost_usd_total", cost(req.model, resp), model=req.model, tenant_id=req.tenant_id, capability=req.capability)
+    return resp
+Now cost is attributable per tenant × capability × model — which is how you find where the money goes (usually one chatty capability or one oversized prompt) instead of vaguely “using less AI.”
+The levers, in order of payoff
+lever                     mechanism                                                     typical impact
+------------------------  ------------------------------------------------------------  ----------------------------------------------------------------------
+**don't call the model**  route easy/deterministic cases through code                   often the biggest — a lot of "AI cost" is the model doing a rule's job
+**batch**                 one call for many items vs N calls                            fewer round-trips, cheaper per item
+**cache**                 memoize deterministic results (embeddings, repeated lookups)  the cheapest call is the one you skip
+**right-size the model**  cheap model for simple decisions, capable for hard ones       big — most traffic is simple, most cost is the premium model
+**trim the prompt**       load only needed context; kill "just in case" preamble        recurring tax paid on *every* call
+Right-sizing is worth making explicit, because it feeds directly into routing (next section): if a cheap model passes evals for a slice, route it there — 5–20× cheaper per call is common. Make the math visible (`cost = tokens_in/1k × price_in + tokens_out/1k × price_out`) rather than guessing.
+Budgets, rate limits, and the silent multipliers
+Cap spend and rate per tenant, with state shared across replicas — a stateless worker pool can’t enforce a per-tenant limit from local memory, since each replica would allow its own full fraction:
+RATE = { "default": { "tokens_per_min": 200_000, "usd_per_day": 50 } }  # derive from real prices
+def check(tenant_id, est_tokens):
+    limits = RATE_FOR(tenant_id)
+    # add the ESTIMATED token count, not 1 — counting calls against a token budget never trips
+    if redis.incr_window(f"tok:{tenant_id}", by=est_tokens, ttl=60) > limits["tokens_per_min"]:
+        raise RateLimited(tenant_id)
+    spent = redis.get_float(f"usd:{tenant_id}:{today()}")    # written by the gateway's post-call cost path
+    if spent > limits["usd_per_day"]:        raise BudgetExceeded(tenant_id)         # 100%: hard stop
+    if spent > 0.8 * limits["usd_per_day"]:  alert(tenant_id, "80% of daily budget") # 80%: warn
+Also set a platform-wide ceiling — N tenants × per-tenant cap has no aggregate bound otherwise. And watch the two things that quietly 10× a bill: retry storms (a flaky validation re-calling the model) and unbounded tool loops (an agent that keeps going). Cap both, and emit llm_retries_total{reason} so a storm is visible. LLM cost isn’t fundamentally high; it’s fundamentally unmonitored. Monitor it at the chokepoint and the bill stays proportional to value.
+Make it fast — without losing quality
+Cost and latency share a root cause: a pipeline that takes minutes usually isn’t slow because of the model. It’s an O(n²) loop, a per-record round-trip, or serial stages — the same performance bugs that always plagued data pipelines, now wrapped around an LLM.
+Rule 0: lock a quality baseline before you touch anything. Performance work is dangerous because the fastest version is often subtly less correct. Capture a baseline — representative dataset, current outputs, key quality metrics — and re-run it after every change. No optimization is accepted that regresses the baseline. Rule 1: profile, don’t guess. A pipeline matching 10,000 × 10,000 items “feels” model-bound, but the profile shows 90% of the time in a nested loop doing 100,000,000 comparisons. The model was never the problem.
+The usual suspects, in order of payoff:
+- The O(n²) match loop → index once into a hash/keyed join, then look up: ~100M comparisons become ~20k operations.
+- Per-record model/network round-trips → batch, or skip the model entirely for easy cases (`partition(rows, is_deterministic)`, rules for the easy ones, one batched model call for the hard ones). This is the same “don’t call the model” lever from cost, paying off twice.
+- Serial stages that could be parallel → bounded concurrency, sized to the real constraint (provider rate limit, CPU, memory) — not unbounded, which just moves the bottleneck and blows limits.
+- Recomputation → cache deterministic work (embeddings, parsed inputs, reference lookups).
+After every change, re-run both axes — latency benchmark and eval vs baseline — and revert anything that regressed quality no matter how fast it is:
+change                  latency     quality vs baseline
+hash-join (was O(n²))   180s → 12s   = baseline ✓
+batch model calls       12s → 6s     = baseline ✓
+parallel stages (×8)    6s → 1.8s    = baseline ✓
+The model is rarely the bottleneck — and “fast” should never be a guess about whether it’s still correct.
+Routing, fallback, and the off switch
+You don’t have “a model.” You have a fleet — cheap and capable, primary and judge, this provider and that — and you need a layer that picks the right one, survives when one goes down, and can be stopped in seconds when it misbehaves. All three live behind the same gateway, and all three only work if the domain doesn’t care which model answered.
+Route by what the decision needs
+condition                        route to                           why
+-------------------------------  ---------------------------------  ----------------------------------
+`is_judge`                       a *different* family from primary  independent blind spots
+`stakes == low` / high volume    cheap/small model                  most traffic; biggest cost lever
+ambiguous / high stakes          capable model                      accuracy where it matters
+long-context / extraction-heavy  the model measured best at it      task fit (only if you've measured)def route(d) -> str:
+    if d.is_judge:               return JUDGE_MODEL        # independent from primary
+    if d.stakes == "low":        return CHEAP_MODEL
+    if d.needs_long_context:     return LONG_CTX_MODEL
+    return CAPABLE_MODEL
+# keep routing rules in ONE place (the gateway), readable + testable — not per-call-site strings
+Fallback: survive a provider going down
+def route_chain(req) -> list[str]:                  # the ordered fallback chain
+    if req.is_judge:        return [JUDGE_MODEL]     # no silent fallback for a judge
+    if req.stakes == "low": return [CHEAP_MODEL, CAPABLE_MODEL]   # fall UP on failure
+    return [CAPABLE_MODEL, FALLBACK_MODEL]
+def complete_with_fallback(req, deadline):
+    for model in route_chain(req):
+        if breaker[model].is_open():                # CHECK BEFORE calling — skip a known-dead provider
+            continue
+        remaining = deadline - now()                # per-ATTEMPT budget vs an overall deadline
+        if remaining <= 0:
+            break
+        try:
+            resp = call(model, req, timeout=remaining, idem_key=req.idem_key)
+            breaker[model].record_success()
+            return resp
+        except (Timeout, ProviderError):
+            breaker[model].record_failure()         # record on EVERY failure → the breaker can open
+    return route_to_human(req, reason="all_models_unavailable")   # degrade deliberately, don't error
+The non-obvious bits that make this correct: check the breaker before calling and record a failure on every caught error (the common bug — doing both in the except means the breaker never proactively skips a dead provider). Use one overall deadline with per-attempt timeouts — the naive alternative, a fixed timeout reused per model, makes total latency N × timeout and blows the upstream budget. Idempotency is mandatory: a primary that timed out but actually completed (and wrote a ledger entry) must not be double-processed. And degrade deliberately — decide per capability whether a weaker fallback’s answer is acceptable or it should route to a human.
+One discipline ties routing and fallback together: eval every model on the path. A routed-to or fallen-back-to model is a different model, so potentially different quality. Your golden set should pass on the cheap model and the fallback model for the capabilities that use them — a fallback that quietly tanks quality is a worse outage than the one it covers. Record which model decided (in the ledger), so outcome analysis can see whether the cheap or fallback model underperformed.
+The kill switch: an off that takes effect in seconds
+A deploy takes minutes you may not have. The switch must be runtime state every node checks:
+class Mode(Enum):
+    LIVE       = "live"          # normal
+    HUMAN_ONLY = "human_only"    # stop auto-execute; still propose to humans
+    HALTED     = "halted"        # stop deciding entirely
+def get_mode(switch, tenant_id, capability) -> Mode:
+    try:
+        raw = (switch.read(f"killswitch:{tenant_id}:{capability}")  # most specific
+               or switch.read(f"killswitch:{tenant_id}")            # whole tenant
+               or switch.read("killswitch:global"))                 # global flip lands everywhere
+        return Mode(raw) if raw else Mode.LIVE
+    except SwitchUnavailable:
+        return Mode.HUMAN_ONLY   # fail toward safe — NOT live, NOT halted (a blip shouldn't self-DoS)
+Four design choices make it trustworthy: fast propagation (back it with shared state / pub-sub so a flip lands across all instances in seconds — a 30s local TTL is not “seconds”); granular (per-tenant and per-capability, so the blast radius of “off” matches the blast radius of the problem); a middle gear (`HUMAN_ONLY` keeps proposing while stopping auto-execution — often you don’t need off, you need humans back in the loop); and fail toward safe (if a node can’t read the switch, assume the conservative mode).
+Degrade by design, and prove it
+Decide in advance how the system bends so failure isn’t a cascade. A circuit breaker stops you hammering a dead dependency — failing in milliseconds instead of behind 60s timeouts, which is exactly how a dependency outage becomes your thread-exhaustion outage. Under overload, shed load deliberately: slow down or route-to-human rather than crash. A system that degrades to “a human handles it” is still serving its purpose.
+These mechanisms are worthless if they only work in theory. Run chaos tests against agents:
+chaos test                   assert
+---------------------------  -----------------------------------------------------
+kill the model provider      decisions route to humans, not error out
+flip the kill switch         auto-execution stops, fast, across all instances
+overload / burst             sheds load / degrades, doesn't crash
+restart a node mid-decision  in-flight decisions recover or fail safe (idempotent)
+dependency latency spike     circuit breaker trips; no thread pileup
+If you haven’t exercised the kill switch and fallbacks under real failure, you don’t know they work — you’re hoping. The kill switch is the thing that lets you sleep.
+The platform underneath
+All of the above assumes a place to stand: a structure that lets you swap models without a refactor, an identity model that keeps each action attributable, and a right-sized set of infrastructure.
+Hexagonal architecture: keep the vendor out of your domain
+The model you ship on won’t be the model you started with. Providers leapfrog every few months; pricing changes; a region or compliance rule forces a switch. If your business logic is littered with vendor SDK imports and provider-shaped request objects, every one of those is a refactor. The fix is an old idea applied to a new problem: ports and adapters. Your domain depends only on ports — interfaces you define, in your terms. The messy outside (model providers, datastores, queues) lives in adapters that implement those ports. The domain never imports a vendor SDK.
+Define one gateway through which all model traffic flows, in your vocabulary:
+@dataclass(frozen=True)
+class ChatRequest:                  # YOUR vocabulary — note what you deliberately DON'T expose
+    messages: list[dict]
+    schema: dict | None = None      # structured output (your concept, not a provider's response_format)
+    max_tokens: int = 1024
+    # no provider-specific knobs (logit_bias, etc.) — they leak the vendor into the domain.
+class LLMGateway(Protocol):         # shown sync for clarity; a real gateway is async/streaming
+    def complete(self, request: ChatRequest) -> ChatResponse: ...   # your types, not a provider's
+This is the same gateway that does cost measurement, rate limiting, routing, fallback, and the kill switch — every cross-cutting concern lives here once, not scattered. That’s not a coincidence: the chokepoint that makes the domain portable is the chokepoint that makes the system operable. Because the domain depends on a Protocol, tests inject a fake — no network, no spend, no flakiness — while adapters get their own integration tests against the real thing.
+Don’t rely on vigilance to keep the boundary clean; enforce it with a linter. An import-contract rule (“the domain may not import vendor SDKs”) turns the build red the moment someone slips a vendor import into domain code. Pair it with a naming convention — anything under adapters/ or suffixed per-provider may import that provider, nothing else may. Most ecosystems have an equivalent (module-boundary lint in JS/TS, ArchUnit in Java, depguard in Go). It costs an extra translation layer and some upfront interface design; it buys one-file provider swaps, a testable domain, and a boundary the build maintains forever. Then "can we switch models?" stops being a project and becomes an afternoon.
+Identity: whose authority is each action carried with?
+An agent that acts on a user’s behalf has an identity problem a stateless API doesn’t. A request arrives as a user; the agent reasons, calls downstream services, maybe runs a while, maybe does work after the user has gone. At every hop: whose authority is this running with, and is it allowed to do this, for this user, in this tenant? Mishandle it and you’ve built the classic confused deputy — the agent using its own broad privileges to do something the user couldn’t.
+Two flows, two strategies. Short, synchronous (< ~60s): propagate the user’s credential — the inbound token rides along to downstream calls, so every action runs with exactly the user’s authority (safe only when every downstream does its own per-action authz). Long-running / deferred: you can’t hold the user’s token, so at the entry node mint a short-lived delegated grant — an asymmetrically-signed token scoped to this workflow, acting for the user, bound to one audience and one tenant, with least-privilege exact-match scopes, a revocable id, and a TTL in hours with a hard cap.
+The single most important check, on every hop, is that the identity’s tenant matches the request’s tenant:
+def authorize(token: str, request):
+    # AUTHENTICATE first: asymmetric signature (downstream verifies but can't mint), reject
+    # alg=none, check exp/iat, aud == this service, jti not denylisted. Never trust a parsed identity.
+    identity = verify_grant(token, expected_aud=THIS_SERVICE, leeway_s=30)
+    if identity.tenant_id != request.tenant_id:
+        audit.violation("cross_tenant", identity=identity, request=request)
+        raise Forbidden()                              # never proceed
+    if request.action not in identity.scope:           # EXACT membership — no "write:*" wildcard
+        raise Forbidden(f"out of scope: {request.action}")
+    return identity
+This is the check that stops one tenant’s agent from ever touching another’s data — even through a bug or a prompt injection. Sign asymmetrically (a shared HMAC secret lets any holder mint grants); use least privilege and short TTLs (a leaked short-lived grant is a small problem, a long-lived one is a breach); validate at every hop (injection happens after the edge); and log cross-tenant denials as audit violations — they’re attack signal, never a silent 403. The point of all of it: every single thing your agents do is attributable, scoped, and bounded to the person and tenant it was meant for.
+Infrastructure: provision the spine, resist the cargo cult
+Standing up an agent platform swings between two failure modes: under-provisioning (no audit store, no secrets management, one shared god-credential) or over-provisioning (a queue, three databases, and a service mesh for what is really a handful of stateless services). The actual shortlist:
+component        why                                                          start with
+---------------  -----------------------------------------------------------  ------------------------------------
+agent services   the capabilities                                             a few stateless services, autoscaled
+model gateway    one chokepoint; only thing holding provider creds            1
+audit datastore  the append-only decision ledger (canonical record)           a relational DB
+cache            session/working state; backing for rate-limit + kill switch  1 (e.g. Redis)
+secrets store    model keys, guardrail config, signing keys                   managed secrets manager
+object storage   large inputs/artifacts + tiered (regulated) logs, encrypted  1 bucket
+Agent endpoints are structurally stateless HTTP services. If they propose decisions and don’t run long internal loops, you usually do not need a queue or event bus to start — sync request/response covers it. Notice what’s deliberately absent: a queue, a vector store, a second database. Add each only when a concrete workload demands it.
+Two disciplines matter more than the component list. Least-privilege IAM: don’t hand every service one broad credential — the gateway gets model:invoke and the model-keys secret; agent services get the audit store and their own object-store prefix but no model creds (they call the gateway); the audit DB user is scoped to its schema. Use per-service workload identities, never shared static keys, so a compromise’s blast radius is one component’s narrow permissions, not the platform. And encryption: a managed key for data at rest from day one, a dedicated signing key if the ledger is cryptographically signed, and per-tenant keys designed for even if you start single-tenant. The discipline isn’t adding exotic infrastructure — it’s not adding it, scoping every credential tightly, and putting the audit store and the gateway chokepoint in from day one.
+The takeaway
+Operability is what turns a working LLM system into one you can actually run. Instrument the decision, not just the service — a metric catalog labeled by tenant and capability, tiered logs, a decision_id threading metrics, logs, traces, and ledger, and alerts on symptoms with real thresholds. Funnel all model traffic through one gateway so cost is visible and bounded, then pull the levers in order: skip the model, batch, cache, right-size, trim — and profile before you optimize, baselining quality at every step. Treat the model as a routing decision, not a constant: cheap to cheap, hard to capable, an independent model to judge, failover so one provider's outage isn't yours — with an instant, granular kill switch and designed degradation you've actually proven under chaos. And stand all of it on a platform that keeps the vendor behind ports, threads tenant-checked identity through every hop, and provisions the spine without the cargo cult.
+The thread running through every section is the same: one chokepoint. The gateway that makes your domain portable is the gateway where you measure cost, route models, fail over, and flip the kill switch. Build that one seam well and operability stops being a scramble during incidents and becomes a property of the system.
+Series: Running LLM systems in production — Level 5 of 6: Operability.

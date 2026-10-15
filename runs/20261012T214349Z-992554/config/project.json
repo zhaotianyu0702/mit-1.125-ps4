@@ -1,0 +1,11 @@
+{
+  "publication_name": "Ship, Then Verify",
+  "topic": "Evaluating AI coding assistants for small software teams",
+  "audience": "Students and early-career software/ML engineers who know Python, Git, and basic testing, and work in small teams.",
+  "central_question": "What evidence would justify trusting an AI coding assistant with more of a small team\u2019s delivery workflow?",
+  "scope": "Coding-agent changes, evaluation quality, review burden, reproducibility, cost, and practitioner workflow. Distinguish tool capability from verified delivery outcomes.",
+  "exclusions": "Investment advice, market valuations as proof of quality, generalized AGI predictions, copied announcements, old uploads, and unsupported productivity percentages.",
+  "voice": "Clear, evidence-first, technically literate and skeptical of unsupported claims; explain uncertainty without blanket pessimism.",
+  "return_value": "A recurring evidence audit and a concrete measurement checklist, updated as tools and user experience change.",
+  "topic_status": "Provisional; ready for student review."
+}

@@ -1,0 +1,37 @@
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.DS_Store
+data/evidence/
+data/media/
+models/*.bin
+*.partial
+.test-*/
+.review-replay-*/
+
+# Submission privacy and local-only artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+data/evidence/
+data/media/
+data/*.sqlite
+data/*.sqlite3
+data/*.db
+models/*.bin
+tmp/
+/tmp/
+*.partial
+
+# Disposable verification scratch space
+.qa-temp/

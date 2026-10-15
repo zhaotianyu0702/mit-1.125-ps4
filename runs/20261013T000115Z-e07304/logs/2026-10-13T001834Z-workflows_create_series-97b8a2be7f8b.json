@@ -1,0 +1,17 @@
+{
+  "stage": "workflows/create_series",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": null,
+  "output_count": null,
+  "started_at": "2026-10-13T00:18:34Z",
+  "finished_at": "2026-10-13T00:21:29Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T001834Z-workflows_create_series-97b8a2be7f8b.json",
+  "tools": [
+    "bash"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

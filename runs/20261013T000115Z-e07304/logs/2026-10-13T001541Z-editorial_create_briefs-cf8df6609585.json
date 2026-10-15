@@ -1,0 +1,75 @@
+{
+  "stage": "editorial/create_briefs",
+  "status": "invalid",
+  "exit_code": 2,
+  "input_count": 36,
+  "output_count": null,
+  "started_at": "2026-10-13T00:15:41Z",
+  "finished_at": "2026-10-13T00:17:40Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T001541Z-editorial_create_briefs-cf8df6609585.json",
+  "tools": [
+    "python3",
+    "OpenAI Codex CLI (existing ChatGPT login)"
+  ],
+  "error_count": 1,
+  "model_calls": [
+    {
+      "usage": {
+        "input_tokens": 32233,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2243,
+        "reasoning_output_tokens": 0
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 32276,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2203,
+        "reasoning_output_tokens": 158
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 31502,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1982,
+        "reasoning_output_tokens": 266
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 44130,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2037,
+        "reasoning_output_tokens": 0
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 44171,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2226,
+        "reasoning_output_tokens": 390
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    }
+  ],
+  "public_derivative": true
+}

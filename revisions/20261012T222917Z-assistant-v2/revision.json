@@ -1,0 +1,24 @@
+{
+  "revision_dir": "revisions/20261012T222917Z-assistant-v2",
+  "source_run_id": "20261012T214349Z-992554",
+  "created_at": "2026-10-12T22:29:17Z",
+  "review_type": "user_authorized_ai_assisted_review",
+  "authorization_scope": "User delegated topic, selection, editorial decisions and review. No permission to publish or submit; no claim of personal student inspection.",
+  "source_hashes": {
+    "runs/20261012T214349Z-992554/items.jsonl": "eab4ae719ce807f835e70c131c66c0888e1f64eb4aaa0136dfa5d54b2ab912b0",
+    "runs/20261012T214349Z-992554/briefs.jsonl": "6f5e673e6f40067c10b324249a275e98c7a2459a50b8a98fd0dbfbf5681937d5",
+    "runs/20261012T214349Z-992554/eligible.jsonl": "64dff288c935660f5d76a2c528b214bfa13b119389bcf6428a2065833b011b8d",
+    "runs/20261012T214349Z-992554/corpus.jsonl": "2ae00e8d94fe5692f6e386867033cb79a67f7167305e980e3dd0e2d5da3b378c",
+    "runs/20261012T214349Z-992554/changes.jsonl": "c229f03a547d6f86c2070d249e6747ce33a47a47af4834966657403fd904bfb5",
+    "runs/20261012T214349Z-992554/decisions.jsonl": "480875ca6a45873e1e1d459f36681a4d3139abb8f1bc54a3f54303a81cb9a092",
+    "runs/20261012T214349Z-992554/candidates.jsonl": "3e1ae1ff59f96a103ee9cd8a79643576e9889b20f09789de85f417c15818b321",
+    "runs/20261012T214349Z-992554/articles.jsonl": "c8131f6c7f88defa83020a9ad56db4163a00ba4c75d321f721125f6d1f49d2e1",
+    "runs/20261012T214349Z-992554/exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261012T214349Z-992554/video_scripts.jsonl": "8e94fe6bc79da27d751e9a653da69e7d8e99d93f1dff3c0413288c58166daa0b"
+  },
+  "student_decision": null,
+  "policy_revision": "v1 -> v2",
+  "policy_change_actor": "user_authorized_ai_assistant",
+  "policy_change_basis": "Observed existing-but-wrong media locators, over-short context and unsupported paid qualifier; clearer natural prose and AI disclosure.",
+  "topic_decision": "Keep Ship, Then Verify: evaluating AI coding assistants for small software teams."
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "collectors/fetch_podcasts",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 1,
+  "output_count": 4,
+  "started_at": "2026-10-12T21:43:55Z",
+  "finished_at": "2026-10-12T21:43:56Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-12T214355Z-collectors_fetch_podcasts-b8508d2ea1eb.json",
+  "tools": [
+    "python3",
+    "urllib RSS/Atom"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

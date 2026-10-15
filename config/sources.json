@@ -1,0 +1,66 @@
+[
+  {
+    "source_id": "simon-entries",
+    "publisher_id": "simon-willison",
+    "kind": "feed",
+    "url": "https://simonwillison.net/atom/entries/",
+    "max_items": 6,
+    "perspective": "Independent practitioner; self-reported experiences need task-level checking."
+  },
+  {
+    "source_id": "github-blog",
+    "publisher_id": "microsoft-github",
+    "kind": "feed",
+    "url": "https://github.blog/feed/",
+    "max_items": 6,
+    "perspective": "Tool vendor; product/benchmark claims are not independent validations."
+  },
+  {
+    "source_id": "openai-news",
+    "publisher_id": "openai",
+    "kind": "feed",
+    "url": "https://openai.com/news/rss.xml",
+    "max_items": 6,
+    "perspective": "Tool vendor and vendor-curated customer case studies."
+  },
+  {
+    "source_id": "stackoverflow-blog",
+    "publisher_id": "stackoverflow",
+    "kind": "feed",
+    "url": "https://stackoverflow.blog/feed/",
+    "max_items": 6,
+    "perspective": "Developer-platform editorial and guest authors; separate actual written material from podcast discovery pages."
+  },
+  {
+    "source_id": "cloudflare-blog",
+    "publisher_id": "cloudflare",
+    "kind": "feed",
+    "url": "https://blog.cloudflare.com/rss/",
+    "max_items": 6,
+    "perspective": "Infrastructure vendor and engineering implementation reports."
+  },
+  {
+    "source_id": "ai-engineer-video",
+    "publisher_id": "latent-space-ai-engineer",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/@aiDotEngineer/videos",
+    "max_items": 1,
+    "perspective": "Conference practitioners; sponsor/guest incentives must be examined."
+  },
+  {
+    "source_id": "github-video",
+    "publisher_id": "microsoft-github",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/@GitHub/videos",
+    "max_items": 1,
+    "perspective": "Same producer as GitHub Blog: not an extra independent publisher."
+  },
+  {
+    "source_id": "practical-ai-audio",
+    "publisher_id": "practical-ai",
+    "kind": "podcast",
+    "url": "https://practicalai.show/feed",
+    "max_items": 4,
+    "perspective": "Practitioner interviews; guest statements are experience reports, not controlled evidence."
+  }
+]

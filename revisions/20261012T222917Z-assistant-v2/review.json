@@ -1,0 +1,11 @@
+{
+  "review_id": "8b1249f56adda4adaa49d1c9ec275d3a9138233118a4ff5077e3c852fd2ccd73",
+  "passed": true,
+  "issues": [
+    {
+      "artifact": "human review",
+      "severity": "warning",
+      "message": "A person must assess factual accuracy, synthesis, attribution, uncertainty, and audience suitability."
+    }
+  ]
+}

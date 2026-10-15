@@ -1,0 +1,62 @@
+{
+  "review_id": "5440a241c8d97f28cfa68b947aa3d21297fbd9f3e832e0f0ee265ae1af830703",
+  "assets": [
+    {
+      "piece_id": "01",
+      "type": "article",
+      "path": "package/articles/01.md"
+    },
+    {
+      "piece_id": "01",
+      "type": "video_script",
+      "path": "package/video_scripts/01.md"
+    },
+    {
+      "piece_id": "01",
+      "type": "source_notes",
+      "path": "package/sources/01.md"
+    },
+    {
+      "piece_id": "02",
+      "type": "article",
+      "path": "package/articles/02.md"
+    },
+    {
+      "piece_id": "02",
+      "type": "video_script",
+      "path": "package/video_scripts/02.md"
+    },
+    {
+      "piece_id": "02",
+      "type": "source_notes",
+      "path": "package/sources/02.md"
+    },
+    {
+      "piece_id": "03",
+      "type": "article",
+      "path": "package/articles/03.md"
+    },
+    {
+      "piece_id": "03",
+      "type": "video_script",
+      "path": "package/video_scripts/03.md"
+    },
+    {
+      "piece_id": "03",
+      "type": "source_notes",
+      "path": "package/sources/03.md"
+    },
+    {
+      "piece_id": null,
+      "type": "publication_links",
+      "path": "package/publication_links.json"
+    }
+  ],
+  "manual_actions": [
+    "Render and quality-check each video in Google Vids or HeyGen.",
+    "Publish each article on Substack with shareable access.",
+    "Publish each video on YouTube and add article and source links to its description.",
+    "Enter the resulting Substack and YouTube URLs in publication_links.json."
+  ],
+  "published": false
+}

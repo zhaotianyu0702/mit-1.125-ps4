@@ -1,0 +1,6 @@
+{
+  "youtube_transcript_mode": "stored_or_local",
+  "whisper_model": "models/ggml-base.en.bin",
+  "whisper_cli": "/opt/homebrew/bin/whisper-cli",
+  "notes": "Reuse unchanged retained transcript/media, otherwise transcribe permitted public audio on-device. No caption requests in this mode. Original dates and cache limitations remain explicit; ASR requires human verification."
+}

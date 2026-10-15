@@ -1,0 +1,597 @@
+{
+  "run_id": "20261013T000115Z-e07304",
+  "status": "awaiting_review",
+  "as_of_date": "2026-10-13",
+  "counts": {
+    "discovered": 36,
+    "extracted": 36,
+    "changes": 36,
+    "eligible": 36,
+    "excluded": 0,
+    "decisions": 36,
+    "briefs": 3,
+    "articles": 3,
+    "video_scripts": 3,
+    "new": 0,
+    "changed": 1,
+    "unchanged": 35,
+    "accepted": 13,
+    "rejected": 17,
+    "deferred": 6
+  },
+  "source_coverage": {
+    "raw_observations": 36,
+    "raw_duplicate_observations": 0,
+    "distinct_underlying_items": 36,
+    "duplicate_observations": 0,
+    "by_kind": {
+      "feed": {
+        "distinct_items": 30,
+        "publishers": 5
+      },
+      "youtube": {
+        "distinct_items": 2,
+        "publishers": 2
+      },
+      "podcast": {
+        "distinct_items": 4,
+        "publishers": 1
+      }
+    },
+    "independent_publishers": 7
+  },
+  "elapsed_seconds": 1214,
+  "costs": {
+    "known_usd": null,
+    "estimated_usd": null,
+    "unknown_cost_receipts": 368
+  },
+  "review": {
+    "present": true,
+    "passed": true,
+    "approval_present": false,
+    "approval_matches": false,
+    "current_review_passed": true,
+    "package_matches_current_review": false
+  },
+  "publication_links": null,
+  "interpretation": "Missing artifact counts are null; zero means the relevant artifact exists and contains no records.",
+  "privacy_note": "Sanitized public derivative: raw model requests/responses and private machine paths omitted; model token usage appears in ../model_usage.jsonl.",
+  "stage_receipts": {
+    "latest_receipts": [
+      {
+        "stage": "collectors/fetch_feeds",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 5,
+        "output_count": 30,
+        "started_at": "2026-10-13T00:01:15Z",
+        "finished_at": "2026-10-13T00:01:16Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "urllib RSS/Atom"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000115Z-collectors_fetch_feeds-95b142d230f4.json"
+      },
+      {
+        "stage": "data/store:init",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "started_at": "2026-10-13T00:01:15Z",
+        "finished_at": "2026-10-13T00:01:15Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000115Z-data_store:init-9f2cc615081c.json"
+      },
+      {
+        "stage": "run",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": null,
+        "output_count": null,
+        "started_at": "2026-10-13T00:18:34Z",
+        "finished_at": "2026-10-13T00:21:29Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "bash"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001834Z-run-a122ccc81376.json"
+      },
+      {
+        "stage": "run:init",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 8,
+        "output_count": 1,
+        "started_at": "2026-10-13T00:01:15Z",
+        "finished_at": "2026-10-13T00:01:15Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000115Z-run:init-e0dff0e30e31.json"
+      },
+      {
+        "stage": "workflows/collect_sources",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": null,
+        "output_count": null,
+        "started_at": "2026-10-13T00:01:15Z",
+        "finished_at": "2026-10-13T00:01:30Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "bash"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000115Z-workflows_collect_sources-247ae8b2b3aa.json"
+      },
+      {
+        "stage": "collectors/fetch_youtube",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 2,
+        "output_count": 2,
+        "started_at": "2026-10-13T00:01:16Z",
+        "finished_at": "2026-10-13T00:01:21Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "yt-dlp"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000116Z-collectors_fetch_youtube-7148ff3c4d87.json"
+      },
+      {
+        "stage": "collectors/fetch_podcasts",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 1,
+        "output_count": 4,
+        "started_at": "2026-10-13T00:01:21Z",
+        "finished_at": "2026-10-13T00:01:22Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "urllib RSS/Atom"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000121Z-collectors_fetch_podcasts-e39761c722b5.json"
+      },
+      {
+        "stage": "data/store:list",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 0,
+        "output_count": 36,
+        "started_at": "2026-10-13T00:01:30Z",
+        "finished_at": "2026-10-13T00:01:30Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000130Z-data_store:list-4aa9f32d5d30.json"
+      },
+      {
+        "stage": "processing/extract_content",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 36,
+        "output_count": 36,
+        "started_at": "2026-10-13T00:01:22Z",
+        "finished_at": "2026-10-13T00:01:30Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "trafilatura (optional)",
+          "yt-dlp",
+          "ffmpeg",
+          "ffprobe",
+          "whisper-cli (optional)"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000122Z-processing_extract_content-64c485cfdc42.json"
+      },
+      {
+        "stage": "data/store:upsert",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 36,
+        "output_count": 36,
+        "started_at": "2026-10-13T00:01:30Z",
+        "finished_at": "2026-10-13T00:01:30Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000130Z-data_store:upsert-f32e73191ccf.json"
+      },
+      {
+        "stage": "editorial/select_items",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 36,
+        "output_count": 36,
+        "started_at": "2026-10-13T00:18:34Z",
+        "finished_at": "2026-10-13T00:18:34Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001834Z-editorial_select_items-5e58c44ed01d.json"
+      },
+      {
+        "stage": "processing/filter_items",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 36,
+        "output_count": 36,
+        "started_at": "2026-10-13T00:01:30Z",
+        "finished_at": "2026-10-13T00:01:30Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T000130Z-processing_filter_items-503b8fb798fc.json"
+      },
+      {
+        "stage": "workflows/create_series",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": null,
+        "output_count": null,
+        "started_at": "2026-10-13T00:18:34Z",
+        "finished_at": "2026-10-13T00:21:29Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "bash"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001834Z-workflows_create_series-97b8a2be7f8b.json"
+      },
+      {
+        "stage": "editorial/create_briefs",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 36,
+        "output_count": 3,
+        "started_at": "2026-10-13T00:18:34Z",
+        "finished_at": "2026-10-13T00:19:18Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "OpenAI Codex CLI (existing ChatGPT login)"
+        ],
+        "error_count": 0,
+        "model_calls": [
+          {
+            "usage": {
+              "input_tokens": 44126,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2635,
+              "reasoning_output_tokens": 497
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 44171,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2546,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          }
+        ],
+        "_file": "logs/2026-10-13T001834Z-editorial_create_briefs-21d233add377.json"
+      },
+      {
+        "stage": "content/write_articles",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 3,
+        "output_count": 3,
+        "started_at": "2026-10-13T00:19:18Z",
+        "finished_at": "2026-10-13T00:20:31Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "OpenAI Codex CLI (existing ChatGPT login)"
+        ],
+        "error_count": 0,
+        "model_calls": [
+          {
+            "usage": {
+              "input_tokens": 32755,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1292,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 32612,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1365,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 58413,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1351,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          }
+        ],
+        "_file": "logs/2026-10-13T001918Z-content_write_articles-12978299d47f.json"
+      },
+      {
+        "stage": "data/store:get",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 0,
+        "output_count": 1,
+        "started_at": "2026-10-13T00:21:29Z",
+        "finished_at": "2026-10-13T00:21:29Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T002129Z-data_store:get-ff1042133f7d.json"
+      },
+      {
+        "stage": "content/write_video_scripts",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 3,
+        "output_count": 3,
+        "started_at": "2026-10-13T00:20:32Z",
+        "finished_at": "2026-10-13T00:21:28Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "OpenAI Codex CLI (existing ChatGPT login)"
+        ],
+        "error_count": 0,
+        "model_calls": [
+          {
+            "usage": {
+              "input_tokens": 32764,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1191,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 32621,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1394,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 58426,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1786,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          }
+        ],
+        "_file": "logs/2026-10-13T002032Z-content_write_video_scripts-2a2ef37863b7.json"
+      },
+      {
+        "stage": "review/check_content",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 9,
+        "output_count": 1,
+        "started_at": "2026-10-13T00:21:28Z",
+        "finished_at": "2026-10-13T00:21:29Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T002128Z-review_check_content-b6a556d721f9.json"
+      },
+      {
+        "stage": "reporting/summarize_run",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 9,
+        "output_count": 1,
+        "started_at": "2026-10-13T00:17:41Z",
+        "finished_at": "2026-10-13T00:17:42Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001741Z-reporting_summarize_run-b6d694ab284d.json"
+      },
+      {
+        "stage": "run:resume_snapshot",
+        "status": "completed",
+        "exit_code": 0,
+        "input_count": 15,
+        "output_count": 16,
+        "started_at": "2026-10-13T00:18:34Z",
+        "finished_at": "2026-10-13T00:18:34Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001834Z-run:resume_snapshot-8d6c39b2472a.json"
+      }
+    ],
+    "historical_failures": [
+      {
+        "stage": "editorial/create_briefs",
+        "status": "invalid",
+        "exit_code": 2,
+        "input_count": 36,
+        "output_count": null,
+        "started_at": "2026-10-13T00:15:41Z",
+        "finished_at": "2026-10-13T00:17:40Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "python3",
+          "OpenAI Codex CLI (existing ChatGPT login)"
+        ],
+        "error_count": 1,
+        "model_calls": [
+          {
+            "usage": {
+              "input_tokens": 32233,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2243,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 32276,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2203,
+              "reasoning_output_tokens": 158
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 31502,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 1982,
+              "reasoning_output_tokens": 266
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 44130,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2037,
+              "reasoning_output_tokens": 0
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          },
+          {
+            "usage": {
+              "input_tokens": 44171,
+              "cached_input_tokens": 8960,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2226,
+              "reasoning_output_tokens": 390
+            },
+            "model": "gpt-6-luna",
+            "billing_mode": "chatgpt_subscription"
+          }
+        ],
+        "_file": "logs/2026-10-13T001541Z-editorial_create_briefs-cf8df6609585.json"
+      },
+      {
+        "stage": "run",
+        "status": "failed",
+        "exit_code": 1,
+        "input_count": null,
+        "output_count": null,
+        "started_at": "2026-10-13T00:15:41Z",
+        "finished_at": "2026-10-13T00:17:41Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "bash"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001541Z-run-9e5e07628305.json"
+      },
+      {
+        "stage": "workflows/create_series",
+        "status": "failed",
+        "exit_code": 1,
+        "input_count": null,
+        "output_count": null,
+        "started_at": "2026-10-13T00:15:41Z",
+        "finished_at": "2026-10-13T00:17:41Z",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "tools": [
+          "bash"
+        ],
+        "error_count": 0,
+        "_file": "logs/2026-10-13T001541Z-workflows_create_series-08757559cb32.json"
+      }
+    ]
+  }
+}

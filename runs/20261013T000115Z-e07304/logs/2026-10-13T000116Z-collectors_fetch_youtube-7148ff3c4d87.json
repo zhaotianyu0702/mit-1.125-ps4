@@ -1,0 +1,18 @@
+{
+  "stage": "collectors/fetch_youtube",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 2,
+  "output_count": 2,
+  "started_at": "2026-10-13T00:01:16Z",
+  "finished_at": "2026-10-13T00:01:21Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T000116Z-collectors_fetch_youtube-7148ff3c4d87.json",
+  "tools": [
+    "python3",
+    "yt-dlp"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

@@ -1,0 +1,10 @@
+{
+  "model": "ggml-base.en",
+  "source": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin",
+  "downloaded_at": "2026-10-12T21:29:40.128970+00:00",
+  "bytes": 147964211,
+  "sha256": "a03779c86df3323075f5e796cb2ce5029f00ec8869eee3fdfb897afe36c6d002",
+  "purpose": "On-device transcription of permitted public source audio; machine-generated transcript requires human verification.",
+  "provider_charge_usd": 0,
+  "provider_charge_note": "No hosted inference service or credential used; local energy and network costs unmeasured."
+}

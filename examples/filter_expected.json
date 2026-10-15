@@ -1,0 +1,30 @@
+{
+  "as_of_date": "2026-10-08",
+  "window_start": "2026-09-09",
+  "window_end": "2026-10-08",
+  "eligible_item_ids": [
+    "feed:fictional-trial",
+    "youtube:fictional-demo",
+    "podcast:fictional-episode",
+    "feed:fictional-boundary-start",
+    "feed:fictional-boundary-end"
+  ],
+  "exclusions": [
+    {
+      "item_id": "feed:fictional-old",
+      "reason": "outside_window"
+    },
+    {
+      "item_id": "feed:fictional-undated",
+      "reason": "unknown_date"
+    },
+    {
+      "item_id": "feed:fictional-future",
+      "reason": "future_date"
+    },
+    {
+      "item_id": "feed:fictional-invalid",
+      "reason": "invalid_date"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "provider": "command",
+  "enabled": true,
+  "command_env": "PS4_MODEL_COMMAND",
+  "model_label": "OpenAI Codex gpt-6-luna via existing ChatGPT login",
+  "timeout_seconds": 420,
+  "max_evidence_characters": 360000,
+  "selection_batch_size": 5,
+  "approval_note": "User selected Codex/OpenAI. Existing ChatGPT login and actual gpt-6-luna JSON inference verified. Adapter rejects API-key auth; no purchases, credit top-ups or provider fallback.",
+  "billing_mode": "chatgpt_subscription",
+  "model": "gpt-6-luna",
+  "command": [
+    "bash",
+    "adapters/codex.sh"
+  ],
+  "verified_at": "2026-10-12T21:39:45.687640+00:00"
+}

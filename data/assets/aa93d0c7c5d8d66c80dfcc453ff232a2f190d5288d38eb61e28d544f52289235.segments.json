@@ -1,0 +1,710 @@
+[
+  {
+    "segment_id": "s-0001",
+    "start_seconds": 1.0,
+    "end_seconds": 35.0,
+    "text": "Welcome to the Practical AI Podcast, where we break down the real world applications of artificial intelligence and how it's shaping the way we live, work, and create. Our goal is to help make AI technology practical, productive, and accessible to everyone. Whether you're a developer, business leader, or just curious about the tech behind the buzz, you're in the right place. Be sure to connect with us on LinkedIn, X, or Blue Sky to stay up to date with episode drops, behind the scenes content, and AI insights. You can learn more at practicalai.fm."
+  },
+  {
+    "segment_id": "s-0002",
+    "start_seconds": 35.0,
+    "end_seconds": 41.0,
+    "text": "Now onto the show."
+  },
+  {
+    "segment_id": "s-0003",
+    "start_seconds": 41.0,
+    "end_seconds": 56.0,
+    "text": "Welcome to another episode of Practical AI Podcast. This is Daniel Whitenack. I am CEO at Prediction Guard, and I'm joined as always by my cohost, Benson, who is a principal AI and autonomy research engineer. How are you doing, Chris?"
+  },
+  {
+    "segment_id": "s-0004",
+    "start_seconds": 56.0,
+    "end_seconds": 60.0,
+    "text": "Hey. Hey. I'm doing great today, Daniel. Really excited about today's conversation."
+  },
+  {
+    "segment_id": "s-0005",
+    "start_seconds": 60.0,
+    "end_seconds": 85.0,
+    "text": "Yeah. Well, I I think in in, in the world that both of us inhabit, we are open to interesting discussions. And, I I think we'll talk about things open and things related to the world in in today's episode because we have with us MingYu Liu, who is vice president of Cosmos Lab at NVIDIA. Welcome to the show, MingYu."
+  },
+  {
+    "segment_id": "s-0006",
+    "start_seconds": 85.0,
+    "end_seconds": 90.0,
+    "text": "Hello. Thanks to have me here. Great to be here. Hi, Daniel and Chris."
+  },
+  {
+    "segment_id": "s-0007",
+    "start_seconds": 90.0,
+    "end_seconds": 116.0,
+    "text": "Yeah. Yeah. Great great to have you. And one of the things I kind of alluded to is maybe something open, which I know is dear to NVIDIA's heart, which is open models. And I've seen in the news recently in what NVIDIA has posted, obviously, they are promoting open models as a key piece of what is important in the e AI ecosystem."
+  },
+  {
+    "segment_id": "s-0008",
+    "start_seconds": 116.0,
+    "end_seconds": 135.0,
+    "text": "I'm wondering, MingYu, if you could help us understand maybe from your perspective, from NVIDIA's perspective, why in today's, world, is open is the idea of having open models and promoting open models, why is that such a critical thing in the ecosystem?"
+  },
+  {
+    "segment_id": "s-0009",
+    "start_seconds": 135.0,
+    "end_seconds": 159.0,
+    "text": "Yes. Okay. So when I was a student, I learned a lot about computer vision and machine learning. At that time, there are great researchers, students, open source layer code and model. And looking at layer code and model actually help me understand the concept and help me to innovate."
+  },
+  {
+    "segment_id": "s-0010",
+    "start_seconds": 159.0,
+    "end_seconds": 192.0,
+    "text": "Right? And and this the academy always work like that and has been years, you know, even before GBT, and GBT also have open source model in the past. And that had been, you know, pushed the field forward around innovation. It's just until recently, the model is getting bigger. The amount of resources required to build a model is tremendous amount, and hence, the amount of open model reduced."
+  },
+  {
+    "segment_id": "s-0011",
+    "start_seconds": 192.0,
+    "end_seconds": 217.0,
+    "text": "Right? But open model generally is there for the field, it's been very useful to push the field forward. And so, NVIDIA, won't this continue to happen? I think the world will be in a better place if we have open model to enable innovation. So people you know, API are great."
+  },
+  {
+    "segment_id": "s-0012",
+    "start_seconds": 217.0,
+    "end_seconds": 244.0,
+    "text": "They solve problems, but they don't give you the insight. You know, it doesn't tell you it it doesn't allow you to tear apart and miss your idea inside. You know? And also, the the kind of thing you want to do may be suitable, you know, you want to have a local computer and you don't have the Internet connection, so API may not always be the solution. And that's why, you know, I think an open model is important to enable people."
+  },
+  {
+    "segment_id": "s-0013",
+    "start_seconds": 244.0,
+    "end_seconds": 264.0,
+    "text": "And NVIDIA is a accelerator computing company. So we build this computer, great computer, GPU networking devices, and now we also build CPU, SoC. Right? We build this computer and we want to enable the whole ecosystem. Right?"
+  },
+  {
+    "segment_id": "s-0014",
+    "start_seconds": 264.0,
+    "end_seconds": 296.0,
+    "text": "And we generally believe that, you know, to better build these computers, we need to know more about the applications. Right? And in the old day, you have this computer and you have library and you have software applications, right? And in the modern world, you have computer and you have library still, but you now have models. Model is a new kind of libraries people can use and to build great amazing applications."
+  },
+  {
+    "segment_id": "s-0015",
+    "start_seconds": 296.0,
+    "end_seconds": 334.0,
+    "text": "You know, maybe all kind of agents to help you buy stuff or help you do code all on top of models. And and we, like to build models, like to build open models on top of NVIDIA's computer. There are a couple of reason why we do that. First, we through building the model, we better understand what kind of computer we should build, what kind of GPU architecture we should have, so that NVIDIA can always be there to help the whole ecosystem. And second, we also want to measure people are enabled to do amazing applications, right?"
+  },
+  {
+    "segment_id": "s-0016",
+    "start_seconds": 334.0,
+    "end_seconds": 356.0,
+    "text": "So when we have open model there, and people can test this out first, and combine them to do application good for their targeted business, And again, some familiarity, and maybe later they can build their own model. So there's a lot of reason why open model is critical, both for Academy and also for the whole industry."
+  },
+  {
+    "segment_id": "s-0017",
+    "start_seconds": 356.0,
+    "end_seconds": 378.0,
+    "text": "Yeah. You were kind of getting to a follow-up that I that I wanted to have, which is it it's important to have open models to your point to promote innovation. But I'm wondering in what you're seeing at NVIDIA, is it increasingly important also on the commercial side? So, like, for NVIDIA's customers. Right?"
+  },
+  {
+    "segment_id": "s-0018",
+    "start_seconds": 378.0,
+    "end_seconds": 411.0,
+    "text": "What is the implication of having access to open models maybe on the on the commercial side? Do you have an do you have any thoughts on that? So it's great if, like, I'm in a lab and, you know, I have, you know, five years to to work towards, you know, the next innovation, the next types of models. But if I'm in a commercial company, maybe I'm a customer of NVIDIA, I run NVIDIA hardware, how does the existence of open models help me as, you know, in the commercial world maybe?"
+  },
+  {
+    "segment_id": "s-0019",
+    "start_seconds": 411.0,
+    "end_seconds": 425.0,
+    "text": "Innovation, freedom. Innovation, freedom. I think that is maybe the two words to to to summarize. Right? So, you know, you can leverage API to solve the problem."
+  },
+  {
+    "segment_id": "s-0020",
+    "start_seconds": 425.0,
+    "end_seconds": 451.0,
+    "text": "And but with the open model, you can do more than what's available in in API. Yeah. So and see, the the field is finding more and more important application of AI. Right? You know, from earlier day of chatbot and now the the coding agent, and we we also see more and more agent that can do things that we didn't think it's possible."
+  },
+  {
+    "segment_id": "s-0021",
+    "start_seconds": 451.0,
+    "end_seconds": 472.0,
+    "text": "People are working very hard to try to figure out how AI can make our life collectively better. Right? And there there will be application that was not foreseen by the foundation model of the frontier companies who are building AI. Right? And they require some customization."
+  },
+  {
+    "segment_id": "s-0022",
+    "start_seconds": 472.0,
+    "end_seconds": 484.0,
+    "text": "Open model allow them give them options, give them choice to do the innovation they need for their target business. And and this way, I I think it's good, for the whole society."
+  },
+  {
+    "segment_id": "s-0023",
+    "start_seconds": 484.0,
+    "end_seconds": 578.0,
+    "text": "I think, I know I was kind of following up on your point there, I was very happy recently to see NVIDIA kind of there was a moment some months back where open models in the West were starting to struggle a bit, and certain unnamed organizations were closing that had been leading the way, and so it was a delight to see NVIDIA step in and take the leadership there and follow through with some other things, the Hugging Face acquisition that's coming in, the work that you're doing. We're kind of going through this turning point toward the next generation of open models and what that looks like, especially with regard to the landscape of physical AI out there, which is my personal passion, as most of our viewers know. So would love if you could kind of, as we are pivoting into this new generation of open models in physical AI context, where it's not all API based, it's not all frontier models at big services and stuff like that, and we're all getting excited about drones in everyday life, robots in everyday life, all the different capacities that that can bring benefits. Could you kind of lay landscape?"
+  },
+  {
+    "segment_id": "s-0024",
+    "start_seconds": 578.0,
+    "end_seconds": 595.0,
+    "text": "As you mesh these things together, what does that look like to you now? What are you seeing as the opportunities in the near term, and kind of how are organizations that work with NVIDIA starting to position to take on this next generation of physical AI that's upon us?"
+  },
+  {
+    "segment_id": "s-0025",
+    "start_seconds": 595.0,
+    "end_seconds": 624.0,
+    "text": "Yeah, thanks for the great question. So I think physical AI is a term covers several important verticals. Automotive is one, factory automation is another, and robotics is sub pillar. There could be more, agriculture, construction, many of them. And physical AI are AI deployed in physical device."
+  },
+  {
+    "segment_id": "s-0026",
+    "start_seconds": 624.0,
+    "end_seconds": 650.0,
+    "text": "And physical device perturb the state of the world and complete certain tasks. And the result is shown as material, as the final something you can touch, right? That is how I would like to define physical AI. So, nowadays, we have some AI in physical device, right? But they are preliminary, right?"
+  },
+  {
+    "segment_id": "s-0027",
+    "start_seconds": 650.0,
+    "end_seconds": 685.0,
+    "text": "And I think the most exciting form of physical AI, one of the most exciting forms of physical AI is a humanoid robot. And we envision that humanoid robot will be able to help people accomplish our task. And now we don't have humanoid robots surrounding us, but one day we have humanoid robots surrounding us, they will require a computer. They will require a powerful computer to help us process visual input, understand people's instruction, and then self correction in completed tasks. And these are great business opportunity for NVIDIA."
+  },
+  {
+    "segment_id": "s-0028",
+    "start_seconds": 685.0,
+    "end_seconds": 699.0,
+    "text": "Right? So that's why NVIDIA care about Physical AI. If we can make Physical AI come, you know, the the dream of Physical AI come true, there will be allow opportunity for media. So we are very aligned. And so we want to help the field moving forward."
+  },
+  {
+    "segment_id": "s-0029",
+    "start_seconds": 699.0,
+    "end_seconds": 701.0,
+    "text": "Yeah. Yeah. Go ahead."
+  },
+  {
+    "segment_id": "s-0030",
+    "start_seconds": 701.0,
+    "end_seconds": 716.0,
+    "text": "Yeah. And I was wondering, just tying that back to where we started the conversation with open models, do open models have certain implications specifically in the physical AI world because of the constraints or requirements of the physical AI world?"
+  },
+  {
+    "segment_id": "s-0031",
+    "start_seconds": 716.0,
+    "end_seconds": 740.0,
+    "text": "Yes. That's a good question. So I think, for example, one thing you a Physical AI model, you know, one popular Physical AI model is a policy model. A policy model is a model based on the visual observation and the interaction given by the user or some machine. And, you know, that it generates an action to complete the task."
+  },
+  {
+    "segment_id": "s-0032",
+    "start_seconds": 740.0,
+    "end_seconds": 751.0,
+    "text": "Right? So observation, instruction in and action out. And every robot have a different kind of sensor setup. Right? Some robot have two eyes."
+  },
+  {
+    "segment_id": "s-0033",
+    "start_seconds": 751.0,
+    "end_seconds": 761.0,
+    "text": "Some robot have cameras mounted on the gripper. And self driving car, some car has 11 cameras. Some have seven. You know? Some have LiDAR sensor."
+  },
+  {
+    "segment_id": "s-0034",
+    "start_seconds": 761.0,
+    "end_seconds": 776.0,
+    "text": "So every physical device, every physical every robot see the world differently. Right? And and some of them are unique. Right? And so it's difficult to have one AI model that can cover all of these."
+  },
+  {
+    "segment_id": "s-0035",
+    "start_seconds": 776.0,
+    "end_seconds": 801.0,
+    "text": "Right? And when you have open model, the model come with viewing capability, like a word understanding or simulation. And from that prior, people can leverage the data they collected from their device and fine tune. You know, maybe this in the initial model only handle one camera. Now you have multi view, you know, enabled through post training and open model."
+  },
+  {
+    "segment_id": "s-0036",
+    "start_seconds": 801.0,
+    "end_seconds": 818.0,
+    "text": "And it's easier it's more achievable with open model. Right? So I think open model give you the the innovation power. So you can customize open model to better tailor for your physical use case. This is important."
+  },
+  {
+    "segment_id": "s-0037",
+    "start_seconds": 818.0,
+    "end_seconds": 826.0,
+    "text": "Right? It means better leverage the observation. Right? And it also give you opportunity to make it more efficient. Yeah."
+  },
+  {
+    "segment_id": "s-0038",
+    "start_seconds": 826.0,
+    "end_seconds": 843.0,
+    "text": "So in the end, the primary evolution will be intelligence per per watt. Right? And and so with this open architecture, you will be able to do more."
+  },
+  {
+    "segment_id": "s-0039",
+    "start_seconds": 843.0,
+    "end_seconds": 904.0,
+    "text": "It's amazing to consider this topic of physical AI, how AI agents are being embedded in the physical world around us. But it just emphasizes this point that we need to have operational control of the agents that we're deploying, whether that be in the case of physical AI or in your digital infrastructure within your company where you're deploying agents as a part of your digital workforce. Operational control is critical so you can ensure that those agents are operating based on the policies that you set, and you can alert when those agents go off script and actually quarantine agents that are behaving in some destructive manner. That's exactly what we're offering with Prediction Guard, the self hosted AI control plane. This is a company that I'm leading personally, and I'm just so thrilled to see that this operational control of AI agents is at the core of what we're offering."
+  },
+  {
+    "segment_id": "s-0040",
+    "start_seconds": 904.0,
+    "end_seconds": 934.0,
+    "text": "We're seeing companies build and deploy fleets of AI agents without losing control of those agents, and we'd love to show you how we do that. Check us out at predictionguard.com/practicalai to book a time with myself and the team to talk more about how we're enabling this operational control of agents. Again, that's predictionguard.com/practicalai."
+  },
+  {
+    "segment_id": "s-0041",
+    "start_seconds": 934.0,
+    "end_seconds": 1000.0,
+    "text": "So I'd to I'd like to take you, kind of expand on what you were talking about going into the break in terms of you talked about a couple of things like fine tuning models and stuff like that, think which maybe, to some people, maybe a little bit of a lost art because people have become so API dependent on a lot of the closed models because they're used to cloud environments. And as we move into physical AI and you're taking these open models that give so much potential on what you can do with your own creativity and innovation in these physical devices, and you have to add in the sensors, as you talked about, LiDAR and other things, and whatever the robot's effectors are, how it's manipulating the real world or perturbing the real world, I believe, how you put it earlier. Could you talk you know, there's inference involved, which now is on a device versus out in the cloud, and there's power. You know? You have to have power to drive these things."
+  },
+  {
+    "segment_id": "s-0042",
+    "start_seconds": 1000.0,
+    "end_seconds": 1041.0,
+    "text": "So there's all of these considerations that a lot of folks in the AI space haven't had to deal with in the past, and that that that get something out there that you can touch working toward your whatever end you're trying to achieve. Could you talk a bit about how you see that and how you put that together for so maybe kind of give a quick primer to folks that are doing AI that are watching or listening but may not have done physical AI with open models, and just kind of lay out all the concerns that they have to start thinking about there. I think that would be really useful, but just as a layout there."
+  },
+  {
+    "segment_id": "s-0043",
+    "start_seconds": 1041.0,
+    "end_seconds": 1061.0,
+    "text": "Okay, so basically it's been the difference in physical as compared to the digital AI that people are very familiar with. Okay. Yeah. So let's say you have a robot and trying to complete certain task, Right? And robot need to react very fast."
+  },
+  {
+    "segment_id": "s-0044",
+    "start_seconds": 1061.0,
+    "end_seconds": 1080.0,
+    "text": "Right? So the the processing had to be done real time on spot. Right? And also, lot of tasks is a batch size one inference problem. So API, you can aggregate users, API code from, you know, from different users and then process them in whole."
+  },
+  {
+    "segment_id": "s-0045",
+    "start_seconds": 1080.0,
+    "end_seconds": 1093.0,
+    "text": "Right? So when you do that, you know, maybe I can go back a little bit a bit. Right? So LM is a very popular architecture for coding, for chat. Right?"
+  },
+  {
+    "segment_id": "s-0046",
+    "start_seconds": 1093.0,
+    "end_seconds": 1117.0,
+    "text": "And LM is based on the auto regress transformer, so it's memory bound. And to use the GPU power more efficiently, you can aggregate the API call from different user to to fill in the compute. Right? But the same architecture, if you put in this embedded device, right, You don't have API code to aggregate. Right?"
+  },
+  {
+    "segment_id": "s-0047",
+    "start_seconds": 1117.0,
+    "end_seconds": 1129.0,
+    "text": "So you're not fully utilize the compute power in in that machine. So for some other architecture might be more efficient. Right? So I'm talking about because the application is different. Right?"
+  },
+  {
+    "segment_id": "s-0048",
+    "start_seconds": 1129.0,
+    "end_seconds": 1151.0,
+    "text": "So it it it require different architecture and different syncing so that you can use your power, your watt more efficiently. And and also there's a real time constraint and safety constraint. So so because of the setup difference, the it gonna promote different architectures."
+  },
+  {
+    "segment_id": "s-0049",
+    "start_seconds": 1151.0,
+    "end_seconds": 1180.0,
+    "text": "And maybe that leads naturally into talking about some of the architecture. Well, there's all sorts of architectures that NVIDIA has been working on for for quite a while. Obviously, you're in the Cosmos lab. I I know one of the things that you're working on is, quote, unquote, world models. You know, cosmos meaning, world as people might, might, infer."
+  },
+  {
+    "segment_id": "s-0050",
+    "start_seconds": 1180.0,
+    "end_seconds": 1200.0,
+    "text": "But, help help those who maybe maybe imagine someone who has just used LLMs or maybe that's their only perception of models. Help connect what a world model is and why it might be necessary in this world of physical AI."
+  },
+  {
+    "segment_id": "s-0051",
+    "start_seconds": 1200.0,
+    "end_seconds": 1225.0,
+    "text": "Okay. So language model is a model that's a non great internal representation through processing human knowledge written in the form of language. Right? And it's optimized for this language representation to generate languages for chats, for code. You know, code is written as a language as well."
+  },
+  {
+    "segment_id": "s-0052",
+    "start_seconds": 1225.0,
+    "end_seconds": 1248.0,
+    "text": "And one model is from a different perspective. It is from the perspective of, you you have a sensory observation of the world. And you know those sensors are capturing different angles of the wall. Right? And those sensor, those camera also capture the dynamics how physics evolve."
+  },
+  {
+    "segment_id": "s-0053",
+    "start_seconds": 1248.0,
+    "end_seconds": 1287.0,
+    "text": "And people believe that's fun modeling these signals, you can implicitly encode the physics of the world. And with the physics kind of something you model, then you can start to do simulation. And if you connect this world representation with language representation, then you can generate explanation that help you understand why this thing happened. So it's more like one is coming from a language perspective. The other is more like a from the observation of the world of physicists and try to learn representation."
+  },
+  {
+    "segment_id": "s-0054",
+    "start_seconds": 1287.0,
+    "end_seconds": 1291.0,
+    "text": "So different way of learning the representations. And, of course, they have different use cases."
+  },
+  {
+    "segment_id": "s-0055",
+    "start_seconds": 1291.0,
+    "end_seconds": 1310.0,
+    "text": "Yeah. And and I guess language is a represent or it it represents part of the knowledge or how people experience the world, but it's only a small piece of how people experience the world. Right? Like, I'm I'm looking at you with my eyes. I'm I'm hearing things."
+  },
+  {
+    "segment_id": "s-0056",
+    "start_seconds": 1310.0,
+    "end_seconds": 1331.0,
+    "text": "I as you mentioned, I see things from different perspective. I see how physics is evolving. Is is is it true so so in an example world model to just make it tangible for people. In an LLM, you would basically put in text and get out text or a next at least the next predicted token. Right?"
+  },
+  {
+    "segment_id": "s-0057",
+    "start_seconds": 1331.0,
+    "end_seconds": 1364.0,
+    "text": "Or in a image generation model, you'd put in text and then get out get out an image. In the world model case, what what is an example, sort of input and output? One of those might be, as you mentioned, maybe it's just a representation of of the world, and then you build additional things on top of that. But maybe help people get some intuition about what do you put into a world model, and what do you get out when you're actually operating prediction with the world model?"
+  },
+  {
+    "segment_id": "s-0058",
+    "start_seconds": 1364.0,
+    "end_seconds": 1383.0,
+    "text": "Yes. So I want to touch a point before answering this question. So people build a model for a purpose. Right? And we did in the world, so we are entity building some model of the world, so we can do a lot of different task."
+  },
+  {
+    "segment_id": "s-0059",
+    "start_seconds": 1383.0,
+    "end_seconds": 1394.0,
+    "text": "Right? One is to predict how it gonna happen and some is to explain what happened. Right? Or sometimes you will need to do navigation so you have the three d representation of the world. So some people call it war model."
+  },
+  {
+    "segment_id": "s-0060",
+    "start_seconds": 1394.0,
+    "end_seconds": 1415.0,
+    "text": "To to me, war model is a way to solve some task. Right? And so it's difficult to to me, difficult to use, like the input, output to kind of define what is a world model. So I I would like to say some sort of modeling of the world is a world model. Okay?"
+  },
+  {
+    "segment_id": "s-0061",
+    "start_seconds": 1415.0,
+    "end_seconds": 1452.0,
+    "text": "And and from my perspective, because our mission is to build physical the mission of Cosmos is to build a, you know, physical foundation model to help the whole ecosystem. So we realized that in early day that you need to have world simulation capability, given the current observation and that there's the action input, what gonna happen in the future. For this world simulation capability, the input is the current observation and the action sequence. Sometimes the action can be described in text. Right?"
+  },
+  {
+    "segment_id": "s-0062",
+    "start_seconds": 1452.0,
+    "end_seconds": 1479.0,
+    "text": "And the output is the the future, the what gonna happen maybe in video, maybe in audio, in the future when you have other modality, you know, other modality. So world simulation. And the other thing is the world understanding. Right? So so you want to understand, you know, why this you know you know, you ask a robot to complete a task and and it didn't complete."
+  },
+  {
+    "segment_id": "s-0063",
+    "start_seconds": 1479.0,
+    "end_seconds": 1487.0,
+    "text": "Right? You want to understand what happened. Right? So there's a obstacle blocked blocked the pathway of the robot arm, so it couldn't. Right?"
+  },
+  {
+    "segment_id": "s-0064",
+    "start_seconds": 1487.0,
+    "end_seconds": 1502.0,
+    "text": "So the the when the situation like this happen, you you found the sensory input. Right? You you of have a modeling what happened. Right? But in order to for people, the receiver and the question asked is a human, right?"
+  },
+  {
+    "segment_id": "s-0065",
+    "start_seconds": 1502.0,
+    "end_seconds": 1521.0,
+    "text": "So you need to connect those word representation to language, so it can generate some description that people understand. Yeah. So and So there's another side of role model understanding. So it's more similar to multimodal ALM. So you have the video, and you have the description, and you have the test as output."
+  },
+  {
+    "segment_id": "s-0066",
+    "start_seconds": 1521.0,
+    "end_seconds": 1546.0,
+    "text": "And in COSMO, we believe that, you know, one is for world understanding, the other is for world simulation. Right? Although they for different purposes, but they model the same world. So so in COSMO three, our latest COSMO model, we actually fuse them together Because we believe that the representation can be shared because, you know, we live in the same world. Right?"
+  },
+  {
+    "segment_id": "s-0067",
+    "start_seconds": 1546.0,
+    "end_seconds": 1562.0,
+    "text": "It's the same stuff. Yeah. So yeah. And for the world understanding, the input is video, text, output is text, and for world simulation, the input is, you know, observation, action, output is test output is video. Sorry."
+  },
+  {
+    "segment_id": "s-0068",
+    "start_seconds": 1562.0,
+    "end_seconds": 1587.0,
+    "text": "And for me, put together, it become an omni model. You have different inputs. You know, in Cosmos, we actually support text, action, audio, video as the input, and also support text, audio, video, action as output. So you can find all combination, and I think a developer can choose the best way they want to build on top of it."
+  },
+  {
+    "segment_id": "s-0069",
+    "start_seconds": 1587.0,
+    "end_seconds": 1632.0,
+    "text": "That was really good. I'd like to ask a clarifying question because there's a couple of terms out there that I'd like to get kind of your definitions and how they relate a little bit. One is obviously this notion of world model, which you've been diving into, but a number of times, obviously, you've mentioned simulation. And for those who may not be familiar with this, how do you define or relate the notion of simulation, where you could either have more of a simulator like what people may be already familiar with, which also is obviously in gaming and things like that, with the notion of the world model as you've just explained it, how do those two terms relate to each other?"
+  },
+  {
+    "segment_id": "s-0070",
+    "start_seconds": 1632.0,
+    "end_seconds": 1661.0,
+    "text": "Okay, good question. So people are spending centuries of years studying how the world work, and they sometimes put that in equations. Right? And we have, you know, simulated the environment governed by program built on top of those equation. You know, how you know, when two things, you know, hit each other, how is it gonna happen?"
+  },
+  {
+    "segment_id": "s-0071",
+    "start_seconds": 1661.0,
+    "end_seconds": 1695.0,
+    "text": "Those are we consider classical simulators. Right? So they are based on physicists, the dual, people's interpretation, equations, and then to govern how things scene I described earlier, people generally call it neural simulation. So it's a data driven way of doing simulation. Instead of the residue put the physics in, you saw tons of observation, you know, showing different, you know, how two scene hit together."
+  },
+  {
+    "segment_id": "s-0072",
+    "start_seconds": 1695.0,
+    "end_seconds": 1723.0,
+    "text": "They they kind of separated or, you know, when you pour water to the ground, how water spread out. It show a lot of different scenes, visual observation to to a model. And the model then data can approximate, predict what gonna happen when they see similar patterns. So it's more like a pattern recognition based way of doing the simulation. Right?"
+  },
+  {
+    "segment_id": "s-0073",
+    "start_seconds": 1723.0,
+    "end_seconds": 1727.0,
+    "text": "So one is rule based, but the other is more like a data driven approximation."
+  },
+  {
+    "segment_id": "s-0074",
+    "start_seconds": 1727.0,
+    "end_seconds": 1775.0,
+    "text": "And I'm I'm coming from a perspective expert like you or or Chris in this area of of physical AI and and world models. I and I'm wondering in my mind, maybe as a nonexpert, you're talking about world models. You're talking about simulation, etcetera. If we go all the way back to kind of one of those concrete examples, like the robot or the, manufacturing case or the automotive case, where does the world model come into play as you're creating the models that are actually, driving decision making or movement or actions in the robot in the physical world? Where does that fit in versus some other things like you mentioned, policy models, etcetera?"
+  },
+  {
+    "segment_id": "s-0075",
+    "start_seconds": 1775.0,
+    "end_seconds": 1776.0,
+    "text": "Okay."
+  },
+  {
+    "segment_id": "s-0076",
+    "start_seconds": 1776.0,
+    "end_seconds": 1790.0,
+    "text": "It's a good question. So in COSMO, we build this foundation model and try to learn a good world representation. Right? And this model can be used in many different ways. From the simulation perspective."
+  },
+  {
+    "segment_id": "s-0077",
+    "start_seconds": 1790.0,
+    "end_seconds": 1801.0,
+    "text": "Okay. Let's say I'm building a self driving car policy. Right? A policy that can navigate navigate to drive the car from destination a to b. Right?"
+  },
+  {
+    "segment_id": "s-0078",
+    "start_seconds": 1801.0,
+    "end_seconds": 1831.0,
+    "text": "So as developing the model, I might have many different checkpoints. Right? And how do I know that checkpoint a is better than checkpoint b? In the old day, what people do is that they have a fleet of cars and driver. Whenever I have a new policy and we deploy the policy to the car, and that the driver kind of, you know, take the car to the field and see, you know, record how good is the policy model."
+  },
+  {
+    "segment_id": "s-0079",
+    "start_seconds": 1831.0,
+    "end_seconds": 1850.0,
+    "text": "And you can clearly see that this is, you know, not scalable. Right? It's limit how many iteration you can do. Right? But with a world model, right, instead of having your policy, you know, deploy the real car, you know, driving the real world, you can have your policy interact with a world model."
+  },
+  {
+    "segment_id": "s-0080",
+    "start_seconds": 1850.0,
+    "end_seconds": 1862.0,
+    "text": "Right? When you're still left, what you're gonna see? You're still right, what you're gonna see? Right? And from this simulation, you can verify the accuracy of a checkpoint."
+  },
+  {
+    "segment_id": "s-0081",
+    "start_seconds": 1862.0,
+    "end_seconds": 1886.0,
+    "text": "It can help you quickly narrow down a couple hypotheses you have. And then use then you have few one that you think is truly valuable, and you do the real test. It help you to get this iteration faster, now we know in technology, the most important thing is how far you can do iteration. Right? Then you can develop better policy for your self driving car."
+  },
+  {
+    "segment_id": "s-0082",
+    "start_seconds": 1886.0,
+    "end_seconds": 1904.0,
+    "text": "It cannot be the same for robots, right? And this is the world simulation. The representation allow you to do simulation, what it can do for physical AI. The other thing is that, you know, this can be also a great backbone for a parsing model. Right?"
+  },
+  {
+    "segment_id": "s-0083",
+    "start_seconds": 1904.0,
+    "end_seconds": 1923.0,
+    "text": "In a one model, it has one representation. It's understand, you know, it's able to understand the instruction given by human. Right? And it's when you model the world, right, the the it generate the piece of space evolution. Right?"
+  },
+  {
+    "segment_id": "s-0084",
+    "start_seconds": 1923.0,
+    "end_seconds": 1973.0,
+    "text": "And the pixel space evolution has a strong correlation to the control signal you might need to use to complete certain manipulation tasks. And that correlation become a great regularization to help you build a better policy model when when the data is more limited. So I think a world representation is the key. And and and since physical AI gonna operate in the real world, and this world representation encapsulate in this foundation model are gonna be useful in a different way. And it's also kind of important we need to make it open so that, you know, people can can test out and share feedback with us, and we can then double down on the capability that's more important to help the Physical AI ecosystem."
+  },
+  {
+    "segment_id": "s-0085",
+    "start_seconds": 1973.0,
+    "end_seconds": 2009.0,
+    "text": "Wow. It's just amazing to hear MingYu talk about NVIDIA's effort to make sure that there is a community of open source enthusiasts, those that are working on open models to foster a real community of innovation around AI and agents. And that is so practical. That's what we're about here at Practical AI is that sort of practical value. And we share that with an amazing event that's happening October 15, just here in a couple weeks, 10/15/2026 called the Midwest AI Summit."
+  },
+  {
+    "segment_id": "s-0086",
+    "start_seconds": 2009.0,
+    "end_seconds": 2052.0,
+    "text": "We're one of the media media sponsors of this event, and I'm personally going to be an emcee at the event. And it's just filled with amazing practical value. There's an AI engineering lounge where you can sit one on one with AI experts that actually can practically provide amazing feedback on your roadmap, toolset, architecture, etcetera. There's gonna be amazing talks from leaders in the field from all over, talking about why they've made certain decisions in their AI roadmap, how you can deploy agents off of your laptop into cloud environments, so much more, so much practicality, plus there's free food and other amazing things. This isn't one to miss."
+  },
+  {
+    "segment_id": "s-0087",
+    "start_seconds": 2052.0,
+    "end_seconds": 2059.0,
+    "text": "So check it out, midwestaisummit.com, and you can use the code Practical AI 20 to get"
+  },
+  {
+    "segment_id": "s-0088",
+    "start_seconds": 2059.0,
+    "end_seconds": 2082.0,
+    "text": "20% registration. Do not miss this. Register today. Use the code Practical AI 20 to get 20% off registration for the Midwest AI Summit. Find out more at midwestaisummit.com and use the code Practical AI 20 for 20% off registration."
+  },
+  {
+    "segment_id": "s-0089",
+    "start_seconds": 2082.0,
+    "end_seconds": 2171.0,
+    "text": "So I'd like to I'd like to kind of maybe expand, might be the right word, the conversation into another dimension, and that's the fact that by contrast in kind of the cloud digital world, people are often used to dealing with an LLM either by itself or it's managing collection of agents that are doing tasks and stuff, but that interface is very much there's a human and there's that LLM and they are agreeing on what's gonna happen with the AI agents going and doing things. When you move things into the physical realm, you add the dimension of you may have all of those things happening, but you also have many physical devices that are beginning to interact together, and they're interacting with humans in different ways, and so the notion of what interactions are gets quite complex. I was wondering if you could kind of walk us through that a bit and maybe kind of take us into that new dimension of we're not talking about one robot now, or one self driving car or whatever you wanna address, but maybe a whole bunch of them. Maybe you have a city full of them, and that's what is mostly there, and they're in all the domains, everything from the ground all the way up and all the way down, maybe undersea and stuff like that."
+  },
+  {
+    "segment_id": "s-0090",
+    "start_seconds": 2171.0,
+    "end_seconds": 2188.0,
+    "text": "We may have robots eventually in our bodies, nanobots that are doing so could you lay out what this implies and what some of the extra considerations are that you have to start thinking about to set this new reality up?"
+  },
+  {
+    "segment_id": "s-0091",
+    "start_seconds": 2188.0,
+    "end_seconds": 2214.0,
+    "text": "Good question. So I've been asking myself what the future gonna look like, right? So I believe, let me take one example, right? So let's say I'm a manufacturer, I build some very cool toy called robot dog, okay? And I got older, people want a minion robot dog, Right?"
+  },
+  {
+    "segment_id": "s-0092",
+    "start_seconds": 2214.0,
+    "end_seconds": 2241.0,
+    "text": "And I might have a digital agent powered by LN. Help me understand, look at my inventory, help me understand what the materials I have in different places. Right? So there's an agent, LN agent, to kind of do some high level planning, right? And now I know that I need to ship certain material from factory B to factory A so that I can manufacture the robot in factory A."
+  },
+  {
+    "segment_id": "s-0093",
+    "start_seconds": 2241.0,
+    "end_seconds": 2273.0,
+    "text": "And and then that that agent send, you know, demand to to the maybe the factory floor agent in factory b, and factory floor agent b do a hand easy handshake. Right? And and that factory 4 gonna have some robots, some mobile platform. Right? And the robot might carry the good to put the mobile platform and mobile platform put, you know, load in a truck, and the truck go from a self driving truck go from factory b to factory a."
+  },
+  {
+    "segment_id": "s-0094",
+    "start_seconds": 2273.0,
+    "end_seconds": 2288.0,
+    "text": "Right? And then we start to do the manufacturing. And every station in in, you know, in assemble the staff, gonna have visual inspection. They gonna have a robot arm, right? There'll be some kind of closed loop, and those gonna be operated by another agent, right?"
+  },
+  {
+    "segment_id": "s-0095",
+    "start_seconds": 2288.0,
+    "end_seconds": 2312.0,
+    "text": "So I think the world gonna be multi agent, right? And also go back to my previous viewpoints, right? So in the end, the intelligence per dollar, you know, matters. Right? And the different tasks, you know, probably don't need your robot arm to solve be capable of solving solve Olympiad mass problem."
+  },
+  {
+    "segment_id": "s-0096",
+    "start_seconds": 2312.0,
+    "end_seconds": 2327.0,
+    "text": "Right? You probably want it to be more sensitive in in some kind of manipulation task. So I I I think we are looking at war with a multi different specialized agent, and they cannot work together and to complete certain tasks. And and drone, you know, can be one of them. Right?"
+  },
+  {
+    "segment_id": "s-0097",
+    "start_seconds": 2327.0,
+    "end_seconds": 2353.0,
+    "text": "So I might be owning a farm, let's say, produce tea. Right? And I can have drone to collect the tea leaf and then put that in the package, you know. So all of them so I think we like agent because, you know, agent is somebody has certain autonomy to behave to to to complete test on behalf of you. Right?"
+  },
+  {
+    "segment_id": "s-0098",
+    "start_seconds": 2353.0,
+    "end_seconds": 2365.0,
+    "text": "You require that agent have some self creation capability. Right? That the part we like. And and and also, you kind of puts all the problem to agent and it figures how you want to solve that. Right?"
+  },
+  {
+    "segment_id": "s-0099",
+    "start_seconds": 2365.0,
+    "end_seconds": 2382.0,
+    "text": "And so we're gonna have specialized agent and there's some agent good at distributing tasks, and sometimes you're good at completing tasks, and they're gonna talk together, work together to complete the stuff. Yeah. And this is how I think this is what I think gonna happen. Yeah. This is my view, by the way."
+  },
+  {
+    "segment_id": "s-0100",
+    "start_seconds": 2382.0,
+    "end_seconds": 2425.0,
+    "text": "Yeah. I I I love that perspective. It really helps bring a concrete visualization to my mind of of of what this may look like. And it but it does maybe to some people out there, It also triggers some well, there's obviously challenges, right, to to get there. I I almost I think about, about AI agents, every day in my day to day work, not physical AI, but there's this idea of cascading failure of of AI agents, right, which is this sort of idea, oh, like, something small happens over here, but the all the agents are interacting, and there's this sort of system wide failure."
+  },
+  {
+    "segment_id": "s-0101",
+    "start_seconds": 2425.0,
+    "end_seconds": 2442.0,
+    "text": "Maybe, you know, obviously, if things are interconnected, thing things can happen. But from your perspective, maybe it's that. Maybe it's something else. What do you see as the challenges that you know, you mentioned we we're working towards these innovations. Right?"
+  },
+  {
+    "segment_id": "s-0102",
+    "start_seconds": 2442.0,
+    "end_seconds": 2458.0,
+    "text": "You you are working towards these NVIDIA, the industry. What are some of the main challenges in your mind from getting kind of from where we're at now to something that looks more like that, what what are some of the categories of those challenges in your in your mind?"
+  },
+  {
+    "segment_id": "s-0103",
+    "start_seconds": 2458.0,
+    "end_seconds": 2474.0,
+    "text": "Yeah. So it's in the account. And and the the picture I just give, you know, multiple agent working together, complete, like, production task might be decades away. Right? So we are not yet there."
+  },
+  {
+    "segment_id": "s-0104",
+    "start_seconds": 2474.0,
+    "end_seconds": 2499.0,
+    "text": "And verify the correctness is super important. Right? So like what you said, so I envision there gonna be also supervisor agents working in the factory floor and trying to capture scenes that not yet been identified. Right? And also, building this physical AI also requires strong robots."
+  },
+  {
+    "segment_id": "s-0105",
+    "start_seconds": 2499.0,
+    "end_seconds": 2535.0,
+    "text": "Right? And know that human knowing robots, they evolve very fast, but I think that they are not yet kind of ready for major commercial use. Right? And also, know, to achieve full automation, we need our robot be smarter, even the robot smarter and more, I would say, more configurable so that you can have a new task and maybe just read the user menu and the robot arm figure out how to assemble this. Right?"
+  },
+  {
+    "segment_id": "s-0106",
+    "start_seconds": 2535.0,
+    "end_seconds": 2555.0,
+    "text": "Those are not yet there. So I think there are a lot of problem need to figure out, and I think it's difficult for one company to do it alone. I think we need a whole ecosystem. And that's why, you know, I think building this open model is super important, right? Because you enable more people the tool to do the inspiration and to do innovation."
+  },
+  {
+    "segment_id": "s-0107",
+    "start_seconds": 2555.0,
+    "end_seconds": 2564.0,
+    "text": "And I think, you know, to achieve that beautiful future, open model gonna play a critical role."
+  },
+  {
+    "segment_id": "s-0108",
+    "start_seconds": 2564.0,
+    "end_seconds": 2601.0,
+    "text": "And on that front, I guess, you know, drawing somewhat closer to to an end here, NVIDIA is pushing forward this narrative about open models. Right? And I'm very personally thankful for that, and you've emphasized that here. How can maybe there's, software engineers, developers, AI practitioners listening to this podcast. How might they even get started, in this in this area, find some of the resources, the open resources that NVIDIA is putting out there?"
+  },
+  {
+    "segment_id": "s-0109",
+    "start_seconds": 2601.0,
+    "end_seconds": 2622.0,
+    "text": "Any suggestions or tips for people that may want to try to start getting into this this innovation, you know, in in terms of a starting point? And, of course, I'll tell our listeners too, we'll include a bunch of show notes as well in our episode where you can click and find some of these things. But any thoughts there, MingYu?"
+  },
+  {
+    "segment_id": "s-0110",
+    "start_seconds": 2622.0,
+    "end_seconds": 2665.0,
+    "text": "Yes. Maybe I'll also use this opportunity to define what a media, you know, what open model mean for media. So open model is not just have the model open weight allow you to use. We also provide the training framework so that you can take this open model and your own data and portray to something more tailored for your use case. We even open source data that we created, you know, to help you to to use those data in you if you want to build your own open model."
+  },
+  {
+    "segment_id": "s-0111",
+    "start_seconds": 2665.0,
+    "end_seconds": 2701.0,
+    "text": "And we also have examples. Right? NVIDIA is a company that work with all the AI companies, and we also work with all the physical AI companies. And people are very willing to share some of their experience or some success use case. And we open put them in the form of developer blog or, you know, example recipe and different places so that people can look at those useful examples and then to start."
+  },
+  {
+    "segment_id": "s-0112",
+    "start_seconds": 2701.0,
+    "end_seconds": 2739.0,
+    "text": "And nowadays, I see most of people doing research using LON. Maybe you can use your favorite agent, no matter it's a Gemini, GPT, or a cow, ask them to look around and find useful materials. And I think in the new world, everybody want to make sure the material is easily accessible to those agents, so they can better come to learn to certain form to educate the human developer. Yeah. So, yeah, so, you know, pretty much we put, you know, open models in hacking phase and all the core resources in GitHub."
+  },
+  {
+    "segment_id": "s-0113",
+    "start_seconds": 2739.0,
+    "end_seconds": 2764.0,
+    "text": "And we have developer box to talk about how we use this. And in the GitHub, we also have a recipe cookbook to help develop to to learn from how other use, you know, open models. And what I say is true for Cosmo. It's also true for Nemo Tron, for good, and other open models, alpha band media."
+  },
+  {
+    "segment_id": "s-0114",
+    "start_seconds": 2764.0,
+    "end_seconds": 2784.0,
+    "text": "That's great. And, yeah, from the you know, just a member of the community, the community, thank thank you and and NVIDIA for for the effort that you're putting into. It's it's no small effort to maintain all of those things and and all of those places. So it's much appreciated. And, this has been a great conversation, MingYu."
+  },
+  {
+    "segment_id": "s-0115",
+    "start_seconds": 2784.0,
+    "end_seconds": 2793.0,
+    "text": "Really appreciate you taking time to walk us through all of these topics and, of course, the work that you're doing and hope to have you back on the show. Thank you so much for your time."
+  },
+  {
+    "segment_id": "s-0116",
+    "start_seconds": 2793.0,
+    "end_seconds": 2802.0,
+    "text": "Thank you. Thank you for having me here and it was a lot of fun."
+  },
+  {
+    "segment_id": "s-0117",
+    "start_seconds": 2802.0,
+    "end_seconds": 2823.0,
+    "text": "All right. That's our show for this week. If you haven't checked out our website, head to practicalai.fm and be sure to connect with us on LinkedIn, X, or Blue Sky. You'll see us posting insights related to the latest AI developments, and we would love for you to join the conversation. Thanks to our partner, Prediction Guard for providing operational support for the show."
+  },
+  {
+    "segment_id": "s-0118",
+    "start_seconds": 2823.0,
+    "end_seconds": 2838.02,
+    "text": "Check them out at predictionguard.com. Also, thanks to Breakmaster Cylinder for the beats and to you for listening. That's all for now, but you'll hear from us again next week."
+  }
+]

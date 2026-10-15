@@ -1,0 +1,184 @@
+{
+  "status": "passed",
+  "mode": "replay",
+  "executed_at": "2026-10-13T00:16:53Z",
+  "source_live_run_id": "20261013T000115Z-e07304",
+  "as_of_date": "2026-10-13",
+  "replay_run": {
+    "run_id": "withheld-real-item-replay",
+    "started_at": "2026-10-13T00:16:53Z",
+    "as_of_date": "2026-10-13",
+    "mode": "replay",
+    "previous_run_id": "20261013T000115Z-e07304",
+    "source_live_run_id": "20261013T000115Z-e07304"
+  },
+  "selected_item": {
+    "item_id": "feed:897ed0a11c3fdbaa832840c6",
+    "version_id": "e8f12f87b7dcd87172d5684b4ef3473189e4fa3a71eee3cbd32a10618983c625",
+    "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+    "published_at": "2026-10-12T17:43:59Z",
+    "publisher_id": "microsoft-github",
+    "kind": "feed"
+  },
+  "actual_live_decision": {
+    "item_id": "feed:897ed0a11c3fdbaa832840c6",
+    "version_id": "e8f12f87b7dcd87172d5684b4ef3473189e4fa3a71eee3cbd32a10618983c625",
+    "decision": "accept",
+    "reason": "Dated 2026-10-12, within the inclusive 30-day window. The GitHub tutorial offers practical implementation detail for small teams: repository and path-specific instructions, reusable skills, custom agents, and MCP connections, including using Playwright to check interface behavior. This supports a bounded workflow recommendation about making agent context and repeatable checks explicit (piece 03). It is vendor guidance, not an evaluation: it supplies no comparison, task population, failure examples, or measured delivery outcomes, so it cannot establish that these customizations improve results. The supplied text does not establish which of these capabilities are newly introduced versus newly explained in this article.",
+    "piece_ids": [
+      "01",
+      "03"
+    ],
+    "student_decision_provenance": {
+      "type": "historical_confirmed_sample_decision",
+      "reviewed_at_utc": "2026-10-12T22:49:53.451321Z",
+      "snapshot_manifest": "student_feedback_carry_forward/manifest.json",
+      "snapshot_sha256": "fe0eddea0dfb6bc73221a41bc703dc0a5697b7675d095ee0c0074fbb32f387a4",
+      "prior_editorial_snapshot_sha256": "06b52a4b717011765ac04116f5ad209eef6966b26c7ec551f9d2c9966de1d85b",
+      "prior_ai_decision": "accept"
+    },
+    "selection_provenance": {
+      "selected_by": "exact_version_student_confirmed_sample",
+      "historical_feedback_manifest": "student_feedback_carry_forward/manifest.json",
+      "new_model_decision": {
+        "decision": "defer",
+        "reason": "Published 2026-10-12, within the freshness window. It gives small teams concrete Copilot setup guidance: repository and path-specific instructions, skills for repeatable procedures such as quality checks, specialized agents, and MCP connections such as Playwright. Its useful contribution is implementation detail, not evidence that these features improve delivery: there is no comparative evaluation, task population, or measured review burden or outcome. As a Microsoft/GitHub vendor tutorial, its recommendations are best treated as guidance to trial and measure, not validated findings. The full text is supplied, but there is not enough independent evaluation here to support an article claim about effectiveness.",
+        "piece_ids": []
+      },
+      "model_disagreed_with_student": true,
+      "student_audio_verified": false,
+      "full_draft_approval": false
+    }
+  },
+  "counts": {
+    "eligible_source": 36,
+    "baseline": 35,
+    "baseline_changes": {
+      "new": 35,
+      "changed": 0,
+      "unchanged": 0
+    },
+    "introduction_changes": {
+      "new": 1,
+      "changed": 0,
+      "unchanged": 35
+    },
+    "exact_replay_changes": {
+      "new": 0,
+      "changed": 0,
+      "unchanged": 36
+    },
+    "duplicate_observations": 0,
+    "filter_eligible": 36,
+    "excluded": 0
+  },
+  "checks": {
+    "baseline_has_35_or_n_minus_one_new": true,
+    "introduction_has_one_new_and_rest_unchanged": true,
+    "exact_replay_has_only_unchanged": true,
+    "no_duplicate_observations_in_each_input": true,
+    "corpus_contains_each_real_record_once": true,
+    "withheld_record_is_date_eligible": true,
+    "filter_preserves_all_eligible_records": true,
+    "replay_metadata_is_labeled": true,
+    "thirty_five_unchanged_plus_one_new": true,
+    "thirty_six_unchanged_on_exact_replay": true
+  },
+  "logs": [
+    {
+      "stage": "data/store:init",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 0,
+      "output_count": 0,
+      "started_at": "2026-10-13T00:16:53Z",
+      "finished_at": "2026-10-13T00:16:53Z",
+      "tools": [
+        "python3"
+      ],
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "errors": []
+    },
+    {
+      "stage": "data/store:list",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 0,
+      "output_count": 36,
+      "started_at": "2026-10-13T00:16:53Z",
+      "finished_at": "2026-10-13T00:16:53Z",
+      "tools": [
+        "python3"
+      ],
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "errors": []
+    },
+    {
+      "stage": "data/store:upsert",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 36,
+      "output_count": 36,
+      "started_at": "2026-10-13T00:16:53Z",
+      "finished_at": "2026-10-13T00:16:53Z",
+      "tools": [
+        "python3"
+      ],
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "errors": []
+    },
+    {
+      "stage": "data/store:upsert",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 35,
+      "output_count": 35,
+      "started_at": "2026-10-13T00:16:53Z",
+      "finished_at": "2026-10-13T00:16:53Z",
+      "tools": [
+        "python3"
+      ],
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "errors": []
+    },
+    {
+      "stage": "data/store:upsert",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 36,
+      "output_count": 36,
+      "started_at": "2026-10-13T00:16:53Z",
+      "finished_at": "2026-10-13T00:16:53Z",
+      "tools": [
+        "python3"
+      ],
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "errors": []
+    },
+    {
+      "stage": "processing/filter_items",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 36,
+      "output_count": 36,
+      "started_at": "2026-10-13T00:16:53Z",
+      "finished_at": "2026-10-13T00:16:53Z",
+      "tools": [
+        "python3"
+      ],
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "errors": [],
+      "window_start": "2026-09-14",
+      "window_end": "2026-10-13",
+      "excluded_count": 0
+    }
+  ],
+  "note": "Fictional inputs were not used; the one withheld record is an exact eligible record from the named live run. This demonstration uses an isolated temporary SQLite store and is not a live run."
+}

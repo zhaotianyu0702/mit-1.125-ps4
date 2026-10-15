@@ -1,0 +1,14 @@
+[
+  {
+    "segment_id": "p-001",
+    "start_seconds": 30.0,
+    "end_seconds": 42.0,
+    "text": "In this fictional discussion, a practitioner says calibration time affects whether a system is useful on site."
+  },
+  {
+    "segment_id": "p-002",
+    "start_seconds": 43.0,
+    "end_seconds": 50.0,
+    "text": "The fictional speaker later clarifies that the observation concerns one site."
+  }
+]

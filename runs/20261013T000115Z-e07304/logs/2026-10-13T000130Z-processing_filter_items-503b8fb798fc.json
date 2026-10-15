@@ -1,0 +1,17 @@
+{
+  "stage": "processing/filter_items",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 36,
+  "output_count": 36,
+  "started_at": "2026-10-13T00:01:30Z",
+  "finished_at": "2026-10-13T00:01:30Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T000130Z-processing_filter_items-503b8fb798fc.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "processing/extract_content",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 36,
+  "output_count": 36,
+  "started_at": "2026-10-12T21:43:56Z",
+  "finished_at": "2026-10-12T21:44:05Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-12T214356Z-processing_extract_content-8ccf97446e32.json",
+  "tools": [
+    "python3",
+    "trafilatura (optional)",
+    "yt-dlp",
+    "ffmpeg",
+    "ffprobe",
+    "whisper-cli (optional)"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

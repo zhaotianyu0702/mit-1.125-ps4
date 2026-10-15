@@ -1,0 +1,53 @@
+{
+  "stage": "content/write_video_scripts",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 3,
+  "output_count": 3,
+  "started_at": "2026-10-13T00:20:32Z",
+  "finished_at": "2026-10-13T00:21:28Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T002032Z-content_write_video_scripts-2a2ef37863b7.json",
+  "tools": [
+    "python3",
+    "OpenAI Codex CLI (existing ChatGPT login)"
+  ],
+  "error_count": 0,
+  "model_calls": [
+    {
+      "usage": {
+        "input_tokens": 32764,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1191,
+        "reasoning_output_tokens": 0
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 32621,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1394,
+        "reasoning_output_tokens": 0
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    },
+    {
+      "usage": {
+        "input_tokens": 58426,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1786,
+        "reasoning_output_tokens": 0
+      },
+      "model": "gpt-6-luna",
+      "billing_mode": "chatgpt_subscription"
+    }
+  ],
+  "public_derivative": true
+}

@@ -1,0 +1,231 @@
+{
+  "recorded_at": "2026-10-12T22:36:12.135835+00:00",
+  "type": "real_model_stage_rerun_on_retained_real_evidence",
+  "source_live_run": "20261012T214349Z-992554",
+  "revision_dir": "revisions/20261012T222917Z-assistant-v2",
+  "same_evidence_versions": true,
+  "policy_v1_path": "before_revision/editorial_policy-v1.md",
+  "policy_v2_path": "config/editorial_policy.md",
+  "raw_model_v2": "decisions.model-v2.jsonl",
+  "assistant_final": "decisions.jsonl",
+  "before_counts": {
+    "accept": 15,
+    "reject": 19,
+    "defer": 2
+  },
+  "raw_model_after_counts": {
+    "accept": 17,
+    "reject": 16,
+    "defer": 3
+  },
+  "assistant_final_counts": {
+    "accept": 17,
+    "reject": 16,
+    "defer": 3
+  },
+  "changes": [
+    {
+      "item_id": "feed:24d39f28f1664a92f8c76c40",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02"
+        ]
+      },
+      "assistant_basis": "Retained after source-grounded user-authorized assistant review."
+    },
+    {
+      "item_id": "feed:425cbd44d7ef5cc67868c4f7",
+      "before": {
+        "decision": "reject",
+        "piece_ids": []
+      },
+      "after": {
+        "decision": "defer",
+        "piece_ids": []
+      },
+      "assistant_basis": "Adopt defer after reading the entire 386-character retained body: it lacks substantive article content. Missing evidence warrants deferral, not a confident irrelevance verdict."
+    },
+    {
+      "item_id": "feed:56dba7d9cf962ed143721fa8",
+      "before": {
+        "decision": "reject",
+        "piece_ids": []
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "03"
+        ]
+      },
+      "assistant_basis": "Adopt accept for piece 03 as optional practice guidance: retained framework specifies CI evaluations, baseline comparisons, scoped action and stopping controls. No empirical efficacy claim or addition to published drafts."
+    },
+    {
+      "item_id": "feed:bcd34ceb205e64cdf75eeddb",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "02",
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "assistant_basis": "Retained after source-grounded user-authorized assistant review."
+    },
+    {
+      "item_id": "youtube:rAUyRDOFyHU",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "assistant_basis": "Assign workflow example to piece 01 as well. Correct read-only tool boundary to s-0237/s-0238 at 11:46–11:51; deterministic steps s-0066/s-0068 at 3:19–3:30; MR findings s-0097/s-0098 at 4:58–5:04; online evaluation absent s-0303 at 15:07–15:10. Transcript is local Whisper output, not audio-verified."
+    },
+    {
+      "item_id": "feed:305ba874f36ffe291e11411a",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "assistant_basis": "Also assign piece 03: a practitioner's review changes and extra half hour of prompting support recording review/rework, without claiming a typical effect size."
+    },
+    {
+      "item_id": "feed:231befe88d753d0247c6f00f",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "02",
+          "03"
+        ]
+      },
+      "assistant_basis": "Retained after source-grounded user-authorized assistant review."
+    },
+    {
+      "item_id": "feed:d3b185d971abc0ead80775d6",
+      "before": {
+        "decision": "defer",
+        "piece_ids": []
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "02",
+          "03"
+        ]
+      },
+      "assistant_basis": "Adopt accept only as optional attributed event observation: inspected the failed-demo passages, author's free-ticket disclosure and security-result discussion. No causal productivity conclusion and no addition to final articles."
+    },
+    {
+      "item_id": "feed:7db4974c11ebd58e1ae24279",
+      "before": {
+        "decision": "reject",
+        "piece_ids": []
+      },
+      "after": {
+        "decision": "defer",
+        "piece_ids": []
+      },
+      "assistant_basis": "Adopt defer: inspected coding/review/security passages are largely retrospective; sampled retained context does not justify an assertion about all recent material in the full source."
+    },
+    {
+      "item_id": "feed:56071c061dcaa98af1dc613f",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "02"
+        ]
+      },
+      "assistant_basis": "Retained after source-grounded user-authorized assistant review."
+    },
+    {
+      "item_id": "youtube:ql_-cPc_ZYQ",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "02",
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "03"
+        ]
+      },
+      "assistant_basis": "Retained after source-grounded user-authorized assistant review."
+    },
+    {
+      "item_id": "podcast:fad37397a128b591f52589ad",
+      "before": {
+        "decision": "accept",
+        "piece_ids": [
+          "01",
+          "03"
+        ]
+      },
+      "after": {
+        "decision": "accept",
+        "piece_ids": [
+          "03"
+        ]
+      },
+      "assistant_basis": "Retained after source-grounded user-authorized assistant review."
+    }
+  ],
+  "interpretation": "This is a documented before/after editorial comparison, not a causal experiment isolating policy effects; stochastic model output and project voice/status metadata also changed. Assistant overrides preserve justified piece assignments and correct media rationale.",
+  "counts_as_second_live_date": false,
+  "student_review_complete": false
+}

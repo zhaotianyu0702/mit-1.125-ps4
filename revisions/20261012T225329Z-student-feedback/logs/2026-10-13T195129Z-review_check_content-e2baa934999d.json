@@ -1,0 +1,17 @@
+{
+  "stage": "review/check_content",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 9,
+  "output_count": 1,
+  "started_at": "2026-10-13T19:51:29Z",
+  "finished_at": "2026-10-13T19:51:31Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T195129Z-review_check_content-e2baa934999d.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

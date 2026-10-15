@@ -1,0 +1,11 @@
+{
+  "review_id": "75d6d51ccfd059506b84227364522a5d542e71cddf3d0987cabb2c9d5874ff1c",
+  "passed": false,
+  "issues": [
+    {
+      "artifact": "examples/",
+      "severity": "error",
+      "message": "Fictional format examples are incomplete and cannot satisfy the publication requirements."
+    }
+  ]
+}

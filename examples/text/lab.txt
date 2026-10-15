@@ -1,0 +1,2 @@
+The fictional lab reports a cycle-time result in a controlled indoor trial.
+The report does not measure on-site setup time.

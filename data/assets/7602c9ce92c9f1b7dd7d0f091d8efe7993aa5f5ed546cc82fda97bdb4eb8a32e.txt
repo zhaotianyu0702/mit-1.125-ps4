@@ -1,0 +1,39 @@
+As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team is excited to spotlight one of the top-performing security researchers participating in the GitHub Security Bug Bounty Program: @vaib25vicky!
+The security research community makes GitHub safer for everyone—that’s the simple idea behind GitHub’s Bug Bounty Program. For more than a decade, researchers from around the world have helped us identify and fix vulnerabilities before they could be exploited, helping protect the code that powers millions of development projects. As AI-powered experiences such as GitHub Copilot and the Copilot coding agent reshape how software is built, partnering with skilled researchers across both traditional and emerging attack surfaces matters more than ever.
+This year marked a new chapter for our program. We restructured our bounty tables around a core shift in what we incentivize: you don’t earn more by submitting more—you earn more by submitting better. As part of this change, we formalized a permanent, invite-only VIP program for researchers who consistently deliver high-quality, high-impact work.
+VIP researchers receive:
+- Significantly higher payouts—up to $30,000 or more for critical findings
+- Faster response times on their submissions
+- Early previews of beta products and features before public launch
+The path to the VIP program is based on demonstrated, consistent quality. Researchers who have one critical, two high, four medium, or seven low-severity resolved findings may earn an invitation. Visit our public bounty site to learn more about the qualification criteria.
+To celebrate Cybersecurity Awareness Month this October, we’re spotlighting one of the top-contributing researchers in our VIP program and exploring their methodology, techniques, and experiences researching GitHub. @vaib25vicky specializes in authorization and access control research and has uncovered some of the most nuanced and impactful issues in our ecosystem. Their deep, sustained focus on a complex attack surface exemplifies exactly the kind of thoughtful research our restructured program was designed to reward.
+How did you get started in security and bug bounty, and what keeps you coming back to GitHub’s program?
+I’ve been interested in computers since childhood. In college I did a lot of coding, building different projects and trying things out—just nerd stuff. While doing that, I started to understand systems deeply and found ways to make them behave the way I wanted. That was basically hacking. Then I discovered bug bounty by accident and started hunting, and I found it really fun. Later I found GitHub’s bug bounty program. I’d used GitHub a lot in my own work, so it felt natural to start there. Over time I focused on GitHub more than other programs because of the high rewards, it’s challenging, the team is great, and I’ve had a good experience.
+What are your favorite classes of bugs to research and why?
+I don’t really hunt by bug class. When I find a feature, I use it, understand how it works, and think of ways it could be misused to cause a security problem. So the bug classes I test for depend on the feature itself.
+How do you keep your skills sharp and stay on top of new vulnerability trends?
+I follow a mix of individual researchers and company blogs. On X, I keep up with researchers who share real findings and write-ups. For blogs, I read company research posts and bug bounty write-ups. I also check Hacker News and some security subreddits now and then. Some of my favorite blogs are Google Project Zero, GitHub Security Lab, PortSwigger, and Hacker News.
+Walk us through your general approach. How do you pick a target area, and how do you go from “interesting feature” to a confirmed finding?
+I pick a target area that looks complex and hard to understand. Thanks to my experience, I can usually spot whether a feature is worth my time. I spend some time on it to see if anything interesting comes up. If not, I move on to the next one. Once I find something worth digging into, I keep using and exploring the feature until something odd happens. Depending on the feature, I test for different types of bugs along the way.
+Do you use AI in your research? Where does it genuinely help and where does it fall short?
+Yes, I use AI. It saves me time and increases my productivity. It’s like a great assistant. Where it falls short is that you still have to steer it. The way I see it, AI is like a really fast car, but it still needs a good driver.
+What’s your guidance on using AI responsibly in bug bounty?
+The main thing I’d say is to always verify what the AI gives you and never submit a finding you haven’t confirmed yourself.
+As the industry ships more AI-powered features, does testing them require a different mindset than traditional web bugs?
+You do need to think a little differently. But most bugs, including the high-impact ones, are still authorization issues, weak guardrails, or overlooked capabilities. I think these can be found with the same mindset as traditional web bugs.
+What’s one thing you wish you’d known when you first started?
+That progress takes time. Early on I wish I’d known it’s normal to spend a long time on a target before finding anything. Patience is part of the job.
+What do you enjoy doing when you aren’t hacking?
+I like playing games and travelling. To relax, I just take a good trip.
+Any social media profiles you’d like to share with our readers?
+I’m mostly on X, handle @vaib25vicky.
+Thank you, @vaib25vicky, for participating in GitHub’s bug bounty researcher spotlight! Each submission to our bug bounty program is a chance to make GitHub, our products, and our customers more secure, and we continue to welcome and appreciate collaboration with the security research community. So, if this inspired you to go hunting for bugs, feel free to report your findings through HackerOne.
+Tags:
+Written by
+Related posts
+How we found 24 Android vulnerabilities using our open source AI security agent
+A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.
+AI-powered fuzzing with the GitHub Security Lab Taskflow Agent
+In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework.
+OpenClaw went viral. Meet the maintainers building and securing it.
+OpenClaw is the fastest-growing project in GitHub history. Peter Steinberger and several maintainers share what they learned in the project’s first six months.

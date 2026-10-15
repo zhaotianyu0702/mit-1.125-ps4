@@ -1,0 +1,1 @@
+This fictional demonstration excludes calibration time from cycle time.

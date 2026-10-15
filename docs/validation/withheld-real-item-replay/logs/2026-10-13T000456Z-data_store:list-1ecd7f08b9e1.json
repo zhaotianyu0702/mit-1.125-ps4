@@ -1,0 +1,15 @@
+{
+  "stage": "data/store:list",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 0,
+  "output_count": 36,
+  "started_at": "2026-10-13T00:04:56Z",
+  "finished_at": "2026-10-13T00:04:56Z",
+  "tools": [
+    "python3"
+  ],
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "errors": []
+}

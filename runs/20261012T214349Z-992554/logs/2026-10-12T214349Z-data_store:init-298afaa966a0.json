@@ -1,0 +1,17 @@
+{
+  "stage": "data/store:init",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 0,
+  "output_count": 0,
+  "started_at": "2026-10-12T21:43:49Z",
+  "finished_at": "2026-10-12T21:43:49Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-12T214349Z-data_store:init-298afaa966a0.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "data/store:list",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 0,
+  "output_count": 36,
+  "started_at": "2026-10-13T00:01:30Z",
+  "finished_at": "2026-10-13T00:01:30Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T000130Z-data_store:list-4aa9f32d5d30.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

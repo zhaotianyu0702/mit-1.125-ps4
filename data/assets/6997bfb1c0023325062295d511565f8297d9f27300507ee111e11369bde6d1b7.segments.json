@@ -1,0 +1,2252 @@
+[
+  {
+    "segment_id": "s-0001",
+    "start_seconds": 0.0,
+    "end_seconds": 2.08,
+    "text": "Hello everyone and welcome."
+  },
+  {
+    "segment_id": "s-0002",
+    "start_seconds": 2.08,
+    "end_seconds": 4.24,
+    "text": "My name is Edou and alongside Habi,"
+  },
+  {
+    "segment_id": "s-0003",
+    "start_seconds": 4.24,
+    "end_seconds": 7.84,
+    "text": "we represent the AI platform experience team at Flywire."
+  },
+  {
+    "segment_id": "s-0004",
+    "start_seconds": 7.84,
+    "end_seconds": 10.32,
+    "text": "Our core mission is to build practical"
+  },
+  {
+    "segment_id": "s-0005",
+    "start_seconds": 10.32,
+    "end_seconds": 13.64,
+    "text": "agent infrastructure that empowers our sovereign engineers"
+  },
+  {
+    "segment_id": "s-0006",
+    "start_seconds": 13.64,
+    "end_seconds": 16.12,
+    "text": "while following our established engineering standards"
+  },
+  {
+    "segment_id": "s-0007",
+    "start_seconds": 16.12,
+    "end_seconds": 17.6,
+    "text": "and practices."
+  },
+  {
+    "segment_id": "s-0008",
+    "start_seconds": 17.6,
+    "end_seconds": 20.8,
+    "text": "Today, we'll share how structure workflow automation"
+  },
+  {
+    "segment_id": "s-0009",
+    "start_seconds": 20.8,
+    "end_seconds": 24.92,
+    "text": "delivers real enterprise value, ensuring control, safety,"
+  },
+  {
+    "segment_id": "s-0010",
+    "start_seconds": 24.92,
+    "end_seconds": 28.76,
+    "text": "and reliability across our development process."
+  },
+  {
+    "segment_id": "s-0011",
+    "start_seconds": 28.76,
+    "end_seconds": 31.64,
+    "text": "Before we dive into the deep technical details"
+  },
+  {
+    "segment_id": "s-0012",
+    "start_seconds": 31.64,
+    "end_seconds": 33.68,
+    "text": "of our AI platform, let us give you"
+  },
+  {
+    "segment_id": "s-0013",
+    "start_seconds": 33.68,
+    "end_seconds": 36.4,
+    "text": "some essential context about Flywire."
+  },
+  {
+    "segment_id": "s-0014",
+    "start_seconds": 36.4,
+    "end_seconds": 40.64,
+    "text": "Flywire is built to process the world most complex payments"
+  },
+  {
+    "segment_id": "s-0015",
+    "start_seconds": 40.64,
+    "end_seconds": 43.24,
+    "text": "across global industries like education,"
+  },
+  {
+    "segment_id": "s-0016",
+    "start_seconds": 43.24,
+    "end_seconds": 46.6,
+    "text": "healthcare, travel, and business services."
+  },
+  {
+    "segment_id": "s-0017",
+    "start_seconds": 46.6,
+    "end_seconds": 49.16,
+    "text": "Today, we serve over 5,000 clients"
+  },
+  {
+    "segment_id": "s-0018",
+    "start_seconds": 49.16,
+    "end_seconds": 52.96,
+    "text": "across more than 240 countries around the world."
+  },
+  {
+    "segment_id": "s-0019",
+    "start_seconds": 52.96,
+    "end_seconds": 56.36,
+    "text": "Because we process high value international transactions,"
+  },
+  {
+    "segment_id": "s-0020",
+    "start_seconds": 56.36,
+    "end_seconds": 59.56,
+    "text": "regulatory compliance, privacy, and security"
+  },
+  {
+    "segment_id": "s-0021",
+    "start_seconds": 59.56,
+    "end_seconds": 61.52,
+    "text": "are not optional atoms."
+  },
+  {
+    "segment_id": "s-0022",
+    "start_seconds": 61.52,
+    "end_seconds": 64.24,
+    "text": "They are core requirements of our business."
+  },
+  {
+    "segment_id": "s-0023",
+    "start_seconds": 64.24,
+    "end_seconds": 67.0,
+    "text": "We operate under strict compliance frameworks"
+  },
+  {
+    "segment_id": "s-0024",
+    "start_seconds": 67.0,
+    "end_seconds": 70.84,
+    "text": "like PCI, DSS, and SOC 2."
+  },
+  {
+    "segment_id": "s-0025",
+    "start_seconds": 70.84,
+    "end_seconds": 74.24,
+    "text": "This means that customer data, personal identification,"
+  },
+  {
+    "segment_id": "s-0026",
+    "start_seconds": 74.24,
+    "end_seconds": 77.48,
+    "text": "and payment details must remain completely safe."
+  },
+  {
+    "segment_id": "s-0027",
+    "start_seconds": 77.48,
+    "end_seconds": 79.68,
+    "text": "We cannot simply take sensitive context"
+  },
+  {
+    "segment_id": "s-0028",
+    "start_seconds": 79.68,
+    "end_seconds": 81.48,
+    "text": "and pass it to third party services"
+  },
+  {
+    "segment_id": "s-0029",
+    "start_seconds": 81.48,
+    "end_seconds": 85.24,
+    "text": "without strict governance and architectural boundaries."
+  },
+  {
+    "segment_id": "s-0030",
+    "start_seconds": 85.24,
+    "end_seconds": 88.72,
+    "text": "To give you an idea of our engineering organization,"
+  },
+  {
+    "segment_id": "s-0031",
+    "start_seconds": 88.72,
+    "end_seconds": 93.36,
+    "text": "we have around 400 sovereign engineers distributed globally."
+  },
+  {
+    "segment_id": "s-0032",
+    "start_seconds": 93.36,
+    "end_seconds": 97.16,
+    "text": "Across our teams, we maintain diverse technology stacks,"
+  },
+  {
+    "segment_id": "s-0033",
+    "start_seconds": 97.16,
+    "end_seconds": 103.04,
+    "text": "including Java, Ruby, Go, Python, .NET, and PHP."
+  },
+  {
+    "segment_id": "s-0034",
+    "start_seconds": 103.04,
+    "end_seconds": 106.0,
+    "text": "Almost everything we build and run is deployed on Victoria."
+  },
+  {
+    "segment_id": "s-0035",
+    "start_seconds": 106.0,
+    "end_seconds": 107.68,
+    "text": "Our internal platform has a service"
+  },
+  {
+    "segment_id": "s-0036",
+    "start_seconds": 107.68,
+    "end_seconds": 111.88,
+    "text": "that operates on top of GitLab and AWS infrastructure."
+  },
+  {
+    "segment_id": "s-0037",
+    "start_seconds": 111.88,
+    "end_seconds": 114.68,
+    "text": "Victoria provides standardized build pipelines"
+  },
+  {
+    "segment_id": "s-0038",
+    "start_seconds": 114.68,
+    "end_seconds": 117.2,
+    "text": "and consistent deployment practices."
+  },
+  {
+    "segment_id": "s-0039",
+    "start_seconds": 117.2,
+    "end_seconds": 120.72,
+    "text": "So how did our AI journey begin?"
+  },
+  {
+    "segment_id": "s-0040",
+    "start_seconds": 120.72,
+    "end_seconds": 123.24,
+    "text": "About six months ago, back in April,"
+  },
+  {
+    "segment_id": "s-0041",
+    "start_seconds": 123.24,
+    "end_seconds": 127.0,
+    "text": "we formally established a dedicated AI platform experience"
+  },
+  {
+    "segment_id": "s-0042",
+    "start_seconds": 127.0,
+    "end_seconds": 128.08,
+    "text": "team."
+  },
+  {
+    "segment_id": "s-0043",
+    "start_seconds": 128.08,
+    "end_seconds": 132.08,
+    "text": "Even before that, passionate engineers across Flywire"
+  },
+  {
+    "segment_id": "s-0044",
+    "start_seconds": 132.08,
+    "end_seconds": 134.8,
+    "text": "were already experimenting with AI tools,"
+  },
+  {
+    "segment_id": "s-0045",
+    "start_seconds": 134.8,
+    "end_seconds": 137.64,
+    "text": "creating skills, building MCP servers,"
+  },
+  {
+    "segment_id": "s-0046",
+    "start_seconds": 137.64,
+    "end_seconds": 140.52,
+    "text": "and assembling an early core review bot."
+  },
+  {
+    "segment_id": "s-0047",
+    "start_seconds": 140.52,
+    "end_seconds": 143.96,
+    "text": "That organic activity proved that our engineers"
+  },
+  {
+    "segment_id": "s-0048",
+    "start_seconds": 143.96,
+    "end_seconds": 146.24,
+    "text": "wanted AI automation."
+  },
+  {
+    "segment_id": "s-0049",
+    "start_seconds": 146.24,
+    "end_seconds": 149.36,
+    "text": "It also showed that we needed a dedicated team"
+  },
+  {
+    "segment_id": "s-0050",
+    "start_seconds": 149.36,
+    "end_seconds": 152.08,
+    "text": "to provide infrastructure for safe and reliable"
+  },
+  {
+    "segment_id": "s-0051",
+    "start_seconds": 152.08,
+    "end_seconds": 153.88,
+    "text": "agendic solutions."
+  },
+  {
+    "segment_id": "s-0052",
+    "start_seconds": 153.88,
+    "end_seconds": 158.16,
+    "text": "Since then, we have moved fast with close to 1,000 commits"
+  },
+  {
+    "segment_id": "s-0053",
+    "start_seconds": 158.16,
+    "end_seconds": 160.08,
+    "text": "to our internal tool."
+  },
+  {
+    "segment_id": "s-0054",
+    "start_seconds": 160.08,
+    "end_seconds": 162.52,
+    "text": "But the industry does not stop."
+  },
+  {
+    "segment_id": "s-0055",
+    "start_seconds": 162.52,
+    "end_seconds": 166.16,
+    "text": "In the same six months, Cloud Code alone"
+  },
+  {
+    "segment_id": "s-0056",
+    "start_seconds": 166.16,
+    "end_seconds": 170.52,
+    "text": "published more than 160 releases, almost one per day."
+  },
+  {
+    "segment_id": "s-0057",
+    "start_seconds": 170.52,
+    "end_seconds": 174.64,
+    "text": "And the major AI labs release more than 20 new models."
+  },
+  {
+    "segment_id": "s-0058",
+    "start_seconds": 174.64,
+    "end_seconds": 178.36,
+    "text": "Every week brings a new model and a new tool"
+  },
+  {
+    "segment_id": "s-0059",
+    "start_seconds": 178.36,
+    "end_seconds": 180.12,
+    "text": "or a new way of working."
+  },
+  {
+    "segment_id": "s-0060",
+    "start_seconds": 180.12,
+    "end_seconds": 184.76,
+    "text": "Our challenge is not only to build fast, but to keep up."
+  },
+  {
+    "segment_id": "s-0061",
+    "start_seconds": 184.76,
+    "end_seconds": 187.6,
+    "text": "This brings us to orbit, our entire killer."
+  },
+  {
+    "segment_id": "s-0062",
+    "start_seconds": 187.6,
+    "end_seconds": 190.04,
+    "text": "orbit is an internal platform that"
+  },
+  {
+    "segment_id": "s-0063",
+    "start_seconds": 190.04,
+    "end_seconds": 192.88,
+    "text": "eliminates daily engineering repetitive tasks"
+  },
+  {
+    "segment_id": "s-0064",
+    "start_seconds": 192.88,
+    "end_seconds": 197.36,
+    "text": "by including LLMs directly into a structured workflows."
+  },
+  {
+    "segment_id": "s-0065",
+    "start_seconds": 197.36,
+    "end_seconds": 199.84,
+    "text": "Instead of letting AI agents run freely"
+  },
+  {
+    "segment_id": "s-0066",
+    "start_seconds": 199.84,
+    "end_seconds": 203.76,
+    "text": "in open-ended loops, orbit pairs the deterministic code"
+  },
+  {
+    "segment_id": "s-0067",
+    "start_seconds": 203.76,
+    "end_seconds": 206.28,
+    "text": "with a small LLM steps."
+  },
+  {
+    "segment_id": "s-0068",
+    "start_seconds": 206.28,
+    "end_seconds": 210.24,
+    "text": "We crystallize repetitive process logic into code."
+  },
+  {
+    "segment_id": "s-0069",
+    "start_seconds": 210.24,
+    "end_seconds": 215.6,
+    "text": "And we call a model only where reasoning is actually needed."
+  },
+  {
+    "segment_id": "s-0070",
+    "start_seconds": 215.6,
+    "end_seconds": 218.96,
+    "text": "When we evaluate whether to build or buy,"
+  },
+  {
+    "segment_id": "s-0071",
+    "start_seconds": 218.96,
+    "end_seconds": 222.84,
+    "text": "building in-house made complete sense for our environment."
+  },
+  {
+    "segment_id": "s-0072",
+    "start_seconds": 222.84,
+    "end_seconds": 226.16,
+    "text": "Frontier models made feature development really fast,"
+  },
+  {
+    "segment_id": "s-0073",
+    "start_seconds": 226.16,
+    "end_seconds": 230.08,
+    "text": "which drastically lowers the cost of a custom platform."
+  },
+  {
+    "segment_id": "s-0074",
+    "start_seconds": 230.08,
+    "end_seconds": 233.2,
+    "text": "More importantly, as a financial enterprise handling"
+  },
+  {
+    "segment_id": "s-0075",
+    "start_seconds": 233.2,
+    "end_seconds": 237.8,
+    "text": "PCI, PAI, and PHI data, keeping execution"
+  },
+  {
+    "segment_id": "s-0076",
+    "start_seconds": 237.8,
+    "end_seconds": 241.0,
+    "text": "inside our existing Victoria infrastructure"
+  },
+  {
+    "segment_id": "s-0077",
+    "start_seconds": 241.0,
+    "end_seconds": 244.4,
+    "text": "ensures that sensitive data never leaves our control"
+  },
+  {
+    "segment_id": "s-0078",
+    "start_seconds": 244.4,
+    "end_seconds": 245.68,
+    "text": "environment."
+  },
+  {
+    "segment_id": "s-0079",
+    "start_seconds": 245.68,
+    "end_seconds": 248.68,
+    "text": "We also keep long-bendor security reviews"
+  },
+  {
+    "segment_id": "s-0080",
+    "start_seconds": 248.68,
+    "end_seconds": 251.52,
+    "text": "and extra compliance work."
+  },
+  {
+    "segment_id": "s-0081",
+    "start_seconds": 251.52,
+    "end_seconds": 255.0,
+    "text": "So what does a workflow actually look like?"
+  },
+  {
+    "segment_id": "s-0082",
+    "start_seconds": 255.0,
+    "end_seconds": 259.12,
+    "text": "Every agent in orbit is defined in a single gammel file"
+  },
+  {
+    "segment_id": "s-0083",
+    "start_seconds": 259.12,
+    "end_seconds": 262.46,
+    "text": "that lives in a repository and goes through the same"
+  },
+  {
+    "segment_id": "s-0084",
+    "start_seconds": 262.46,
+    "end_seconds": 266.2,
+    "text": "merge request review as any other code."
+  },
+  {
+    "segment_id": "s-0085",
+    "start_seconds": 266.2,
+    "end_seconds": 269.04,
+    "text": "Take our code review agent as an example."
+  },
+  {
+    "segment_id": "s-0086",
+    "start_seconds": 269.04,
+    "end_seconds": 272.16,
+    "text": "It starts with a trigger, a Villa Webhook,"
+  },
+  {
+    "segment_id": "s-0087",
+    "start_seconds": 272.16,
+    "end_seconds": 274.92,
+    "text": "that fires when an engineer mentions the review"
+  },
+  {
+    "segment_id": "s-0088",
+    "start_seconds": 274.92,
+    "end_seconds": 277.08,
+    "text": "bolt on a merge request."
+  },
+  {
+    "segment_id": "s-0089",
+    "start_seconds": 277.08,
+    "end_seconds": 280.68,
+    "text": "From there, a sequence of deterministic activities"
+  },
+  {
+    "segment_id": "s-0090",
+    "start_seconds": 280.68,
+    "end_seconds": 283.0,
+    "text": "fetches the merge request metadata."
+  },
+  {
+    "segment_id": "s-0091",
+    "start_seconds": 283.0,
+    "end_seconds": 286.68,
+    "text": "Classifies its risk tier, loads prior findings,"
+  },
+  {
+    "segment_id": "s-0092",
+    "start_seconds": 286.68,
+    "end_seconds": 288.64,
+    "text": "and plans the repository."
+  },
+  {
+    "segment_id": "s-0093",
+    "start_seconds": 288.64,
+    "end_seconds": 290.88,
+    "text": "Only then, we call the model."
+  },
+  {
+    "segment_id": "s-0094",
+    "start_seconds": 290.88,
+    "end_seconds": 292.88,
+    "text": "In an NLM step, that can read the code,"
+  },
+  {
+    "segment_id": "s-0095",
+    "start_seconds": 292.88,
+    "end_seconds": 295.16,
+    "text": "but has no permission to modify it."
+  },
+  {
+    "segment_id": "s-0096",
+    "start_seconds": 295.16,
+    "end_seconds": 298.84,
+    "text": "And that must answer in a strict output schema."
+  },
+  {
+    "segment_id": "s-0097",
+    "start_seconds": 298.84,
+    "end_seconds": 301.32,
+    "text": "Finally, another deterministic step"
+  },
+  {
+    "segment_id": "s-0098",
+    "start_seconds": 301.32,
+    "end_seconds": 304.04,
+    "text": "pulls the findings back to the merge request."
+  },
+  {
+    "segment_id": "s-0099",
+    "start_seconds": 304.04,
+    "end_seconds": 306.96,
+    "text": "This is what we mean by a workflow, not autopilot."
+  },
+  {
+    "segment_id": "s-0100",
+    "start_seconds": 306.96,
+    "end_seconds": 309.24,
+    "text": "Code handles the predictable parts."
+  },
+  {
+    "segment_id": "s-0101",
+    "start_seconds": 309.24,
+    "end_seconds": 311.8,
+    "text": "And the model is called only where reasoning"
+  },
+  {
+    "segment_id": "s-0102",
+    "start_seconds": 311.8,
+    "end_seconds": 314.2,
+    "text": "is actually needed."
+  },
+  {
+    "segment_id": "s-0103",
+    "start_seconds": 314.2,
+    "end_seconds": 315.96,
+    "text": "We choose to start with gammel files"
+  },
+  {
+    "segment_id": "s-0104",
+    "start_seconds": 315.96,
+    "end_seconds": 318.96,
+    "text": "and a merge request review process on purpose."
+  },
+  {
+    "segment_id": "s-0105",
+    "start_seconds": 318.96,
+    "end_seconds": 321.84,
+    "text": "Yammel is a format our engineers already know,"
+  },
+  {
+    "segment_id": "s-0106",
+    "start_seconds": 321.84,
+    "end_seconds": 325.36,
+    "text": "and the review works the way they already work every day."
+  },
+  {
+    "segment_id": "s-0107",
+    "start_seconds": 325.36,
+    "end_seconds": 327.96,
+    "text": "It also keeps the code base AI friendly."
+  },
+  {
+    "segment_id": "s-0108",
+    "start_seconds": 327.96,
+    "end_seconds": 331.8,
+    "text": "Codeing agents can read, write, and review workflow definitions"
+  },
+  {
+    "segment_id": "s-0109",
+    "start_seconds": 331.8,
+    "end_seconds": 333.72,
+    "text": "as easily as people can."
+  },
+  {
+    "segment_id": "s-0110",
+    "start_seconds": 333.72,
+    "end_seconds": 338.48,
+    "text": "However, not every use case comes from an engineering team."
+  },
+  {
+    "segment_id": "s-0111",
+    "start_seconds": 338.48,
+    "end_seconds": 340.96,
+    "text": "For corporate use cases, we are considering"
+  },
+  {
+    "segment_id": "s-0112",
+    "start_seconds": 340.96,
+    "end_seconds": 344.88,
+    "text": "an offering tool in the orbit UI, where people can build"
+  },
+  {
+    "segment_id": "s-0113",
+    "start_seconds": 344.88,
+    "end_seconds": 347.08,
+    "text": "a workflow by dragging and dropping"
+  },
+  {
+    "segment_id": "s-0114",
+    "start_seconds": 347.08,
+    "end_seconds": 349.48,
+    "text": "from a set of predefined activities,"
+  },
+  {
+    "segment_id": "s-0115",
+    "start_seconds": 349.48,
+    "end_seconds": 351.72,
+    "text": "without writing in Yammel."
+  },
+  {
+    "segment_id": "s-0116",
+    "start_seconds": 351.72,
+    "end_seconds": 354.36,
+    "text": "A workflow can start in three ways."
+  },
+  {
+    "segment_id": "s-0117",
+    "start_seconds": 354.36,
+    "end_seconds": 357.8,
+    "text": "Engineers in another system can call orbits internal API"
+  },
+  {
+    "segment_id": "s-0118",
+    "start_seconds": 357.8,
+    "end_seconds": 361.24,
+    "text": "directly or using our internal CLI."
+  },
+  {
+    "segment_id": "s-0119",
+    "start_seconds": 361.24,
+    "end_seconds": 365.28,
+    "text": "Webhooks from GitLab, Gira Sentry, and AWS"
+  },
+  {
+    "segment_id": "s-0120",
+    "start_seconds": 365.28,
+    "end_seconds": 368.08,
+    "text": "start the workflow from the moment something happens,"
+  },
+  {
+    "segment_id": "s-0121",
+    "start_seconds": 368.08,
+    "end_seconds": 372.04,
+    "text": "such as a new merge request or a new production error."
+  },
+  {
+    "segment_id": "s-0122",
+    "start_seconds": 372.04,
+    "end_seconds": 375.24,
+    "text": "A schedule jobs run workflows on a fixed cadence,"
+  },
+  {
+    "segment_id": "s-0123",
+    "start_seconds": 375.24,
+    "end_seconds": 377.64,
+    "text": "like our daily translation things,"
+  },
+  {
+    "segment_id": "s-0124",
+    "start_seconds": 377.64,
+    "end_seconds": 381.0,
+    "text": "feature flag cleanups, and knowledge base refreshes."
+  },
+  {
+    "segment_id": "s-0125",
+    "start_seconds": 381.0,
+    "end_seconds": 383.4,
+    "text": "Beyond these entry points, we are currently building"
+  },
+  {
+    "segment_id": "s-0126",
+    "start_seconds": 383.4,
+    "end_seconds": 387.8,
+    "text": "an MCP server for orbit, so that the other AI services"
+  },
+  {
+    "segment_id": "s-0127",
+    "start_seconds": 387.8,
+    "end_seconds": 390.6,
+    "text": "and tools we use across flywire can start"
+  },
+  {
+    "segment_id": "s-0128",
+    "start_seconds": 390.6,
+    "end_seconds": 391.76,
+    "text": "workflows directly."
+  },
+  {
+    "segment_id": "s-0129",
+    "start_seconds": 391.76,
+    "end_seconds": 395.56,
+    "text": "For example, an engineer will be able to ask cloth in Slack"
+  },
+  {
+    "segment_id": "s-0130",
+    "start_seconds": 395.56,
+    "end_seconds": 398.84,
+    "text": "through cloth tag to run an orbit workflow without ever"
+  },
+  {
+    "segment_id": "s-0131",
+    "start_seconds": 398.84,
+    "end_seconds": 401.52,
+    "text": "leaving the conversation."
+  },
+  {
+    "segment_id": "s-0132",
+    "start_seconds": 401.52,
+    "end_seconds": 405.28,
+    "text": "We start the small, with clear high impact use cases."
+  },
+  {
+    "segment_id": "s-0133",
+    "start_seconds": 405.28,
+    "end_seconds": 407.64,
+    "text": "First, the daily engineering work,"
+  },
+  {
+    "segment_id": "s-0134",
+    "start_seconds": 407.64,
+    "end_seconds": 409.72,
+    "text": "automated core reviews on merge request,"
+  },
+  {
+    "segment_id": "s-0135",
+    "start_seconds": 409.72,
+    "end_seconds": 412.72,
+    "text": "and our Victoria upgrades agent, which fixes"
+  },
+  {
+    "segment_id": "s-0136",
+    "start_seconds": 412.72,
+    "end_seconds": 415.96,
+    "text": "Victoria's interaction findings automatically."
+  },
+  {
+    "segment_id": "s-0137",
+    "start_seconds": 415.96,
+    "end_seconds": 417.48,
+    "text": "Second, translations."
+  },
+  {
+    "segment_id": "s-0138",
+    "start_seconds": 417.48,
+    "end_seconds": 420.44,
+    "text": "One workflow now handles the full cycle."
+  },
+  {
+    "segment_id": "s-0139",
+    "start_seconds": 420.44,
+    "end_seconds": 423.08,
+    "text": "It fetches the newer strings, translates them,"
+  },
+  {
+    "segment_id": "s-0140",
+    "start_seconds": 423.08,
+    "end_seconds": 427.24,
+    "text": "updates the files, and notifies the themes with the updated docs."
+  },
+  {
+    "segment_id": "s-0141",
+    "start_seconds": 427.24,
+    "end_seconds": 429.0,
+    "text": "Third, production errors."
+  },
+  {
+    "segment_id": "s-0142",
+    "start_seconds": 429.0,
+    "end_seconds": 432.56,
+    "text": "A Sentry work hook starts the Sentry Mestigator."
+  },
+  {
+    "segment_id": "s-0143",
+    "start_seconds": 432.56,
+    "end_seconds": 436.2,
+    "text": "It assesses the issue, pulls the assessment in Slack,"
+  },
+  {
+    "segment_id": "s-0144",
+    "start_seconds": 436.2,
+    "end_seconds": 440.56,
+    "text": "and shares the merge request with the fix in the same place."
+  },
+  {
+    "segment_id": "s-0145",
+    "start_seconds": 440.56,
+    "end_seconds": 442.68,
+    "text": "On the support side, ticket triage"
+  },
+  {
+    "segment_id": "s-0146",
+    "start_seconds": 442.68,
+    "end_seconds": 445.04,
+    "text": "classifies new tickets and routes them"
+  },
+  {
+    "segment_id": "s-0147",
+    "start_seconds": 445.04,
+    "end_seconds": 447.28,
+    "text": "to the right engineering area."
+  },
+  {
+    "segment_id": "s-0148",
+    "start_seconds": 447.28,
+    "end_seconds": 449.8,
+    "text": "AI readings scorecards, measures"
+  },
+  {
+    "segment_id": "s-0149",
+    "start_seconds": 449.8,
+    "end_seconds": 454.08,
+    "text": "how really a repository is for AI assisted development,"
+  },
+  {
+    "segment_id": "s-0150",
+    "start_seconds": 454.08,
+    "end_seconds": 456.92,
+    "text": "and a fixer acts on the findings."
+  },
+  {
+    "segment_id": "s-0151",
+    "start_seconds": 456.92,
+    "end_seconds": 459.64,
+    "text": "Finally, the junior implementer takes a ticket"
+  },
+  {
+    "segment_id": "s-0152",
+    "start_seconds": 459.64,
+    "end_seconds": 461.92,
+    "text": "and turns it into a merge request."
+  },
+  {
+    "segment_id": "s-0153",
+    "start_seconds": 461.92,
+    "end_seconds": 465.56,
+    "text": "It works like a small software factory."
+  },
+  {
+    "segment_id": "s-0154",
+    "start_seconds": 465.56,
+    "end_seconds": 468.04,
+    "text": "On the biggest benefits that we found"
+  },
+  {
+    "segment_id": "s-0155",
+    "start_seconds": 468.04,
+    "end_seconds": 472.84,
+    "text": "is that we can make changes in bulk across many repositories."
+  },
+  {
+    "segment_id": "s-0156",
+    "start_seconds": 472.84,
+    "end_seconds": 476.76,
+    "text": "That lets us do software engineering at scale."
+  },
+  {
+    "segment_id": "s-0157",
+    "start_seconds": 476.76,
+    "end_seconds": 480.6,
+    "text": "It is very convenient for migrations, library updates,"
+  },
+  {
+    "segment_id": "s-0158",
+    "start_seconds": 480.6,
+    "end_seconds": 482.08,
+    "text": "and deprecations."
+  },
+  {
+    "segment_id": "s-0159",
+    "start_seconds": 482.08,
+    "end_seconds": 484.84,
+    "text": "And we also use it to run a plot doctor"
+  },
+  {
+    "segment_id": "s-0160",
+    "start_seconds": 484.84,
+    "end_seconds": 488.92,
+    "text": "and to launch our own AI readiness scorecard."
+  },
+  {
+    "segment_id": "s-0161",
+    "start_seconds": 488.92,
+    "end_seconds": 492.2,
+    "text": "Even with all this automation, the merge request"
+  },
+  {
+    "segment_id": "s-0162",
+    "start_seconds": 492.2,
+    "end_seconds": 494.72,
+    "text": "is still our unit of work."
+  },
+  {
+    "segment_id": "s-0163",
+    "start_seconds": 494.72,
+    "end_seconds": 498.36,
+    "text": "And it is where a human stays in the loop."
+  },
+  {
+    "segment_id": "s-0164",
+    "start_seconds": 498.36,
+    "end_seconds": 500.48,
+    "text": "We operate in a related environment,"
+  },
+  {
+    "segment_id": "s-0165",
+    "start_seconds": 500.48,
+    "end_seconds": 505.12,
+    "text": "so people still review and approve those merge requests."
+  },
+  {
+    "segment_id": "s-0166",
+    "start_seconds": 505.12,
+    "end_seconds": 508.12,
+    "text": "Let's take a deeper look at the technical architecture"
+  },
+  {
+    "segment_id": "s-0167",
+    "start_seconds": 508.12,
+    "end_seconds": 509.4,
+    "text": "of orbit."
+  },
+  {
+    "segment_id": "s-0168",
+    "start_seconds": 509.4,
+    "end_seconds": 512.72,
+    "text": "Originally, we began with a simple container setup"
+  },
+  {
+    "segment_id": "s-0169",
+    "start_seconds": 512.72,
+    "end_seconds": 516.52,
+    "text": "on AWS ECS Fargate, where the orchestration layer"
+  },
+  {
+    "segment_id": "s-0170",
+    "start_seconds": 516.52,
+    "end_seconds": 518.36,
+    "text": "harness and the runtime environment"
+  },
+  {
+    "segment_id": "s-0171",
+    "start_seconds": 518.36,
+    "end_seconds": 520.76,
+    "text": "lived inside the same container."
+  },
+  {
+    "segment_id": "s-0172",
+    "start_seconds": 520.76,
+    "end_seconds": 523.76,
+    "text": "As our needs grew, we both were separating"
+  },
+  {
+    "segment_id": "s-0173",
+    "start_seconds": 523.76,
+    "end_seconds": 526.6,
+    "text": "the orchestration layer, the agent runtime environment,"
+  },
+  {
+    "segment_id": "s-0174",
+    "start_seconds": 526.6,
+    "end_seconds": 529.48,
+    "text": "and the session state into distinct components."
+  },
+  {
+    "segment_id": "s-0175",
+    "start_seconds": 529.48,
+    "end_seconds": 532.24,
+    "text": "This improves isolation, maintainability,"
+  },
+  {
+    "segment_id": "s-0176",
+    "start_seconds": 532.24,
+    "end_seconds": 534.16,
+    "text": "and resource allocation."
+  },
+  {
+    "segment_id": "s-0177",
+    "start_seconds": 534.16,
+    "end_seconds": 536.72,
+    "text": "It also makes the system more resilient,"
+  },
+  {
+    "segment_id": "s-0178",
+    "start_seconds": 536.72,
+    "end_seconds": 540.28,
+    "text": "because an error in the effort does not kill the sandbox."
+  },
+  {
+    "segment_id": "s-0179",
+    "start_seconds": 540.28,
+    "end_seconds": 542.76,
+    "text": "And it lets us scale each piece independently"
+  },
+  {
+    "segment_id": "s-0180",
+    "start_seconds": 542.76,
+    "end_seconds": 545.84,
+    "text": "and adapt to changing requirements."
+  },
+  {
+    "segment_id": "s-0181",
+    "start_seconds": 545.84,
+    "end_seconds": 548.8,
+    "text": "Fargate lets us scale tasks elastically,"
+  },
+  {
+    "segment_id": "s-0182",
+    "start_seconds": 548.8,
+    "end_seconds": 552.92,
+    "text": "so we can run a very large number of agents in parallel."
+  },
+  {
+    "segment_id": "s-0183",
+    "start_seconds": 552.92,
+    "end_seconds": 555.64,
+    "text": "It was also really easy to deploy orbit,"
+  },
+  {
+    "segment_id": "s-0184",
+    "start_seconds": 555.64,
+    "end_seconds": 557.88,
+    "text": "because we already had Victoria, our path"
+  },
+  {
+    "segment_id": "s-0185",
+    "start_seconds": 557.88,
+    "end_seconds": 560.88,
+    "text": "that scales applications without any effort."
+  },
+  {
+    "segment_id": "s-0186",
+    "start_seconds": 560.88,
+    "end_seconds": 564.0,
+    "text": "But that scale needs car rails, so the platform"
+  },
+  {
+    "segment_id": "s-0187",
+    "start_seconds": 564.0,
+    "end_seconds": 565.56,
+    "text": "is not misused."
+  },
+  {
+    "segment_id": "s-0188",
+    "start_seconds": 565.56,
+    "end_seconds": 567.2,
+    "text": "First, timeouts."
+  },
+  {
+    "segment_id": "s-0189",
+    "start_seconds": 567.2,
+    "end_seconds": 570.6,
+    "text": "Every agent stops after a configurable amount of time."
+  },
+  {
+    "segment_id": "s-0190",
+    "start_seconds": 570.6,
+    "end_seconds": 574.28,
+    "text": "Second, rail limits, which are aggressive by default."
+  },
+  {
+    "segment_id": "s-0191",
+    "start_seconds": 574.28,
+    "end_seconds": 576.4,
+    "text": "A broken API integration could start"
+  },
+  {
+    "segment_id": "s-0192",
+    "start_seconds": 576.4,
+    "end_seconds": 580.2,
+    "text": "spawning thousands of agents and make our build much bigger."
+  },
+  {
+    "segment_id": "s-0193",
+    "start_seconds": 580.2,
+    "end_seconds": 582.68,
+    "text": "The limits keep that under control."
+  },
+  {
+    "segment_id": "s-0194",
+    "start_seconds": 582.68,
+    "end_seconds": 584.88,
+    "text": "Third, concurrency control."
+  },
+  {
+    "segment_id": "s-0195",
+    "start_seconds": 584.88,
+    "end_seconds": 588.84,
+    "text": "Our control plane uses logs to prevent duplicate executions"
+  },
+  {
+    "segment_id": "s-0196",
+    "start_seconds": 588.84,
+    "end_seconds": 590.16,
+    "text": "of the same task."
+  },
+  {
+    "segment_id": "s-0197",
+    "start_seconds": 590.16,
+    "end_seconds": 592.72,
+    "text": "For example, if our code review is already running,"
+  },
+  {
+    "segment_id": "s-0198",
+    "start_seconds": 592.72,
+    "end_seconds": 596.36,
+    "text": "we drop the duplicator request."
+  },
+  {
+    "segment_id": "s-0199",
+    "start_seconds": 596.36,
+    "end_seconds": 599.84,
+    "text": "Running agent is a Victoria, comes with container limits."
+  },
+  {
+    "segment_id": "s-0200",
+    "start_seconds": 599.84,
+    "end_seconds": 602.52,
+    "text": "Victoria uses standard Fargate task definitions,"
+  },
+  {
+    "segment_id": "s-0201",
+    "start_seconds": 602.52,
+    "end_seconds": 605.68,
+    "text": "so the containers are lightweight and tightly restricted."
+  },
+  {
+    "segment_id": "s-0202",
+    "start_seconds": 605.68,
+    "end_seconds": 607.72,
+    "text": "Our baseline agent container includes"
+  },
+  {
+    "segment_id": "s-0203",
+    "start_seconds": 607.72,
+    "end_seconds": 609.48,
+    "text": "the common language run times."
+  },
+  {
+    "segment_id": "s-0204",
+    "start_seconds": 609.48,
+    "end_seconds": 611.92,
+    "text": "But it intentionally leaves out package managers,"
+  },
+  {
+    "segment_id": "s-0205",
+    "start_seconds": 611.92,
+    "end_seconds": 614.76,
+    "text": "like bundler, maven, and composer."
+  },
+  {
+    "segment_id": "s-0206",
+    "start_seconds": 614.76,
+    "end_seconds": 617.16,
+    "text": "So heavy agents, like our gear implementer,"
+  },
+  {
+    "segment_id": "s-0207",
+    "start_seconds": 617.16,
+    "end_seconds": 619.76,
+    "text": "cannot easily run native builds or unit tests"
+  },
+  {
+    "segment_id": "s-0208",
+    "start_seconds": 619.76,
+    "end_seconds": 621.96,
+    "text": "inside the container."
+  },
+  {
+    "segment_id": "s-0209",
+    "start_seconds": 621.96,
+    "end_seconds": 626.56,
+    "text": "When we started orbit in April, AWS Lambda MicroVMs"
+  },
+  {
+    "segment_id": "s-0210",
+    "start_seconds": 626.56,
+    "end_seconds": 628.4,
+    "text": "did not exist yet."
+  },
+  {
+    "segment_id": "s-0211",
+    "start_seconds": 628.4,
+    "end_seconds": 631.4,
+    "text": "AWS released them in June, so our first version"
+  },
+  {
+    "segment_id": "s-0212",
+    "start_seconds": 631.4,
+    "end_seconds": 633.72,
+    "text": "run only on Fargate."
+  },
+  {
+    "segment_id": "s-0213",
+    "start_seconds": 633.72,
+    "end_seconds": 637.6,
+    "text": "These are managed MicroVMs that work like Lambda functions,"
+  },
+  {
+    "segment_id": "s-0214",
+    "start_seconds": 637.6,
+    "end_seconds": 641.04,
+    "text": "reasonable processes, so they can pause and continue"
+  },
+  {
+    "segment_id": "s-0215",
+    "start_seconds": 641.04,
+    "end_seconds": 642.28,
+    "text": "where they stop."
+  },
+  {
+    "segment_id": "s-0216",
+    "start_seconds": 642.28,
+    "end_seconds": 645.48,
+    "text": "That fits the nature of a gigantic execution really well,"
+  },
+  {
+    "segment_id": "s-0217",
+    "start_seconds": 645.48,
+    "end_seconds": 649.44,
+    "text": "so we now use them with a runtime chosen by project type."
+  },
+  {
+    "segment_id": "s-0218",
+    "start_seconds": 649.44,
+    "end_seconds": 652.32,
+    "text": "Each tech stack gets its own toolchain quickly"
+  },
+  {
+    "segment_id": "s-0219",
+    "start_seconds": 652.32,
+    "end_seconds": 654.4,
+    "text": "in an isolated environment."
+  },
+  {
+    "segment_id": "s-0220",
+    "start_seconds": 654.4,
+    "end_seconds": 657.12,
+    "text": "This is not full sunboxing yet, and we are actively"
+  },
+  {
+    "segment_id": "s-0221",
+    "start_seconds": 657.12,
+    "end_seconds": 658.08,
+    "text": "moving there."
+  },
+  {
+    "segment_id": "s-0222",
+    "start_seconds": 658.08,
+    "end_seconds": 660.8,
+    "text": "The goal is to support setups like Docker and Docker"
+  },
+  {
+    "segment_id": "s-0223",
+    "start_seconds": 660.8,
+    "end_seconds": 664.04,
+    "text": "or multiple MicroVMs, so agents can run tests"
+  },
+  {
+    "segment_id": "s-0224",
+    "start_seconds": 664.04,
+    "end_seconds": 667.4,
+    "text": "or more complex purifications on any repository."
+  },
+  {
+    "segment_id": "s-0225",
+    "start_seconds": 667.4,
+    "end_seconds": 671.36,
+    "text": "Inside each LLM step, we did not build our own harness."
+  },
+  {
+    "segment_id": "s-0226",
+    "start_seconds": 671.36,
+    "end_seconds": 674.96,
+    "text": "Instead, we reused the Cloud Agents SDK,"
+  },
+  {
+    "segment_id": "s-0227",
+    "start_seconds": 674.96,
+    "end_seconds": 677.8,
+    "text": "the same harness that powers Cloud Code."
+  },
+  {
+    "segment_id": "s-0228",
+    "start_seconds": 677.8,
+    "end_seconds": 680.56,
+    "text": "This gives us a mature, well-tested harness"
+  },
+  {
+    "segment_id": "s-0229",
+    "start_seconds": 680.56,
+    "end_seconds": 684.56,
+    "text": "with tool usage, sub-agents, and skills out of the box,"
+  },
+  {
+    "segment_id": "s-0230",
+    "start_seconds": 684.56,
+    "end_seconds": 688.36,
+    "text": "so we can focus on the workflow rather than on the plumbing."
+  },
+  {
+    "segment_id": "s-0231",
+    "start_seconds": 688.36,
+    "end_seconds": 690.4,
+    "text": "What we add on top is control."
+  },
+  {
+    "segment_id": "s-0232",
+    "start_seconds": 690.4,
+    "end_seconds": 693.84,
+    "text": "We restrict four different things for every step."
+  },
+  {
+    "segment_id": "s-0233",
+    "start_seconds": 693.84,
+    "end_seconds": 697.16,
+    "text": "The network the agent can reach, the tools it can call,"
+  },
+  {
+    "segment_id": "s-0234",
+    "start_seconds": 697.16,
+    "end_seconds": 700.68,
+    "text": "the skills it can load, and the MCP servers it can use,"
+  },
+  {
+    "segment_id": "s-0235",
+    "start_seconds": 700.68,
+    "end_seconds": 703.56,
+    "text": "down to the specific tools allowed from each server."
+  },
+  {
+    "segment_id": "s-0236",
+    "start_seconds": 703.56,
+    "end_seconds": 706.08,
+    "text": "All of this is declaring the YAML file itself."
+  },
+  {
+    "segment_id": "s-0237",
+    "start_seconds": 706.08,
+    "end_seconds": 708.8,
+    "text": "A code review step, for example, can grid and search"
+  },
+  {
+    "segment_id": "s-0238",
+    "start_seconds": 708.8,
+    "end_seconds": 711.72,
+    "text": "the code but cannot edit files or push changes."
+  },
+  {
+    "segment_id": "s-0239",
+    "start_seconds": 711.72,
+    "end_seconds": 714.12,
+    "text": "And our center investigator can query traces"
+  },
+  {
+    "segment_id": "s-0240",
+    "start_seconds": 714.12,
+    "end_seconds": 717.36,
+    "text": "through our MCP server, but only with a short list"
+  },
+  {
+    "segment_id": "s-0241",
+    "start_seconds": 717.36,
+    "end_seconds": 718.68,
+    "text": "of read-only tools."
+  },
+  {
+    "segment_id": "s-0242",
+    "start_seconds": 718.68,
+    "end_seconds": 722.64,
+    "text": "In practice, each LLM step runs with only the access it needs"
+  },
+  {
+    "segment_id": "s-0243",
+    "start_seconds": 722.64,
+    "end_seconds": 727.6,
+    "text": "and the access is visible and reviewable like any other code."
+  },
+  {
+    "segment_id": "s-0244",
+    "start_seconds": 727.6,
+    "end_seconds": 730.48,
+    "text": "Skills themselves come from a single place."
+  },
+  {
+    "segment_id": "s-0245",
+    "start_seconds": 730.48,
+    "end_seconds": 734.48,
+    "text": "At Flywire, we maintain a central repository of skills"
+  },
+  {
+    "segment_id": "s-0246",
+    "start_seconds": 734.48,
+    "end_seconds": 739.04,
+    "text": "that is published internally as a cloud code plug-in marketplace."
+  },
+  {
+    "segment_id": "s-0247",
+    "start_seconds": 739.04,
+    "end_seconds": 742.6,
+    "text": "An orbit connects to that marketplace at build time."
+  },
+  {
+    "segment_id": "s-0248",
+    "start_seconds": 742.6,
+    "end_seconds": 746.16,
+    "text": "This means the same skills works in two places."
+  },
+  {
+    "segment_id": "s-0249",
+    "start_seconds": 746.16,
+    "end_seconds": 749.6,
+    "text": "An engineer can run it in cloud code on their laptop,"
+  },
+  {
+    "segment_id": "s-0250",
+    "start_seconds": 749.6,
+    "end_seconds": 752.84,
+    "text": "an orbit can run it inside an automated workflow."
+  },
+  {
+    "segment_id": "s-0251",
+    "start_seconds": 752.84,
+    "end_seconds": 756.08,
+    "text": "That shared foundation also shapes our recommendation"
+  },
+  {
+    "segment_id": "s-0252",
+    "start_seconds": 756.08,
+    "end_seconds": 758.48,
+    "text": "to teams, start with the skill."
+  },
+  {
+    "segment_id": "s-0253",
+    "start_seconds": 758.48,
+    "end_seconds": 761.52,
+    "text": "Skill is cheap to write, easy to iterate on,"
+  },
+  {
+    "segment_id": "s-0254",
+    "start_seconds": 761.52,
+    "end_seconds": 763.48,
+    "text": "and useful from day one."
+  },
+  {
+    "segment_id": "s-0255",
+    "start_seconds": 763.48,
+    "end_seconds": 766.6,
+    "text": "Once the team is sure that a task is worth automating,"
+  },
+  {
+    "segment_id": "s-0256",
+    "start_seconds": 766.6,
+    "end_seconds": 770.48,
+    "text": "we move it into orbit and turn it into a workflow."
+  },
+  {
+    "segment_id": "s-0257",
+    "start_seconds": 770.48,
+    "end_seconds": 773.64,
+    "text": "The predictable parts become deterministic code."
+  },
+  {
+    "segment_id": "s-0258",
+    "start_seconds": 773.64,
+    "end_seconds": 776.6,
+    "text": "The model is called only where it adds value,"
+  },
+  {
+    "segment_id": "s-0259",
+    "start_seconds": 776.6,
+    "end_seconds": 779.64,
+    "text": "and each run becomes more reliable and less expensive"
+  },
+  {
+    "segment_id": "s-0260",
+    "start_seconds": 779.64,
+    "end_seconds": 781.76,
+    "text": "than an open-ended session."
+  },
+  {
+    "segment_id": "s-0261",
+    "start_seconds": 781.76,
+    "end_seconds": 783.92,
+    "text": "Workflows also run in the background,"
+  },
+  {
+    "segment_id": "s-0262",
+    "start_seconds": 783.92,
+    "end_seconds": 786.84,
+    "text": "so engineers do not have to sit with an open session"
+  },
+  {
+    "segment_id": "s-0263",
+    "start_seconds": 786.84,
+    "end_seconds": 788.88,
+    "text": "and guide it step by step."
+  },
+  {
+    "segment_id": "s-0264",
+    "start_seconds": 788.88,
+    "end_seconds": 791.8,
+    "text": "That means less context-reaching and more time"
+  },
+  {
+    "segment_id": "s-0265",
+    "start_seconds": 791.8,
+    "end_seconds": 794.56,
+    "text": "for the work that needs them."
+  },
+  {
+    "segment_id": "s-0266",
+    "start_seconds": 794.56,
+    "end_seconds": 797.08,
+    "text": "Beyond runtime isolation, we also"
+  },
+  {
+    "segment_id": "s-0267",
+    "start_seconds": 797.08,
+    "end_seconds": 801.88,
+    "text": "rely heavily on structure output to guarantee systemic reliability."
+  },
+  {
+    "segment_id": "s-0268",
+    "start_seconds": 801.88,
+    "end_seconds": 804.16,
+    "text": "Every LLM step in an orbit workflow"
+  },
+  {
+    "segment_id": "s-0269",
+    "start_seconds": 804.16,
+    "end_seconds": 808.12,
+    "text": "enforces street JSON schemas for model responses."
+  },
+  {
+    "segment_id": "s-0270",
+    "start_seconds": 808.12,
+    "end_seconds": 810.12,
+    "text": "By constraining output formats, we"
+  },
+  {
+    "segment_id": "s-0271",
+    "start_seconds": 810.12,
+    "end_seconds": 813.68,
+    "text": "ensure that subsequent execution branches, error handling,"
+  },
+  {
+    "segment_id": "s-0272",
+    "start_seconds": 813.68,
+    "end_seconds": 817.12,
+    "text": "and state transitions are driven by deterministic control"
+  },
+  {
+    "segment_id": "s-0273",
+    "start_seconds": 817.12,
+    "end_seconds": 820.56,
+    "text": "flow rather than unpredictable string parsing."
+  },
+  {
+    "segment_id": "s-0274",
+    "start_seconds": 820.56,
+    "end_seconds": 823.48,
+    "text": "If an LLM response fails validation"
+  },
+  {
+    "segment_id": "s-0275",
+    "start_seconds": 823.48,
+    "end_seconds": 827.16,
+    "text": "against a specked JSON schema, orbit automatically"
+  },
+  {
+    "segment_id": "s-0276",
+    "start_seconds": 827.16,
+    "end_seconds": 831.76,
+    "text": "triggers a targeted retry or fallback pass before proceeding."
+  },
+  {
+    "segment_id": "s-0277",
+    "start_seconds": 831.76,
+    "end_seconds": 833.76,
+    "text": "Another crucial pattern we rely on"
+  },
+  {
+    "segment_id": "s-0278",
+    "start_seconds": 833.76,
+    "end_seconds": 836.36,
+    "text": "is isolated component evaluation."
+  },
+  {
+    "segment_id": "s-0279",
+    "start_seconds": 836.36,
+    "end_seconds": 839.64,
+    "text": "Evaluating complex end-to-end agent workflows"
+  },
+  {
+    "segment_id": "s-0280",
+    "start_seconds": 839.64,
+    "end_seconds": 842.12,
+    "text": "in synthetic benchmark environments"
+  },
+  {
+    "segment_id": "s-0281",
+    "start_seconds": 842.12,
+    "end_seconds": 845.68,
+    "text": "is often noisy, expensive, and difficult to reproduce"
+  },
+  {
+    "segment_id": "s-0282",
+    "start_seconds": 845.68,
+    "end_seconds": 847.04,
+    "text": "consistently."
+  },
+  {
+    "segment_id": "s-0283",
+    "start_seconds": 847.04,
+    "end_seconds": 849.48,
+    "text": "Instead of trying to evaluate entire workflows"
+  },
+  {
+    "segment_id": "s-0284",
+    "start_seconds": 849.48,
+    "end_seconds": 852.2,
+    "text": "from start to finish, our evaluation harness"
+  },
+  {
+    "segment_id": "s-0285",
+    "start_seconds": 852.2,
+    "end_seconds": 854.6,
+    "text": "isolates individual LLM steps."
+  },
+  {
+    "segment_id": "s-0286",
+    "start_seconds": 854.6,
+    "end_seconds": 858.24,
+    "text": "By injecting exact historical state and context directly"
+  },
+  {
+    "segment_id": "s-0287",
+    "start_seconds": 858.24,
+    "end_seconds": 861.64,
+    "text": "into specific workflow nodes, we can evaluate model output"
+  },
+  {
+    "segment_id": "s-0288",
+    "start_seconds": 861.64,
+    "end_seconds": 863.76,
+    "text": "quality, measure from adjustments,"
+  },
+  {
+    "segment_id": "s-0289",
+    "start_seconds": 863.76,
+    "end_seconds": 867.68,
+    "text": "and cut performance regressions quickly and cost effectively."
+  },
+  {
+    "segment_id": "s-0290",
+    "start_seconds": 867.68,
+    "end_seconds": 870.32,
+    "text": "So how do we know that an agent is good enough?"
+  },
+  {
+    "segment_id": "s-0291",
+    "start_seconds": 870.32,
+    "end_seconds": 874.08,
+    "text": "Today, a new agent usually reaches production after a buy check."
+  },
+  {
+    "segment_id": "s-0292",
+    "start_seconds": 874.08,
+    "end_seconds": 876.4,
+    "text": "The team tries it on a few real cases"
+  },
+  {
+    "segment_id": "s-0293",
+    "start_seconds": 876.4,
+    "end_seconds": 879.28,
+    "text": "and confirms that it behaves as expected."
+  },
+  {
+    "segment_id": "s-0294",
+    "start_seconds": 879.28,
+    "end_seconds": 883.24,
+    "text": "Once it runs in production, we trace every execution end-to-end"
+  },
+  {
+    "segment_id": "s-0295",
+    "start_seconds": 883.24,
+    "end_seconds": 887.16,
+    "text": "with open telemetry, including its activity, model call,"
+  },
+  {
+    "segment_id": "s-0296",
+    "start_seconds": 887.16,
+    "end_seconds": 888.6,
+    "text": "and tool call."
+  },
+  {
+    "segment_id": "s-0297",
+    "start_seconds": 888.6,
+    "end_seconds": 891.68,
+    "text": "We then extract traces from real executions"
+  },
+  {
+    "segment_id": "s-0298",
+    "start_seconds": 891.68,
+    "end_seconds": 893.96,
+    "text": "and add them to a golden data set."
+  },
+  {
+    "segment_id": "s-0299",
+    "start_seconds": 893.96,
+    "end_seconds": 898.04,
+    "text": "For now, each golden data set is version in the repo story,"
+  },
+  {
+    "segment_id": "s-0300",
+    "start_seconds": 898.04,
+    "end_seconds": 900.92,
+    "text": "next to the code, and we run it on demand."
+  },
+  {
+    "segment_id": "s-0301",
+    "start_seconds": 900.92,
+    "end_seconds": 903.92,
+    "text": "Based on those results, we improve the prompt or chance"
+  },
+  {
+    "segment_id": "s-0302",
+    "start_seconds": 903.92,
+    "end_seconds": 907.4,
+    "text": "the model, and we run the data set again to compare."
+  },
+  {
+    "segment_id": "s-0303",
+    "start_seconds": 907.4,
+    "end_seconds": 909.96,
+    "text": "We do not have online evaluations yet,"
+  },
+  {
+    "segment_id": "s-0304",
+    "start_seconds": 909.96,
+    "end_seconds": 911.96,
+    "text": "but we are working on them internally."
+  },
+  {
+    "segment_id": "s-0305",
+    "start_seconds": 911.96,
+    "end_seconds": 915.64,
+    "text": "Our goal is to run the whole evaluation loop inside orbit"
+  },
+  {
+    "segment_id": "s-0306",
+    "start_seconds": 915.64,
+    "end_seconds": 918.68,
+    "text": "from the UI or through the MCP server."
+  },
+  {
+    "segment_id": "s-0307",
+    "start_seconds": 918.68,
+    "end_seconds": 920.72,
+    "text": "First, you deploy your agent."
+  },
+  {
+    "segment_id": "s-0308",
+    "start_seconds": 920.72,
+    "end_seconds": 924.84,
+    "text": "Then you monitor and evaluate its execution in production."
+  },
+  {
+    "segment_id": "s-0309",
+    "start_seconds": 924.84,
+    "end_seconds": 928.28,
+    "text": "Finally, you improve the agent based on those evaluations"
+  },
+  {
+    "segment_id": "s-0310",
+    "start_seconds": 928.28,
+    "end_seconds": 930.8,
+    "text": "without the need to deploy it again."
+  },
+  {
+    "segment_id": "s-0311",
+    "start_seconds": 930.8,
+    "end_seconds": 933.0,
+    "text": "That is our roadmap for evaluation."
+  },
+  {
+    "segment_id": "s-0312",
+    "start_seconds": 933.0,
+    "end_seconds": 938.48,
+    "text": "One place to ship, measure, and improve every workflow."
+  },
+  {
+    "segment_id": "s-0313",
+    "start_seconds": 938.48,
+    "end_seconds": 940.6,
+    "text": "The operational impact of this approach"
+  },
+  {
+    "segment_id": "s-0314",
+    "start_seconds": 940.6,
+    "end_seconds": 944.0,
+    "text": "has been significant across our engineering organization."
+  },
+  {
+    "segment_id": "s-0315",
+    "start_seconds": 944.0,
+    "end_seconds": 947.52,
+    "text": "In the past 30 days alone, our automated code review agent"
+  },
+  {
+    "segment_id": "s-0316",
+    "start_seconds": 947.52,
+    "end_seconds": 950.88,
+    "text": "completed over 9,700 runs, averaging"
+  },
+  {
+    "segment_id": "s-0317",
+    "start_seconds": 950.88,
+    "end_seconds": 953.48,
+    "text": "under three minutes per match request."
+  },
+  {
+    "segment_id": "s-0318",
+    "start_seconds": 953.48,
+    "end_seconds": 955.8,
+    "text": "Beyond code review, our audit fixer"
+  },
+  {
+    "segment_id": "s-0319",
+    "start_seconds": 955.8,
+    "end_seconds": 960.4,
+    "text": "opened 159 months' request to fix vulnerable dependencies"
+  },
+  {
+    "segment_id": "s-0320",
+    "start_seconds": 960.4,
+    "end_seconds": 965.2,
+    "text": "and the AI readiness fixer improved around 80 repositories."
+  },
+  {
+    "segment_id": "s-0321",
+    "start_seconds": 965.2,
+    "end_seconds": 969.36,
+    "text": "The Victoria Linter Fixer fixed 413 projects"
+  },
+  {
+    "segment_id": "s-0322",
+    "start_seconds": 969.36,
+    "end_seconds": 973.4,
+    "text": "and the merge conflict resolver ran 921 times."
+  },
+  {
+    "segment_id": "s-0323",
+    "start_seconds": 973.4,
+    "end_seconds": 977.16,
+    "text": "Across these workflows, we run over 11,000 executions"
+  },
+  {
+    "segment_id": "s-0324",
+    "start_seconds": 977.16,
+    "end_seconds": 981.12,
+    "text": "with a 99% success rate."
+  },
+  {
+    "segment_id": "s-0325",
+    "start_seconds": 981.12,
+    "end_seconds": 984.04,
+    "text": "Reflecting our journey, adopting a self-service model"
+  },
+  {
+    "segment_id": "s-0326",
+    "start_seconds": 984.04,
+    "end_seconds": 986.72,
+    "text": "was one of the best decisions we've made."
+  },
+  {
+    "segment_id": "s-0327",
+    "start_seconds": 986.72,
+    "end_seconds": 990.84,
+    "text": "Standardized guard rates allow engineers across SRE, security,"
+  },
+  {
+    "segment_id": "s-0328",
+    "start_seconds": 990.84,
+    "end_seconds": 994.12,
+    "text": "IT, and support to build custom workflow steps"
+  },
+  {
+    "segment_id": "s-0329",
+    "start_seconds": 994.12,
+    "end_seconds": 995.84,
+    "text": "easily and safely."
+  },
+  {
+    "segment_id": "s-0330",
+    "start_seconds": 995.84,
+    "end_seconds": 1000.0,
+    "text": "We also learn that cost control starts with model selection."
+  },
+  {
+    "segment_id": "s-0331",
+    "start_seconds": 1000.0,
+    "end_seconds": 1002.72,
+    "text": "Not every step needs the most capable model,"
+  },
+  {
+    "segment_id": "s-0332",
+    "start_seconds": 1002.72,
+    "end_seconds": 1006.84,
+    "text": "so its LLM step in a workflow declares its own model."
+  },
+  {
+    "segment_id": "s-0333",
+    "start_seconds": 1006.84,
+    "end_seconds": 1009.8,
+    "text": "For example, a planning step and an implementation step"
+  },
+  {
+    "segment_id": "s-0334",
+    "start_seconds": 1009.8,
+    "end_seconds": 1011.48,
+    "text": "can use different models."
+  },
+  {
+    "segment_id": "s-0335",
+    "start_seconds": 1011.48,
+    "end_seconds": 1014.6,
+    "text": "Matching the model to a task keeps cost under control,"
+  },
+  {
+    "segment_id": "s-0336",
+    "start_seconds": 1014.6,
+    "end_seconds": 1018.0,
+    "text": "and it is why a cost-aware model router is in our roadmap."
+  },
+  {
+    "segment_id": "s-0337",
+    "start_seconds": 1018.0,
+    "end_seconds": 1020.56,
+    "text": "On the other hand, managing data separation"
+  },
+  {
+    "segment_id": "s-0338",
+    "start_seconds": 1020.56,
+    "end_seconds": 1022.88,
+    "text": "remains an ongoing responsibility."
+  },
+  {
+    "segment_id": "s-0339",
+    "start_seconds": 1022.88,
+    "end_seconds": 1024.56,
+    "text": "We maintain a strict distillation"
+  },
+  {
+    "segment_id": "s-0340",
+    "start_seconds": 1024.56,
+    "end_seconds": 1029.24,
+    "text": "between engineering SDLC data, corporate operational data,"
+  },
+  {
+    "segment_id": "s-0341",
+    "start_seconds": 1029.24,
+    "end_seconds": 1031.84,
+    "text": "and sensitive payment production data."
+  },
+  {
+    "segment_id": "s-0342",
+    "start_seconds": 1031.84,
+    "end_seconds": 1035.04,
+    "text": "Additionally, because demand for automation is high,"
+  },
+  {
+    "segment_id": "s-0343",
+    "start_seconds": 1035.04,
+    "end_seconds": 1038.4,
+    "text": "maintaining focus and monetizing high impact work"
+  },
+  {
+    "segment_id": "s-0344",
+    "start_seconds": 1038.4,
+    "end_seconds": 1041.28,
+    "text": "is essential."
+  },
+  {
+    "segment_id": "s-0345",
+    "start_seconds": 1041.28,
+    "end_seconds": 1043.08,
+    "text": "Looking ahead, our roadmap focuses"
+  },
+  {
+    "segment_id": "s-0346",
+    "start_seconds": 1043.08,
+    "end_seconds": 1044.72,
+    "text": "on expanding our platform features"
+  },
+  {
+    "segment_id": "s-0347",
+    "start_seconds": 1044.72,
+    "end_seconds": 1047.6,
+    "text": "and increasing overall architecture flexibility."
+  },
+  {
+    "segment_id": "s-0348",
+    "start_seconds": 1047.6,
+    "end_seconds": 1051.0,
+    "text": "We are actively moving towards a complete sandboxing,"
+  },
+  {
+    "segment_id": "s-0349",
+    "start_seconds": 1051.0,
+    "end_seconds": 1054.12,
+    "text": "so agents can handle complex builds, local environments,"
+  },
+  {
+    "segment_id": "s-0350",
+    "start_seconds": 1054.12,
+    "end_seconds": 1057.4,
+    "text": "and test suite seamlessly across all project types."
+  },
+  {
+    "segment_id": "s-0351",
+    "start_seconds": 1057.4,
+    "end_seconds": 1060.6,
+    "text": "Moving forward, we are also introducing resumable sessions"
+  },
+  {
+    "segment_id": "s-0352",
+    "start_seconds": 1060.6,
+    "end_seconds": 1062.96,
+    "text": "to handle complex multi-step tasks."
+  },
+  {
+    "segment_id": "s-0353",
+    "start_seconds": 1062.96,
+    "end_seconds": 1065.44,
+    "text": "We are also building more evaluation tools"
+  },
+  {
+    "segment_id": "s-0354",
+    "start_seconds": 1065.44,
+    "end_seconds": 1068.24,
+    "text": "directly into orbit, so teams can measure the quality"
+  },
+  {
+    "segment_id": "s-0355",
+    "start_seconds": 1068.24,
+    "end_seconds": 1070.72,
+    "text": "of their workflows on the platform itself."
+  },
+  {
+    "segment_id": "s-0356",
+    "start_seconds": 1070.72,
+    "end_seconds": 1073.64,
+    "text": "In parallel, we are refactoring our orchestration layer"
+  },
+  {
+    "segment_id": "s-0357",
+    "start_seconds": 1073.64,
+    "end_seconds": 1076.8,
+    "text": "to be model agnostic, enabling flexible routing"
+  },
+  {
+    "segment_id": "s-0358",
+    "start_seconds": 1076.8,
+    "end_seconds": 1079.0,
+    "text": "across different model vendors, including"
+  },
+  {
+    "segment_id": "s-0359",
+    "start_seconds": 1079.0,
+    "end_seconds": 1082.8,
+    "text": "an automated model router that select the most cost-effective"
+  },
+  {
+    "segment_id": "s-0360",
+    "start_seconds": 1082.8,
+    "end_seconds": 1084.28,
+    "text": "model for its task."
+  },
+  {
+    "segment_id": "s-0361",
+    "start_seconds": 1084.28,
+    "end_seconds": 1088.6,
+    "text": "That will help us control cost as we keep scaling the platform."
+  },
+  {
+    "segment_id": "s-0362",
+    "start_seconds": 1088.6,
+    "end_seconds": 1092.28,
+    "text": "We also want to make the platform harness agnostic,"
+  },
+  {
+    "segment_id": "s-0363",
+    "start_seconds": 1092.28,
+    "end_seconds": 1096.48,
+    "text": "so that we are not tied to a single harness."
+  },
+  {
+    "segment_id": "s-0364",
+    "start_seconds": 1096.48,
+    "end_seconds": 1099.04,
+    "text": "To wrap up, here are three things we'll add."
+  },
+  {
+    "segment_id": "s-0365",
+    "start_seconds": 1099.04,
+    "end_seconds": 1102.8,
+    "text": "First, start small, pick a repetitive, well-defined task,"
+  },
+  {
+    "segment_id": "s-0366",
+    "start_seconds": 1102.8,
+    "end_seconds": 1105.0,
+    "text": "and prove it worse before you scale it."
+  },
+  {
+    "segment_id": "s-0367",
+    "start_seconds": 1105.0,
+    "end_seconds": 1108.72,
+    "text": "Second, use the model only where it adds value."
+  },
+  {
+    "segment_id": "s-0368",
+    "start_seconds": 1108.72,
+    "end_seconds": 1110.92,
+    "text": "Everything predicts a lot of space as code,"
+  },
+  {
+    "segment_id": "s-0369",
+    "start_seconds": 1110.92,
+    "end_seconds": 1113.56,
+    "text": "and that is what keeps the workflows proliferate."
+  },
+  {
+    "segment_id": "s-0370",
+    "start_seconds": 1113.56,
+    "end_seconds": 1117.0,
+    "text": "And third, keep guardrails and humans in the loop."
+  },
+  {
+    "segment_id": "s-0371",
+    "start_seconds": 1117.0,
+    "end_seconds": 1119.92,
+    "text": "Owners, limits, and merit request reviews."
+  },
+  {
+    "segment_id": "s-0372",
+    "start_seconds": 1119.92,
+    "end_seconds": 1122.48,
+    "text": "That is how we move from AI experiments"
+  },
+  {
+    "segment_id": "s-0373",
+    "start_seconds": 1122.48,
+    "end_seconds": 1125.2,
+    "text": "to workflows and engineering use every day."
+  },
+  {
+    "segment_id": "s-0374",
+    "start_seconds": 1126.32,
+    "end_seconds": 1129.0,
+    "text": "- Thank you all so much for your time and attention today."
+  },
+  {
+    "segment_id": "s-0375",
+    "start_seconds": 1129.0,
+    "end_seconds": 1132.28,
+    "text": "Feel free to reach out to us in case you have further questions or comments."
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "operation_type": "student-approved package generation on existing editorial revision",
+  "source_revision": "revisions/20261012T225329Z-student-feedback",
+  "started_at_utc": "2026-10-13T19:51:29Z",
+  "finished_at_utc": "2026-10-13T19:51:34Z",
+  "exit_code": 0,
+  "receipts": [
+    {
+      "stage": "review/check_content",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 9,
+      "output_count": 1,
+      "started_at": "2026-10-13T19:51:29Z",
+      "finished_at": "2026-10-13T19:51:31Z",
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "tools": [
+        "python3"
+      ],
+      "error_count": 0,
+      "_file": "logs/2026-10-13T195129Z-review_check_content-e2baa934999d.json"
+    },
+    {
+      "stage": "run",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": null,
+      "output_count": null,
+      "started_at": "2026-10-13T19:51:29Z",
+      "finished_at": "2026-10-13T19:51:34Z",
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "tools": [
+        "bash"
+      ],
+      "error_count": 0,
+      "_file": "logs/2026-10-13T195129Z-run-f522bf20adb3.json"
+    },
+    {
+      "stage": "publishing/prepare_package",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 3,
+      "output_count": 11,
+      "started_at": "2026-10-13T19:51:31Z",
+      "finished_at": "2026-10-13T19:51:34Z",
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "tools": [
+        "python3"
+      ],
+      "error_count": 0,
+      "_file": "logs/2026-10-13T195131Z-publishing_prepare_package-8e06c8407c43.json"
+    },
+    {
+      "stage": "reporting/summarize_run",
+      "status": "completed",
+      "exit_code": 0,
+      "input_count": 5,
+      "output_count": 1,
+      "started_at": "2026-10-13T19:51:34Z",
+      "finished_at": "2026-10-13T19:51:35Z",
+      "cost_usd": null,
+      "cost_is_estimate": false,
+      "tools": [
+        "python3"
+      ],
+      "error_count": 0,
+      "_file": "logs/2026-10-13T195134Z-reporting_summarize_run-3b82277e3a7d.json"
+    }
+  ],
+  "note": "This is an editorial-revision package operation, not another live source collection run. Its separate revision summary remains failed because it intentionally has no collector stages.",
+  "log_files": [
+    "logs/2026-10-13T195129Z-review_check_content-e2baa934999d.json",
+    "logs/2026-10-13T195129Z-run-f522bf20adb3.json",
+    "logs/2026-10-13T195131Z-publishing_prepare_package-8e06c8407c43.json",
+    "logs/2026-10-13T195134Z-reporting_summarize_run-3b82277e3a7d.json"
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "segment_id": "v-001",
+    "start_seconds": 10.0,
+    "end_seconds": 20.0,
+    "text": "This fictional demonstration excludes calibration time from cycle time."
+  }
+]

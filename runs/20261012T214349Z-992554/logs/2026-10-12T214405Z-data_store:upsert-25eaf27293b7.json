@@ -1,0 +1,17 @@
+{
+  "stage": "data/store:upsert",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 36,
+  "output_count": 36,
+  "started_at": "2026-10-12T21:44:05Z",
+  "finished_at": "2026-10-12T21:44:05Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-12T214405Z-data_store:upsert-25eaf27293b7.json",
+  "tools": [
+    "python3"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

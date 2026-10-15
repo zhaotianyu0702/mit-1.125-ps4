@@ -1,0 +1,17 @@
+{
+  "stage": "workflows/collect_sources",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": null,
+  "output_count": null,
+  "started_at": "2026-10-13T00:01:15Z",
+  "finished_at": "2026-10-13T00:01:30Z",
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "_file": "logs/2026-10-13T000115Z-workflows_collect_sources-247ae8b2b3aa.json",
+  "tools": [
+    "bash"
+  ],
+  "error_count": 0,
+  "public_derivative": true
+}

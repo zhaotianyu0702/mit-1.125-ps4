@@ -1,0 +1,13 @@
+{
+  "run_id": "20261012T213141Z",
+  "started_at": "2026-10-12T21:31:41Z",
+  "as_of_date": "2026-10-12",
+  "mode": "live_stage_recovery",
+  "source_run_id": "20261012T211601Z-41cd70",
+  "scope": "One permitted public YouTube audio download and local ASR; no subtitle requests, no editorial inference, not a separate completed run.",
+  "effective_environment": {
+    "PS4_YOUTUBE_TRANSCRIPT_MODE": "local",
+    "PS4_WHISPER_MODEL": "models/ggml-base.en.bin",
+    "PS4_WHISPER_CLI": "/opt/homebrew/bin/whisper-cli"
+  }
+}

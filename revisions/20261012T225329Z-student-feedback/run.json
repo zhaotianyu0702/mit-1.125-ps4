@@ -1,0 +1,11 @@
+{
+  "run_id": "20261012T225329Z-student-feedback",
+  "started_at": "2026-10-12T22:53:29.102077+00:00",
+  "as_of_date": "2026-10-12",
+  "mode": "replay",
+  "previous_run_id": "20261012T222917Z-assistant-v2",
+  "source_run_id": "20261012T214349Z-992554",
+  "operation": "Apply actual student feedback to retained-evidence editorial drafts; no collection or new live date",
+  "student_review_status": "sample_decisions_and_policy_confirmed; conclusion_revision_requested",
+  "human_approval": false
+}

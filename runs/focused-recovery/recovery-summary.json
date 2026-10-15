@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-12T21:34:46.891937+00:00",
+  "status": "recovered",
+  "scope": "Focused live source recovery, not a second completed pipeline run",
+  "items": 1,
+  "segments": 375,
+  "errors": [],
+  "method": "Local Whisper base.en on permitted public audio; no subtitle request. Transcript is unverified machine output.",
+  "original_failed_run_unchanged": true,
+  "editorial_inference_performed": false
+}

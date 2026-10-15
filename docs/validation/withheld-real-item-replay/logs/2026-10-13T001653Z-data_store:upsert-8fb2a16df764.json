@@ -1,0 +1,15 @@
+{
+  "stage": "data/store:upsert",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 35,
+  "output_count": 35,
+  "started_at": "2026-10-13T00:16:53Z",
+  "finished_at": "2026-10-13T00:16:53Z",
+  "tools": [
+    "python3"
+  ],
+  "cost_usd": null,
+  "cost_is_estimate": false,
+  "errors": []
+}

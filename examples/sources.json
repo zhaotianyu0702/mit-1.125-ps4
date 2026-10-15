@@ -1,0 +1,20 @@
+[
+  {
+    "source_id": "lab-feed",
+    "publisher_id": "fictional-lab",
+    "kind": "feed",
+    "url": "https://lab.example/feed.xml"
+  },
+  {
+    "source_id": "vendor-video",
+    "publisher_id": "fictional-vendor",
+    "kind": "youtube",
+    "url": "https://video.example/channel"
+  },
+  {
+    "source_id": "practitioner-podcast",
+    "publisher_id": "fictional-practitioner",
+    "kind": "podcast",
+    "url": "https://podcast.example/feed.xml"
+  }
+]
