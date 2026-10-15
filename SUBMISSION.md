@@ -2,7 +2,7 @@
 
 **Student:** Tianyu Zhao  
 **Repository:** https://github.com/zhaotianyu0702/mit-1.125-ps4  
-**Current status:** Implementation and evidence are ready for inspection. Article/video publication and final course submission are not yet complete; publication links below are intentionally pending.
+**Current status:** The public code and evidence repository is uploaded, and its URL was registered in the course roster's PS4 Repo field on October 15 UTC. The overall assignment remains incomplete because article/video publication and the final published-claim trace are still pending; publication links below are intentionally pending.
 
 ## Topic, audience and purpose
 

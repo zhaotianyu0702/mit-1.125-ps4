@@ -7,12 +7,12 @@
   ],
   "student_feedback_revision": "revisions/20261012T225329Z-student-feedback (selected articles/scripts, six sample and policy feedback record)",
   "contents_file_count": 325,
-  "contents_bytes": 4081901,
+  "contents_bytes": 4082039,
   "sha256": {
     ".gitignore": "932179c8ef5f0c66508ff1146079bafda8781b2bf5d6a880bd020c25b0c8268a",
     "ARCHITECTURE.md": "9b0bc4cd7800053b552f30b2398d75fde22749bada3614520ec7f87c9c850bd9",
     "README.md": "4bdeabd9444351b2d0970e7b48d1698d89162dbc3a2a1abc3eb31d396b5328e7",
-    "SUBMISSION.md": "435397ffd25766484023bd359aa02c165023e9a73dd2362e5a7ed4dddc65edfc",
+    "SUBMISSION.md": "89a80fb088a67849dabf8e3c2ddebad726c1ec5d0e87b48c74793dbbd42f2a0c",
     "adapters/codex.py": "edd60116477f6c17ef4b2b66305c55a5c358d2c0e4e9e75577120038af541ea1",
     "adapters/codex.sh": "323648411a3903c8430a9f7449776d78b58e1c8041d78bc4a27822f92ed9bcc2",
     "collectors/collect.py": "c958e1642ff6c722cfbd27b2a2c342a4969748a92a27c6217cd713eb792b19d9",
@@ -347,8 +347,7 @@
   "asset_preservation": "Copied exact data/assets text and timestamp-segment files referenced by both selected live runs; run records retain the same repository-relative paths.",
   "derivative_label": "Run summaries, stage receipts, student feedback records, and review samples are sanitized derivatives; original local records remain unchanged.",
   "parent_sync_pending": [
-    "final SUBMISSION.md",
-    "verified publication links and claim-trace update"
+    "verified publication links and final technical-demo published-claim trace"
   ],
   "privacy_derivatives": [
     "non-portable local CLI path removed from staged adapter; use codex on PATH or PS4_CODEX_BIN",
