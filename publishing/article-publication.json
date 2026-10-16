@@ -1,0 +1,47 @@
+{
+  "verified_at_utc": "2026-10-15T02:34:14.849493+00:00",
+  "author": "Tianyu Zhao",
+  "profile": "https://substack.com/@tianyuzhao",
+  "publication": "https://tianyuzhao.substack.com",
+  "audience": "everyone_free",
+  "email_and_app_delivery": false,
+  "verification": "Substack publisher dashboard showed Published for each distinct post; signed-in reader pages matched all approved paragraphs and exact links. On October 16, unauthenticated HTTPS retrieval also returned HTTP 200 and all 42 approved paragraph word sequences and all article/video/source hrefs across the three posts. YouTube Studio saved and read back each article URL.",
+  "youtube_external_links": "Article URLs are stored in full in the descriptions, but clickable external links require channel verification. No verification or access expansion was performed.",
+  "articles": [
+    {
+      "piece": "01",
+      "title": "Coding agents move into the delivery system",
+      "article_url": "https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery",
+      "video_url": "https://youtu.be/pmSUPnpCyag",
+      "approved_article_sha256": "f04c88647515c23cfb47e69b338ed880b533f66a9149eea1425ebcbbb3c4a10d",
+      "published_html_sha256": "db551d6da36847f0a0a3c9e3288f0ceed2526aa9323a3593b8380424cfdd7857",
+      "full_article_and_disclosure_visible": true,
+      "article_to_video_link_verified": true,
+      "video_description_article_url_saved": true
+    },
+    {
+      "piece": "02",
+      "title": "What Coding-Agent Results Actually Measure",
+      "article_url": "https://tianyuzhao.substack.com/p/what-coding-agent-results-actually",
+      "video_url": "https://youtu.be/h0z538an6hE",
+      "approved_article_sha256": "c9e73b3f0c657c7bdc1a6555c493a777aae1c04b09711b4e0d975e7610f1a7bf",
+      "published_html_sha256": "ab6376af37a70b0c1cbbe4d064c7ac593be7f08eb14228aad0d426133cd9dde6",
+      "full_article_and_disclosure_visible": true,
+      "article_to_video_link_verified": true,
+      "video_description_article_url_saved": true
+    },
+    {
+      "piece": "03",
+      "title": "Run a Small, Reversible Trial Before Expanding Agent Access",
+      "article_url": "https://tianyuzhao.substack.com/p/run-a-small-reversible-trial-before",
+      "video_url": "https://youtu.be/7dnm8xoI_yA",
+      "approved_article_sha256": "d119f59e8ee09b99c3fc357a31e75677e6d026b90cc60ae6dc7096ec65d824e3",
+      "published_html_sha256": "afab0a332d18b4decfa6ca1c04ab5f7e4c5fbfa022e746b4140366e335378b8f",
+      "full_article_and_disclosure_visible": true,
+      "article_to_video_link_verified": true,
+      "video_description_article_url_saved": true
+    }
+  ],
+  "anonymous_verification_at_utc": "2026-10-16T01:06:10.223311+00:00",
+  "anonymous_content_qa": "substack-anonymous-content-qa-20261016.json"
+}

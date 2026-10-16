@@ -1,0 +1,288 @@
+1
+00:00:00,000 --> 00:00:07,560
+This is the technical demonstration for Ship, Then Verify: a
+research-to-content pipeline about evaluating coding assistants for small
+
+2
+00:00:07,560 --> 00:00:08,400
+software teams.
+
+3
+00:00:08,400 --> 00:00:12,700
+The screen shows saved diagrams and project files, not a live terminal
+recording.
+
+4
+00:00:12,700 --> 00:00:18,000
+The claim trace now reaches a published article, with its companion video
+linked from the public page.
+
+5
+00:00:21,000 --> 00:00:24,300
+The entry point is bash run dot S H.
+
+6
+00:00:24,300 --> 00:00:29,300
+It creates a unique run directory and captures the actual UTC date once.
+
+7
+00:00:29,300 --> 00:00:33,700
+Two Bash workflows coordinate separate collectors and editorial components.
+
+8
+00:00:33,700 --> 00:00:43,060
+RSS, YouTube and podcast candidates pass through extraction, the evidence
+store, freshness filtering, selection, briefs, articles, scripts, review
+
+9
+00:00:43,060 --> 00:00:44,100
+and reporting.
+
+10
+00:00:44,100 --> 00:00:47,100
+Only the store component owns SQLite.
+
+11
+00:00:47,100 --> 00:00:51,100
+The other components exchange JSON Lines and retained asset paths.
+
+12
+00:00:51,100 --> 00:00:54,300
+The code shown here is the actual orchestrator.
+
+13
+00:00:54,300 --> 00:00:57,300
+Here is a source trace from the October twelfth run.
+
+14
+00:00:57,300 --> 00:01:02,500
+The Flywire presentation is stored under its YouTube item ID and an exact
+version.
+
+15
+00:01:02,500 --> 00:01:06,300
+Its accepted decision feeds claim zero one, C two.
+
+16
+00:01:06,300 --> 00:01:15,300
+In retained segment sixty eight, at three minutes twenty six, the
+transcript says that repetitive process logic is crystallized into code.
+
+17
+00:01:15,300 --> 00:01:22,800
+Adjacent cited passages describe returning findings to a merge request and
+keeping review access read only.
+
+18
+00:01:22,800 --> 00:01:29,500
+Article one carries this claim into its public Substack page, with links to
+the same presentation and timestamps.
+
+19
+00:01:29,500 --> 00:01:34,300
+The Flywire transcript is machine generated and still unverified by human
+listening.
+
+20
+00:01:34,300 --> 00:01:38,800
+The first completed automated run is dated October twelfth, UTC.
+
+21
+00:01:38,800 --> 00:01:46,100
+It retained thirty six eligible items: thirty feed records, two YouTube
+videos and four podcasts, from seven publisher groups.
+
+22
+00:01:46,100 --> 00:01:55,100
+Earlier attempts had caption requests fail with HTTP four twenty nine. A
+separately logged local Whisper recovery supplied one missing transcript.
+
+23
+00:01:55,100 --> 00:01:58,100
+Those failed runs and the recovery remain visible;
+
+24
+00:01:58,100 --> 00:02:01,100
+neither was relabeled as a successful later date.
+
+25
+00:02:01,100 --> 00:02:04,100
+Policy version two added a concrete rule:
+
+26
+00:02:04,100 --> 00:02:08,100
+a locator must support a claim’s meaning, not merely exist.
+
+27
+00:02:08,100 --> 00:02:14,100
+Source context had exposed a wrong timestamp and an unsupported paid API
+key qualifier.
+
+28
+00:02:14,100 --> 00:02:18,100
+The assistant revised the policy and reran selection on retained evidence.
+
+29
+00:02:18,100 --> 00:02:26,100
+The student then accepted the six presented sample decisions and policy
+version two, and asked for a positive attitude toward efficiency gains.
+
+30
+00:02:26,100 --> 00:02:32,100
+The revised conclusion supports active trials and expansion when quality
+holds and total effort falls.
+
+31
+00:02:32,100 --> 00:02:35,100
+All three article texts are now approved and published.
+
+32
+00:02:35,100 --> 00:02:41,600
+That approval records article review; it does not establish human listening
+verification of the Flywire audio.
+
+33
+00:02:41,600 --> 00:02:47,600
+The second full live run started at zero zero, zero one UTC on October
+thirteenth.
+
+34
+00:02:47,600 --> 00:02:53,600
+It collected and extracted thirty six items in the inclusive September
+fourteenth through October thirteenth window.
+
+35
+00:02:53,600 --> 00:02:57,600
+The store recorded zero new, one changed and thirty five unchanged.
+
+36
+00:02:57,600 --> 00:03:03,600
+The changed ReviewBench version only altered promotional footer text; the
+core finding did not change.
+
+37
+00:03:03,600 --> 00:03:08,600
+Effective selection is thirteen accept, seventeen reject and six defer.
+
+38
+00:03:08,600 --> 00:03:15,232
+Six unchanged source versions retain the student’s previously confirmed
+choices, while the new model’s differing suggestions remain separately
+
+39
+00:03:15,232 --> 00:03:15,600
+recorded.
+
+40
+00:03:15,600 --> 00:03:22,600
+The run exposed a missing date context in selection; the fix passes the
+run’s captured window explicitly.
+
+41
+00:03:22,600 --> 00:03:30,600
+Another resumed attempt was rejected for an altered quotation and a
+mistyped version ID. The invalid responses were preserved.
+
+42
+00:03:30,600 --> 00:03:38,600
+A subsequent resume completed at zero zero twenty one, twenty nine UTC,
+producing three briefs, articles and scripts.
+
+43
+00:03:38,600 --> 00:03:43,600
+Source review then corrected numerical pointers, a podcast attribution and
+a timestamp.
+
+44
+00:03:43,600 --> 00:03:48,600
+The final mechanical check passes, while the status remains awaiting
+review.
+
+45
+00:03:48,600 --> 00:03:54,600
+Because no meaningful new finding appeared, an isolated replay withholds
+one real eligible item.
+
+46
+00:03:54,600 --> 00:04:02,600
+A baseline contains thirty five records. Introducing the withheld item
+produces one new and thirty five unchanged records.
+
+47
+00:04:02,600 --> 00:04:09,600
+Repeating all thirty six produces thirty six unchanged and zero duplicates.
+The replay uses a disposable store,
+
+48
+00:04:09,600 --> 00:04:15,600
+keeps the real item identifiers and is labeled replay. It does not count as
+a third live run.
+
+49
+00:04:15,600 --> 00:04:24,600
+Forty one tests, Bash syntax checks and ShellCheck pass. The final source
+audit checked sixteen claims and forty eight exact locators.
+
+50
+00:04:24,600 --> 00:04:33,062
+Asset checks covered eighty four files and seven thousand seven hundred ten
+transcript segments. Hash comparisons confirmed that earlier runs,
+
+51
+00:04:33,062 --> 00:04:35,600
+revisions and completed videos remained unchanged.
+
+52
+00:04:35,600 --> 00:04:44,600
+These checks establish specific properties, not claim truth or student
+approval. Human interpretation and media listening remain distinct work.
+
+53
+00:04:44,600 --> 00:04:51,600
+The significant architectural tradeoff is retaining versioned, content
+addressed evidence behind a single store interface.
+
+54
+00:04:51,600 --> 00:04:56,600
+It makes changes and claims reproducible, but large media consume storage.
+
+55
+00:04:56,600 --> 00:05:00,600
+Reusing an unchanged media URL may miss changed remote bytes.
+
+56
+00:05:00,600 --> 00:05:07,600
+Long model inputs use labeled sampled passages, so a valid quote does not
+prove the model considered every relevant passage.
+
+57
+00:05:07,600 --> 00:05:11,600
+The next improvement is deeper context checking around every claim.
+
+58
+00:05:11,600 --> 00:05:15,600
+All three approved articles and their companion videos are published.
+
+59
+00:05:15,600 --> 00:05:20,600
+The Substack reader pages show the full text, AI disclosures, and links to
+their videos;
+
+60
+00:05:20,600 --> 00:05:24,600
+each YouTube description includes its corresponding article link.
+
+61
+00:05:24,600 --> 00:05:30,600
+YouTube currently blocks clickable external links until one-time channel
+verification is completed.
+
+62
+00:05:30,600 --> 00:05:35,600
+Final publication of this technical demonstration and YouTube external-link
+verification remain.
+
+63
+00:05:35,600 --> 00:05:40,520
+The course repository is registered, but the overall submission is not
+complete.

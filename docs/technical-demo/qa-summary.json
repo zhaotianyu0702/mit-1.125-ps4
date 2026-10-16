@@ -1,0 +1,128 @@
+{
+  "assembled_sha256": "3a71b22c3eca0d7da73df89993cd556f33fdbfd34a599ead2d20aac85e4b760a",
+  "master_sha256": "1ec1b9b71a9cfd12187b60810fb170bae7a69d16630c08734bbd4fda6b3a374a",
+  "asr_srt_sha256": "001349d42eb0387787f7fbafe12b3178a4023a46f5c5cb82c0e5fcd9aeb84e90",
+  "duration_seconds": 340.53,
+  "source_media": {
+    "duration_seconds": 340.52,
+    "video_codec": "h264",
+    "dimensions": "1920x1080",
+    "frame_rate_text": "30",
+    "audio_codec": "aac",
+    "has_video": true,
+    "has_audio": true
+  },
+  "output_media": {
+    "duration_seconds": 340.53,
+    "video_codec": "h264",
+    "dimensions": "1920x1080",
+    "frame_rate_text": "30",
+    "audio_codec": "aac",
+    "has_video": true,
+    "has_audio": true
+  },
+  "automated_checks_passed": true,
+  "checks": {
+    "complete_decode": true,
+    "duration_4_to_6_minutes": true,
+    "duration_matches_master_within_0_10s": true,
+    "dimensions_1920x1080": true,
+    "h264_video": true,
+    "audio_present": true,
+    "assembly_report_matches_master": true,
+    "assembly_report_matches_asr_srt": true,
+    "captions_exact_authored_word_sequence": true,
+    "captions_nonoverlapping": true,
+    "caption_times_within_video": true,
+    "captions_max_two_lines_per_cue": true,
+    "captions_max_75_characters_per_line": true,
+    "audio_packet_payloads_bit_identical": true,
+    "all_scene_review_frames_extracted": true,
+    "three_caption_temporal_probes_created": true,
+    "all_three_temporal_probes_inside_authored_caption_cues": true,
+    "caption_region_changes_across_three_cues": true
+  },
+  "caption_cue_count": 63,
+  "caption_layout": {
+    "cue_count": 63,
+    "max_lines_per_cue": 2,
+    "max_characters_per_line": 75,
+    "cues_over_two_lines": 0,
+    "lines_over_75_characters": 0
+  },
+  "caption_token_mismatches": [],
+  "audio_packet_comparison": {
+    "master": {
+      "ok": true,
+      "sha256": "f90349dad4c1e3721555ec44802c2bc8011dc4358ed3dce6d89b91b888539f73",
+      "bytes": 5358020,
+      "frame_count": 14665,
+      "method": "SHA-256 of concatenated AAC frame payloads with ADTS headers removed"
+    },
+    "assembled": {
+      "ok": true,
+      "sha256": "f90349dad4c1e3721555ec44802c2bc8011dc4358ed3dce6d89b91b888539f73",
+      "bytes": 5358020,
+      "frame_count": 14665,
+      "method": "SHA-256 of concatenated AAC frame payloads with ADTS headers removed"
+    }
+  },
+  "audio_levels": {
+    "mean_db": [
+      "-23.7"
+    ],
+    "max_db": [
+      "-4.4"
+    ],
+    "silence_candidates": [
+      {
+        "start_seconds": 17.798027,
+        "duration_seconds": 3.708844
+      }
+    ]
+  },
+  "verified_at_utc": "2026-10-16T01:10:32.736689+00:00",
+  "video_filename": "MIT-1.125-PS04-technical-demo-Elio-final.mp4",
+  "visual_review": {
+    "verified_at_utc": "2026-10-16T01:10:32.736689+00:00",
+    "reviewer": "assistant",
+    "file_sha256": "3a71b22c3eca0d7da73df89993cd556f33fdbfd34a599ead2d20aac85e4b760a",
+    "scope": [
+      "All 12 chapter-midpoint frames in final contact sheet",
+      "Full-size published-claim frame and final status frame",
+      "Three distinct authored-caption moments in scene 01"
+    ],
+    "result": "Layout and text readable; evidence panes and captions do not overlap; publication snapshot date is visible; source and published article URLs appear.",
+    "full_human_listening_performed": false,
+    "source_listening_verification": false
+  },
+  "asr_script_difference_count": 55,
+  "caption_timing": "Authored narration words aligned to machine-generated Whisper intervals; long intervals split with proportional timing. This is not human word-level listening verification.",
+  "human_listening_performed": false,
+  "authorization_basis": "Student approved the series, Elio demonstration and necessary published-claim update on October 13 UTC; this records the scope, not a new listening review.",
+  "initial_failures_and_repairs": {
+    "status": "automated_checks_need_repair",
+    "assembled_sha256": "9d562f5ca67484669d231ad0950163e04dff30c0053ab68780c04f9ce9519a7e",
+    "duration_seconds": 340.53,
+    "master_duration_seconds": 340.52,
+    "caption_layout": {
+      "cue_count": 59,
+      "max_lines_per_cue": 3,
+      "max_characters_per_line": 75,
+      "cues_over_two_lines": 4,
+      "lines_over_75_characters": 0
+    },
+    "checks": {
+      "caption_times_within_video": false,
+      "captions_max_two_lines_per_cue": false,
+      "all_three_temporal_probes_inside_authored_caption_cues": false
+    },
+    "diagnosis": {
+      "caption_times_within_video": "Last Whisper cue ended at 340.600s while the master duration was 340.520s; authored captions were clipped to the master duration.",
+      "captions_max_two_lines_per_cue": "Four long ASR intervals wrapped to three lines. The assembler now splits long authored text into sequential cues, proportionally interpolating within the original machine-generated ASR interval, then wraps to at most two lines of <=75 characters.",
+      "all_three_temporal_probes_inside_authored_caption_cues": "The original 18.0s probe fell in a narration pause within scene 01: the preceding caption ended at 17.8s and scene 02 began at 21.0s. It was moved to 14.5s, an active speech interval with an authored caption, rather than treating a legitimate pause as a caption failure."
+    },
+    "automated_qa_only": true,
+    "human_listening_performed": false
+  }
+}

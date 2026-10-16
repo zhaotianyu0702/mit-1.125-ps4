@@ -1,0 +1,42 @@
+{
+  "verified_at_utc": "2026-10-16T01:04:58.475589+00:00",
+  "method": "Unauthenticated HTTPS retrieval with no cookies or authorization; parse rendered HTML text (excluding script/style), compare all approved paragraph word sequences and exact hrefs. Does not prove full video playback.",
+  "results": [
+    {
+      "piece": "01",
+      "url": "https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "89ce341fd74336ba8fff5cdac16a2676d6897feb414f6dffbb0d223a55c2dab1",
+      "paragraphs_checked": 13,
+      "missing_paragraphs": [],
+      "unique_links_checked": 8,
+      "missing_links": [],
+      "no_cookies_or_authorization_sent": true
+    },
+    {
+      "piece": "02",
+      "url": "https://tianyuzhao.substack.com/p/what-coding-agent-results-actually",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e951ce41cf22fa26f565154707e7665984cfe94a28f5cacda3cb42a2ce501e58",
+      "paragraphs_checked": 15,
+      "missing_paragraphs": [],
+      "unique_links_checked": 8,
+      "missing_links": [],
+      "no_cookies_or_authorization_sent": true
+    },
+    {
+      "piece": "03",
+      "url": "https://tianyuzhao.substack.com/p/run-a-small-reversible-trial-before",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "544ce27dfeb56e47cfabc526efc91e8c156a813dee19cce49aec85d2c9b99dfd",
+      "paragraphs_checked": 14,
+      "missing_paragraphs": [],
+      "unique_links_checked": 10,
+      "missing_links": [],
+      "no_cookies_or_authorization_sent": true
+    }
+  ]
+}

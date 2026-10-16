@@ -6,10 +6,9 @@
   "paid_promotion": false,
   "ai_generated_label": true,
   "subscriber_notifications": false,
-  "verification": "YouTube Studio confirmed all three Unlisted. Each watch page loaded the approved title and AI label and played beyond the start. Independent web retrieval also returned each matching title; no signed-out full-playback claim is made.",
+  "verification": "YouTube Studio confirmed all three Unlisted. Each watch page loaded the approved title and AI label and played beyond the start. Independent web retrieval also returned each matching title; no signed-out full-playback claim is made. On October 15, each complete companion-article URL was saved and read back in YouTube Studio; the external-link verification limitation remains.",
   "remaining_work": [
-    "Publish the three Substack articles, then add their verified URLs to the descriptions.",
-    "Complete the separate technical demonstration with an actual published-claim trace and upload it separately."
+    "Optional channel verification to enable clickable external description links; full URLs already appear in descriptions and the submission repository."
   ],
   "external_source_links": "Complete source URLs are saved below and in the descriptions. YouTube currently requires one-time channel verification for clickable external links; its watch interface truncates some unlinked external URLs. No verification or permission expansion was performed.",
   "videos": [
@@ -18,7 +17,7 @@
       "url": "https://youtu.be/pmSUPnpCyag",
       "filename": "01-ship-then-verify.mp4",
       "title": "Coding agents move into the delivery system",
-      "description": "Ship, Then Verify — Part 1 of 3\nEvidence as of 2026-10-12.\n\nCoding agents work inside a delivery system of project context, permissions, review paths, and run records. This article considers practical efficiency opportunities and what a small team should measure before expanding use.\n\nCompanion article: Substack publication pending; the link will be added after publication.\n\nNarration disclosure: This video uses AI-generated narration created with Google Vids. Research, drafting, and substantive assistant review were AI-assisted.\n\nSources cited in the article:\n- https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/\n- https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/\n- https://openai.com/index/asana-browser-agent\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=500s\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=708s",
+      "description": "Ship, Then Verify \u2014 Part 1 of 3\nEvidence as of 2026-10-12.\n\nCoding agents work inside a delivery system of project context, permissions, review paths, and run records. This article considers practical efficiency opportunities and what a small team should measure before expanding use.\n\nCompanion article: https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery\n\nNarration disclosure: This video uses AI-generated narration created with Google Vids. Research, drafting, and substantive assistant review were AI-assisted.\n\nSources cited in the article:\n- https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/\n- https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/\n- https://openai.com/index/asana-browser-agent\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=500s\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=708s",
       "source_urls": [
         "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
         "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
@@ -26,28 +25,32 @@
         "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s",
         "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=500s",
         "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=708s"
-      ]
+      ],
+      "article_url": "https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery",
+      "article_url_saved_readback": true
     },
     {
       "piece": "02",
       "url": "https://youtu.be/h0z538an6hE",
       "filename": "02-ship-then-verify.mp4",
       "title": "What Coding-Agent Results Actually Measure",
-      "description": "Ship, Then Verify — Part 2 of 3\nEvidence as of 2026-10-12.\n\nTask completion, lower costs, benchmarks, and run counts each measure different things. This article explains what those results establish and how a small team can test whether gains reach accepted software changes.\n\nCompanion article: Substack publication pending; the link will be added after publication.\n\nNarration disclosure: This video uses AI-generated narration created with Google Vids. Research, drafting, and substantive assistant review were AI-assisted.\n\nSources cited in the article:\n- https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/\n- https://openai.com/index/asana-browser-agent\n- https://openai.com/index/legalon-halves-codex-costs\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=907s\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=944s",
+      "description": "Ship, Then Verify \u2014 Part 2 of 3\nEvidence as of 2026-10-12.\n\nTask completion, lower costs, benchmarks, and run counts each measure different things. This article explains what those results establish and how a small team can test whether gains reach accepted software changes.\n\nCompanion article: https://tianyuzhao.substack.com/p/what-coding-agent-results-actually\n\nNarration disclosure: This video uses AI-generated narration created with Google Vids. Research, drafting, and substantive assistant review were AI-assisted.\n\nSources cited in the article:\n- https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/\n- https://openai.com/index/asana-browser-agent\n- https://openai.com/index/legalon-halves-codex-costs\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=907s\n- https://www.youtube.com/watch?v=rAUyRDOFyHU&t=944s",
       "source_urls": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://openai.com/index/asana-browser-agent",
         "https://openai.com/index/legalon-halves-codex-costs",
         "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=907s",
         "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=944s"
-      ]
+      ],
+      "article_url": "https://tianyuzhao.substack.com/p/what-coding-agent-results-actually",
+      "article_url_saved_readback": true
     },
     {
       "piece": "03",
       "url": "https://youtu.be/7dnm8xoI_yA",
       "filename": "03-ship-then-verify.mp4",
       "title": "Run a Small, Reversible Trial Before Expanding Agent Access",
-      "description": "Ship, Then Verify — Part 3 of 3\nEvidence as of 2026-10-12.\n\nA small, reversible coding-agent trial can test efficiency on comparable tasks. Track independently verified outcomes, repeatability, review effort, elapsed time, cost, and access boundaries.\n\nCompanion article: Substack publication pending; the link will be added after publication.\n\nNarration disclosure: This video uses AI-generated narration created with Google Vids. Research, drafting, and substantive assistant review were AI-assisted.\n\nSources cited in the article:\n- https://blog.cloudflare.com/agentic-security-operations/\n- https://openai.com/index/asana-browser-agent\n- https://openai.com/index/legalon-halves-codex-costs\n- https://share.transistor.fm/s/74934e48?t=1461\n- https://share.transistor.fm/s/74934e48?t=660\n- https://simonwillison.net/2026/Oct/9/built-using-my-voice/\n- https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened/\n- https://stackoverflow.blog/2026/10/08/part-5-operating-an-llm-system-observability-cost-routing-and-the-platform-underneath/\n- https://www.youtube.com/watch?v=ql_-cPc_ZYQ&t=5850s",
+      "description": "Ship, Then Verify \u2014 Part 3 of 3\nEvidence as of 2026-10-12.\n\nA small, reversible coding-agent trial can test efficiency on comparable tasks. Track independently verified outcomes, repeatability, review effort, elapsed time, cost, and access boundaries.\n\nCompanion article: https://tianyuzhao.substack.com/p/run-a-small-reversible-trial-before\n\nNarration disclosure: This video uses AI-generated narration created with Google Vids. Research, drafting, and substantive assistant review were AI-assisted.\n\nSources cited in the article:\n- https://blog.cloudflare.com/agentic-security-operations/\n- https://openai.com/index/asana-browser-agent\n- https://openai.com/index/legalon-halves-codex-costs\n- https://share.transistor.fm/s/74934e48?t=1461\n- https://share.transistor.fm/s/74934e48?t=660\n- https://simonwillison.net/2026/Oct/9/built-using-my-voice/\n- https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened/\n- https://stackoverflow.blog/2026/10/08/part-5-operating-an-llm-system-observability-cost-routing-and-the-platform-underneath/\n- https://www.youtube.com/watch?v=ql_-cPc_ZYQ&t=5850s",
       "source_urls": [
         "https://blog.cloudflare.com/agentic-security-operations/",
         "https://openai.com/index/asana-browser-agent",
@@ -58,7 +61,24 @@
         "https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened/",
         "https://stackoverflow.blog/2026/10/08/part-5-operating-an-llm-system-observability-cost-routing-and-the-platform-underneath/",
         "https://www.youtube.com/watch?v=ql_-cPc_ZYQ&t=5850s"
-      ]
+      ],
+      "article_url": "https://tianyuzhao.substack.com/p/run-a-small-reversible-trial-before",
+      "article_url_saved_readback": true
     }
-  ]
+  ],
+  "crosslinks_verified_at_utc": "2026-10-15T02:34:14.849493+00:00",
+  "anonymous_metadata_qa_at_utc": "2026-10-16T01:06:10.223311+00:00",
+  "anonymous_metadata_qa": "youtube-anonymous-metadata-qa-20261016.json",
+  "anonymous_verification": "No-cookie/no-credential public metadata retrieval returned all three expected titles, Unlisted availability and playable media formats; this is not a claim of full signed-out playback.",
+  "external_link_verification_options_observed": [
+    "6-second selfie video",
+    "photo of identity document",
+    "sufficient channel history (UI says usually two active months)"
+  ],
+  "verification_option_selected": false,
+  "technical_demonstration_delivery": {
+    "host": "existing GitHub submission repository",
+    "url": "https://raw.githubusercontent.com/zhaotianyu0702/mit-1.125-ps4/main/docs/technical-demo/MIT-1.125-PS04-technical-demo-Elio-final.mp4",
+    "fourth_youtube_upload": false
+  }
 }

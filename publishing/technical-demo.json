@@ -1,0 +1,16 @@
+{
+  "prepared_at_utc": "2026-10-16T01:10:32.736689+00:00",
+  "title": "MIT 1.125 PS04 \u2014 Technical demonstration",
+  "video_url": "https://raw.githubusercontent.com/zhaotianyu0702/mit-1.125-ps4/main/docs/technical-demo/MIT-1.125-PS04-technical-demo-Elio-final.mp4",
+  "file_page_url": "https://github.com/zhaotianyu0702/mit-1.125-ps4/blob/main/docs/technical-demo/MIT-1.125-PS04-technical-demo-Elio-final.mp4",
+  "hosting": "existing authorized public GitHub submission repository",
+  "fourth_youtube_upload": false,
+  "sha256": "3a71b22c3eca0d7da73df89993cd556f33fdbfd34a599ead2d20aac85e4b760a",
+  "bytes": 13949911,
+  "duration_seconds": 340.53,
+  "narration": "Google Vids Elio; AI disclosure visible on every card",
+  "snapshot_date_utc": "2026-10-15",
+  "finalized_date_utc": "2026-10-16",
+  "qa": "../docs/technical-demo/qa-summary.json",
+  "published_claim_trace": "../docs/technical-demo/published-claim-trace.json"
+}

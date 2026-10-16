@@ -1,0 +1,33 @@
+{
+  "verified_at_utc": "2026-10-16T01:05:39.226859+00:00",
+  "method": "yt-dlp public metadata extraction; no browser cookies or account credentials; no media download. Format availability is not full playback verification.",
+  "results": [
+    {
+      "id": "pmSUPnpCyag",
+      "title": "Coding agents move into the delivery system",
+      "duration": 214,
+      "availability": "unlisted",
+      "playable_in_embed": true,
+      "webpage_url": "https://www.youtube.com/watch?v=pmSUPnpCyag",
+      "formats_available": 25
+    },
+    {
+      "id": "h0z538an6hE",
+      "title": "What Coding-Agent Results Actually Measure",
+      "duration": 232,
+      "availability": "unlisted",
+      "playable_in_embed": true,
+      "webpage_url": "https://www.youtube.com/watch?v=h0z538an6hE",
+      "formats_available": 19
+    },
+    {
+      "id": "7dnm8xoI_yA",
+      "title": "Run a Small, Reversible Trial Before Expanding Agent Access",
+      "duration": 229,
+      "availability": "unlisted",
+      "playable_in_embed": true,
+      "webpage_url": "https://www.youtube.com/watch?v=7dnm8xoI_yA",
+      "formats_available": 19
+    }
+  ]
+}

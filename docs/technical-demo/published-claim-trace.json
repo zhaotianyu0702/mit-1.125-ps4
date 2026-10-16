@@ -1,0 +1,24 @@
+{
+  "item_id": "youtube:rAUyRDOFyHU",
+  "version_id": "ca1da54d964f56f643c9a4cca6e50469a2a430bf5b1b32a1a8a6ab541700738a",
+  "decision": "accept",
+  "claim_id": "01-c2",
+  "segment_id": "s-0068",
+  "segment_start_seconds": 206.28,
+  "segment_end_seconds": 210.24,
+  "published_article_path": "publishing/01-article-public.html",
+  "published_article_sha256": "db551d6da36847f0a0a3c9e3288f0ceed2526aa9323a3593b8380424cfdd7857",
+  "published_article_url": "https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery",
+  "published_claim_text": "In their account, deterministic code gathers merge request information and classifies risk; the review agent can inspect code but cannot edit files or push changes; findings return to a merge request for people to review.",
+  "citation_url": "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s",
+  "additional_source_path": "runs/20261012T214349Z-992554/articles/01.md",
+  "version_display_prefix": "ca1da54d964f56f6",
+  "production_article_path": "revisions/20261012T225329Z-student-feedback/articles/01.md",
+  "citation_urls": [
+    "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s",
+    "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=708s",
+    "https://www.youtube.com/watch?v=rAUyRDOFyHU&t=500s"
+  ],
+  "source_transcript_human_listening_verified": false,
+  "path_resolution": "All artifact paths are relative to repository root."
+}

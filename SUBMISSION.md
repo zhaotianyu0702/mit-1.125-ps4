@@ -2,7 +2,7 @@
 
 **Student:** Tianyu Zhao  
 **Repository:** https://github.com/zhaotianyu0702/mit-1.125-ps4  
-**Current status:** The public code and evidence repository is uploaded, and its URL was registered in the course roster's PS4 Repo field on October 15 UTC. All three companion videos are now Unlisted and their watch pages have been verified. The overall assignment remains incomplete: the three Substack articles, article/video crosslinks, and final technical demonstration with a published-claim trace are still pending.
+**Current status:** All three free Substack articles, three Unlisted companion videos and the separate technical demonstration are linked below. Code, both genuine dated runs and sanitized evidence are in this public repository. The repository URL was registered in the course roster’s PS4 Repo field on October 15 UTC. Anonymous article-content and public video-metadata checks passed on October 16. YouTube external description URLs remain plain text until channel verification; the complete clickable links are provided here and in the metadata.
 
 ## Topic, audience and purpose
 
@@ -12,15 +12,15 @@
 
 | Piece | Article | Substack URL | YouTube URL |
 | --- | --- | --- | --- |
-| 1 | Coding agents move into the delivery system | Pending | [Watch video 1](https://youtu.be/pmSUPnpCyag) |
-| 2 | What Coding-Agent Results Actually Measure | Pending | [Watch video 2](https://youtu.be/h0z538an6hE) |
-| 3 | Run a Small, Reversible Trial Before Expanding Agent Access | Pending | [Watch video 3](https://youtu.be/7dnm8xoI_yA) |
+| 1 | Coding agents move into the delivery system | [Read article 1](https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery) | [Watch video 1](https://youtu.be/pmSUPnpCyag) |
+| 2 | What Coding-Agent Results Actually Measure | [Read article 2](https://tianyuzhao.substack.com/p/what-coding-agent-results-actually) | [Watch video 2](https://youtu.be/h0z538an6hE) |
+| 3 | Run a Small, Reversible Trial Before Expanding Agent Access | [Read article 3](https://tianyuzhao.substack.com/p/run-a-small-reversible-trial-before) | [Watch video 3](https://youtu.be/7dnm8xoI_yA) |
 
 The approved article/script pairs and source notes are in [the production package](revisions/20261012T225329Z-student-feedback/package/). The three completed companion videos run 3:33.72, 3:51.83 and 3:48.95. Google Vids generated their narration; local finishing added evidence graphics and corrected subtitles. Research, drafting and substantive assistant review were AI-assisted. The student approved the deliverables on October 13 at 19:43 UTC. No personal source-listening claim is made.
 
-The three videos use the approved titles, evidence-as-of date, source references, written AI disclosure and YouTube AI-generated-content label. They are set as not made for children, with subscriber notifications disabled. [Published video metadata and full source URLs](publishing/video-publication.json) preserve the exact descriptions and verification record. The companion-article fields explicitly remain pending. YouTube currently requires one-time channel verification before external description links become clickable; some are truncated in its watch interface. The complete URLs are retained in the linked metadata.
+The three videos use the approved titles, evidence-as-of date, source references, written AI disclosure and YouTube AI-generated-content label. They are set as not made for children, with subscriber notifications disabled. [Published video metadata and full source URLs](publishing/video-publication.json) preserve the exact descriptions and verification record. Each companion-article field now contains its actual Substack URL. The [article publication record](publishing/article-publication.json) documents free web-only publication with email/app delivery disabled. YouTube currently requires one-time channel verification before external description links become clickable; some are truncated in its watch interface. The complete URLs are retained in the linked metadata. [Anonymous article checks](publishing/substack-anonymous-content-qa-20261016.json) matched all 42 approved paragraphs and every exact href. [Unauthenticated video metadata checks](publishing/youtube-anonymous-metadata-qa-20261016.json) returned the three expected titles, Unlisted availability and media formats; this is not full signed-out playback verification.
 
-**Separate technical demonstration:** shareable URL pending. The approved Elio review copy is 5:28.07. It covers architecture, the entrypoint, retained source/decision/claim evidence, both actual run dates, recovery, editorial revisions and an architectural tradeoff. The final published-claim screen and the statements about pending publication must be updated after publication. Written AI-narration disclosure will remain.
+**Separate technical demonstration:** [Open/download the final MP4 — 5:40.53](https://raw.githubusercontent.com/zhaotianyu0702/mit-1.125-ps4/main/docs/technical-demo/MIT-1.125-PS04-technical-demo-Elio-final.mp4) ([GitHub file page](https://github.com/zhaotianyu0702/mit-1.125-ps4/blob/main/docs/technical-demo/MIT-1.125-PS04-technical-demo-Elio-final.mp4)). The [video notes and QA](docs/technical-demo/) include captions, narration, media hashes and the published-claim trace. This saved-evidence walkthrough covers architecture, the entrypoint, retained source/decision/published-claim evidence, both actual run dates, recovery, editorial revision and a tradeoff. Its status narration is explicitly a snapshot from October 15; final video delivery in this repository occurred October 16. Written Google Vids Elio AI-narration disclosure remains throughout.
 
 ## Setup and execution
 
@@ -84,7 +84,7 @@ The [withheld-real-item replay](docs/validation/withheld-real-item-replay/README
 
 ## Published claim trace
 
-**Pending actual publication.** The prepared chain is article 1's Flywire workflow paragraph → brief claim `01-c2` → accepted `youtube:rAUyRDOFyHU` decision → version `ca1da54d964f56f643c9a4cca6e50469a2a430bf5b1b32a1a8a6ab541700738a` → retained segment `s-0068`, 206.28–210.24 seconds. The public source is [Flywire at 3:26](https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s). Add the verified Substack URL and exact published passage after publication; this prepared trace is not yet a published claim.
+The verified [published article 1](https://tianyuzhao.substack.com/p/coding-agents-move-into-the-delivery) contains the Flywire workflow paragraph → brief claim `01-c2` → accepted `youtube:rAUyRDOFyHU` decision → version `ca1da54d964f56f643c9a4cca6e50469a2a430bf5b1b32a1a8a6ab541700738a` → retained segment `s-0068`, 206.28–210.24 seconds. The public source is [Flywire at 3:26](https://www.youtube.com/watch?v=rAUyRDOFyHU&t=206s). The published paragraph states: “In their account, deterministic code gathers merge request information and classifies risk; the review agent can inspect code but cannot edit files or push changes; findings return to a merge request for people to review.” Its public citations point to 3:26, 11:48 and 8:20 of the same presentation. The reader-facing copy replaces internal claim markers with these source links. Machine transcription remains unverified by human listening.
 
 ## Editorial review and revision
 
